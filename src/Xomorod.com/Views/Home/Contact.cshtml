@@ -1,0 +1,86 @@
+﻿@using Xomorod.Helper.Resources
+@using Xomorod.Shared
+@using Xomorod.Shared.Resources
+
+<section class="contact-us" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="white-text">@Localization.GetInTouch</h2>
+            <br/><br/>
+            <h5 class="white-text">@Localization.ContactUsSubTitle1</h5>
+            <h5 class="white-text">@Localization.ContactUsSubTitle2</h5>
+            <h6 class="white-text">@Localization.ContactUsSubTitle3</h6>
+        </div>
+        <div class="row">
+            <div class="pirate_forms_wrap">
+                <form id="pirate_forms_5558" class="pirate_forms" onsubmit="return contactFormSubmit();">
+                    <div class="form_field_wrap contact_name_wrap col-lg-4 col-sm-4 ">
+                        <label for="pirate-forms-contact-name"></label>
+                        <input id="pirate-forms-contact-name" name="name" required class="form-control" type="text" value="" placeholder="@Localization.YourName">
+                    </div>
+                    <div class="form_field_wrap contact_email_wrap col-lg-4 col-sm-4 ">
+                        <label for="pirate-forms-contact-email"></label>
+                        <input id="pirate-forms-contact-email" name="email" required class="form-control" type="email" value="" placeholder="@Localization.YourEmail">
+                    </div>
+                    <div class="form_field_wrap contact_subject_wrapcol-lg-4 col-sm-4 ">
+                        <label for="pirate-forms-contact-subject"></label>
+                        <input id="pirate-forms-contact-subject" name="subject" required class="form-control" type="text" value="" placeholder="@Localization.Subject">
+                    </div>
+                    <div class="form_field_wrap contact_message_wrap col-lg-12 col-sm-12 ">
+                        <textarea id="pirate-forms-contact-message" name="message" required class="form-control" placeholder="@Localization.YourMessage"></textarea>
+                    </div>
+
+                    <button type="submit" id="pirate-forms-contact-submit" class="btn custom-button red-btn pirate-forms-submit-button">
+                        <span class="glyphicon glyphicon-envelope"></span>&nbsp;@Localization.SendMessage
+                    </button>
+
+                    <div class="form_field_wrap" dir="ltr">
+                        <div id="pirate-forms-captcha" class="g-recaptcha pirate-forms-g-recaptcha" data-sitekey="@ViewBag.reCaptchaPublicKey"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    window.onload = function () {
+        var recaptchaScriptLoaded = false;
+        for (var t = document.querySelectorAll(".pirate_forms input, .pirate_forms textarea"), e = 0; e < t.length; e++)
+            t[e].onfocus = t[e].onselect = function () {
+                if (!recaptchaScriptLoaded) {
+                    $.getScript("https://www.google.com/recaptcha/api.js", function () {
+                        recaptchaScriptLoaded = true;
+                        var c = document.getElementById("pirate-forms-captcha");
+                        "block" !== c.style.display && (c.style.display = "block", c.style.opacity = 1);
+                    }).fail(function (jqxhr, settings, exp) {
+                        toastr.error("@Localization.InternetError");
+                    });;
+                }
+            }
+    };
+
+
+
+    function contactFormSubmit() {
+        var resp = window.grecaptcha.getResponse();
+
+        // if recaptcha is valid or in debugg mode:
+        if (resp.length === 0) {
+            toastr.warning("@Localization.AlertLeaveWithoutCaptcha");
+            return false;
+        }
+        else {
+            postAsync("@SecurityKeys.ApiWebRout" + "General/ContactMe",
+            {
+                captchaResponse: resp,
+                culture: "@CultureHelper.GetCurrentCultureTwoLetter()",
+                name: document.getElementById("pirate-forms-contact-name").value,
+                email: document.getElementById("pirate-forms-contact-email").value,
+                subject: document.getElementById("pirate-forms-contact-subject").value,
+                message: document.getElementById("pirate-forms-contact-message").value
+            });
+            return false;
+        }
+    };
+</script>

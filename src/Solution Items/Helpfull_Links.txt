@@ -1,0 +1,25 @@
+﻿﻿Pre load page: http://bradsknutson.com/blog/display-loading-image-while-page-loads/
+Preload Gif images: http://preloaders.net/en/circular
+30 Best Creative CSS3 Animation Examples: http://designscrazed.org/css3-animation-examples/
+My Preload Creative: http://codepen.io/Raphael/pen/fqweF
+
+Wow Animation.js samples: https://daneden.github.io/animate.css/
+
+CSS Compressor: http://csscompressor.com/
+
+JS Compressor: http://jscompress.com/
+
+Trianglify Pattern: http://qrohlf.com/trianglify/
+
+Particles JS: https://github.com/VincentGarreau/particles.js/
+
+Particles Login Form: http://bootsnipp.com/snippets/featured/particle-background-login-form
+
+Header responsive padding: https://css-tricks.com/viewport-sized-typography/
+
+Complete Example for Error Handlers: https://msdn.microsoft.com/en-us/library/bb397417.aspx
+
+SSL: 
+https://www.macaw.nl/weblog/2013/6/configuring-an-asp-net-project-for-development-with-ssl
+and
+http://www.asp.net/web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/checkout-and-payment-with-paypal#SSLWebForms

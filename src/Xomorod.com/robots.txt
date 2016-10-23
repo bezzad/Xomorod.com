@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /Admin/
+Disallow: /Account/
+Disallow: /Manage/
+Sitemap: http://www.xomorod.com/sitemap.xml
+
+User-agent: Libwww-perl
+Disallow: /

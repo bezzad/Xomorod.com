@@ -1,0 +1,20 @@
+﻿@using Xomorod.Helper.Resources
+
+<section id="map" class="embed-container maps">
+    <div>
+        <h2 class="white-text" data-scrollreveal="enter left after 0s over 1s">@Localization.CompanyLocation</h2>
+        <br />
+        <div>
+            <iframe id="map-iframe" class="xomorod_google_map" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d50247.41390035679!2d46.31160947131181!3d38.08287682388276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfa!2sir!4v1465669008460" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<script>
+    var mapframe = document.getElementById('map-iframe');
+    var mapSection = document.getElementById('map');
+
+    mapSection.onclick = function () {
+        mapframe.style.pointerEvents = 'auto';
+    };
+</script>

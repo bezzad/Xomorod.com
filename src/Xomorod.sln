@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xomorod.News", "Xomorod.News\Xomorod.News.csproj", "{F3B06021-853F-4E90-87E2-A99DAEF26FB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xomorod.API", "Xomorod.API\Xomorod.API.csproj", "{588B75B9-D7AA-474E-AEC4-E371C97C2395}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DatabaseScripts", "DatabaseScripts", "{FC128E63-4C0D-4D6E-9235-34A4CB250C1E}"
+	ProjectSection(SolutionItems) = preProject
+		DatabaseScripts\DropCreateDatabase_schema.sql = DatabaseScripts\DropCreateDatabase_schema.sql
+		DatabaseScripts\DropDatabase_AllObjects.sql = DatabaseScripts\DropDatabase_AllObjects.sql
+		Xomorod.com\App_Data\ElmahSqlServer.sql = Xomorod.com\App_Data\ElmahSqlServer.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1D8C7855-D53D-4249-A06B-E1699F3FEF16}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Helpfull_Links.txt = Solution Items\Helpfull_Links.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xomorod.Com", "Xomorod.com\Xomorod.Com.csproj", "{1E3212DC-9051-48A9-85BB-DC4BC5E8A91A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xomorod.Helper", "Xomorod.Helper\Xomorod.Helper.csproj", "{2DD4BCC5-EC5C-4A9D-B4A9-1578F50E98B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xomorod.Demo", "Xomorod.Demo\Xomorod.Demo.csproj", "{68077FDF-8185-4D44-AC50-0E868093A525}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Xomorod.Shared", "Xomorod.Shared\Xomorod.Shared.shproj", "{712972E2-8E2C-4E4E-A038-546A54F46A9D}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Xomorod.Shared\Xomorod.Shared.projitems*{1e3212dc-9051-48a9-85bb-dc4bc5e8a91a}*SharedItemsImports = 4
+		Xomorod.Shared\Xomorod.Shared.projitems*{588b75b9-d7aa-474e-aec4-e371c97c2395}*SharedItemsImports = 4
+		Xomorod.Shared\Xomorod.Shared.projitems*{712972e2-8e2c-4e4e-a038-546a54f46a9d}*SharedItemsImports = 13
+		Xomorod.Shared\Xomorod.Shared.projitems*{f3b06021-853f-4e90-87e2-a99daef26fb6}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3B06021-853F-4E90-87E2-A99DAEF26FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3B06021-853F-4E90-87E2-A99DAEF26FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3B06021-853F-4E90-87E2-A99DAEF26FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3B06021-853F-4E90-87E2-A99DAEF26FB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{588B75B9-D7AA-474E-AEC4-E371C97C2395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{588B75B9-D7AA-474E-AEC4-E371C97C2395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{588B75B9-D7AA-474E-AEC4-E371C97C2395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{588B75B9-D7AA-474E-AEC4-E371C97C2395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E3212DC-9051-48A9-85BB-DC4BC5E8A91A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E3212DC-9051-48A9-85BB-DC4BC5E8A91A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E3212DC-9051-48A9-85BB-DC4BC5E8A91A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E3212DC-9051-48A9-85BB-DC4BC5E8A91A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DD4BCC5-EC5C-4A9D-B4A9-1578F50E98B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DD4BCC5-EC5C-4A9D-B4A9-1578F50E98B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DD4BCC5-EC5C-4A9D-B4A9-1578F50E98B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DD4BCC5-EC5C-4A9D-B4A9-1578F50E98B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68077FDF-8185-4D44-AC50-0E868093A525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68077FDF-8185-4D44-AC50-0E868093A525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68077FDF-8185-4D44-AC50-0E868093A525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68077FDF-8185-4D44-AC50-0E868093A525}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

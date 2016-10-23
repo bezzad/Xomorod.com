@@ -1,0 +1,21 @@
+﻿@model Xomorod.Com.Models.ExternalLoginListViewModel
+@using Microsoft.Owin.Security
+@using Xomorod.Helper.Resources
+
+<h4>@Localization.Use_another_service_to_log_in</h4>
+<hr />
+@{
+    var loginProviders = Context.GetOwinContext().Authentication.GetExternalAuthenticationTypes().ToList();
+    if (loginProviders.Any()) {
+        using (Html.BeginForm("ExternalLogin", "Account", new { ReturnUrl = Model.ReturnUrl })) {
+            @Html.AntiForgeryToken()
+            <div id="socialLoginList">
+                <p>
+                    @foreach (AuthenticationDescription p in loginProviders) {
+                        <button type="submit" class="zocial @p.AuthenticationType.ToLower()"  name="provider" value="@p.AuthenticationType">@Localization.ResourceManager.GetString(p.AuthenticationType)</button>
+                    }
+                </p>
+            </div>
+        }
+    }
+}

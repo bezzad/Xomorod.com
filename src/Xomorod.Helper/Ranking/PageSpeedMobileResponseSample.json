@@ -1,0 +1,436 @@
+﻿{
+  "kind": "pagespeedonline#result",
+  "id": "http://xomorod.com/",
+  "responseCode": 200,
+  "title": "Xomorod Corporation Free Applications & News -",
+  "ruleGroups": {
+    "SPEED": {
+      "score": 84
+    },
+    "USABILITY": {
+      "score": 100
+    }
+  },
+  "pageStats": {
+    "numberResources": 15,
+    "numberHosts": 1,
+    "totalRequestBytes": "1033",
+    "numberStaticResources": 13,
+    "htmlResponseBytes": "42724",
+    "cssResponseBytes": "329185",
+    "imageResponseBytes": "177624",
+    "javascriptResponseBytes": "210437",
+    "otherResponseBytes": "16070",
+    "numberJsResources": 3,
+    "numberCssResources": 1
+  },
+  "formattedResults": {
+    "locale": "en_US",
+    "ruleResults": {
+      "AvoidInterstitials": {
+        "localizedRuleName": "Avoid app install interstitials that hide content",
+        "ruleImpact": 0,
+        "groups": [
+          "USABILITY"
+        ],
+        "summary": {
+          "format": "Your page does not appear to have any app install interstitials that hide a significant amount of content. Learn more about the importance of {{BEGIN_LINK}}avoiding the use of app install interstitials{{END_LINK}}.",
+          "args": [
+            {
+              "type": "HYPERLINK",
+              "key": "LINK",
+              "value": "https://developers.google.com/webmasters/mobile-sites/mobile-seo/common-mistakes/avoid-interstitials"
+            }
+          ]
+        }
+      },
+      "AvoidLandingPageRedirects": {
+        "localizedRuleName": "Avoid landing page redirects",
+        "ruleImpact": 0,
+        "groups": [
+          "SPEED"
+        ],
+        "summary": {
+          "format": "Your page has no redirects. Learn more about {{BEGIN_LINK}}avoiding landing page redirects{{END_LINK}}.",
+          "args": [
+            {
+              "type": "HYPERLINK",
+              "key": "LINK",
+              "value": "https://developers.google.com/speed/docs/insights/AvoidRedirects"
+            }
+          ]
+        }
+      },
+      "AvoidPlugins": {
+        "localizedRuleName": "Avoid plugins",
+        "ruleImpact": 0,
+        "groups": [
+          "USABILITY"
+        ],
+        "summary": {
+          "format": "Your page does not appear to use plugins, which would prevent content from being usable on many platforms. Learn more about the importance of {{BEGIN_LINK}}avoiding plugins{{END_LINK}}.",
+          "args": [
+            {
+              "type": "HYPERLINK",
+              "key": "LINK",
+              "value": "https://developers.google.com/speed/docs/insights/AvoidPlugins"
+            }
+          ]
+        }
+      },
+      "ConfigureViewport": {
+        "localizedRuleName": "Configure the viewport",
+        "ruleImpact": 0,
+        "groups": [
+          "USABILITY"
+        ],
+        "summary": {
+          "format": "Your page specifies a viewport matching the device's size, which allows it to render properly on all devices. Learn more about {{BEGIN_LINK}}configuring viewports{{END_LINK}}.",
+          "args": [
+            {
+              "type": "HYPERLINK",
+              "key": "LINK",
+              "value": "https://developers.google.com/speed/docs/insights/ConfigureViewport"
+            }
+          ]
+        }
+      },
+      "EnableGzipCompression": {
+        "localizedRuleName": "Enable compression",
+        "ruleImpact": 0,
+        "groups": [
+          "SPEED"
+        ],
+        "summary": {
+          "format": "You have compression enabled. Learn more about {{BEGIN_LINK}}enabling compression{{END_LINK}}.",
+          "args": [
+            {
+              "type": "HYPERLINK",
+              "key": "LINK",
+              "value": "https://developers.google.com/speed/docs/insights/EnableCompression"
+            }
+          ]
+        }
+      },
+      "LeverageBrowserCaching": {
+        "localizedRuleName": "Leverage browser caching",
+        "ruleImpact": 0,
+        "groups": [
+          "SPEED"
+        ],
+        "summary": {
+          "format": "You have enabled browser caching. Learn more about {{BEGIN_LINK}}browser caching recommendations{{END_LINK}}.",
+          "args": [
+            {
+              "type": "HYPERLINK",
+              "key": "LINK",
+              "value": "https://developers.google.com/speed/docs/insights/LeverageBrowserCaching"
+            }
+          ]
+        }
+      },
+      "MainResourceServerResponseTime": {
+        "localizedRuleName": "Reduce server response time",
+        "ruleImpact": 0.54,
+        "groups": [
+          "SPEED"
+        ],
+        "urlBlocks": [
+          {
+            "header": {
+              "format": "In our test, your server responded in {{RESPONSE_TIME}}. There are many factors that can slow down your server response time. {{BEGIN_LINK}}Please read our recommendations{{END_LINK}} to learn how you can monitor and measure where your server is spending the most time.",
+              "args": [
+                {
+                  "type": "DURATION",
+                  "key": "RESPONSE_TIME",
+                  "value": "0.24 seconds"
+                },
+                {
+                  "type": "HYPERLINK",
+                  "key": "LINK",
+                  "value": "https://developers.google.com/speed/docs/insights/Server"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "MinifyCss": {
+        "localizedRuleName": "Minify CSS",
+        "ruleImpact": 0,
+        "groups": [
+          "SPEED"
+        ],
+        "summary": {
+          "format": "Your CSS is minified. Learn more about {{BEGIN_LINK}}minifying CSS{{END_LINK}}.",
+          "args": [
+            {
+              "type": "HYPERLINK",
+              "key": "LINK",
+              "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+            }
+          ]
+        }
+      },
+      "MinifyHTML": {
+        "localizedRuleName": "Minify HTML",
+        "ruleImpact": 0.1086,
+        "groups": [
+          "SPEED"
+        ],
+        "summary": {
+          "format": "Compacting HTML code, including any inline JavaScript and CSS contained in it, can save many bytes of data and speed up download and parse times."
+        },
+        "urlBlocks": [
+          {
+            "header": {
+              "format": "{{BEGIN_LINK}}Minify HTML{{END_LINK}} for the following resources to reduce their size by {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+              "args": [
+                {
+                  "type": "HYPERLINK",
+                  "key": "LINK",
+                  "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+                },
+                {
+                  "type": "BYTES",
+                  "key": "SIZE_IN_BYTES",
+                  "value": "1.1KiB"
+                },
+                {
+                  "type": "PERCENTAGE",
+                  "key": "PERCENTAGE",
+                  "value": "13%"
+                }
+              ]
+            },
+            "urls": [
+              {
+                "result": {
+                  "format": "Minifying {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction) after compression.",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://xomorod.com/"
+                    },
+                    {
+                      "type": "BYTES",
+                      "key": "SIZE_IN_BYTES",
+                      "value": "1.1KiB"
+                    },
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "13%"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "MinifyJavaScript": {
+        "localizedRuleName": "Minify JavaScript",
+        "ruleImpact": 0,
+        "groups": [
+          "SPEED"
+        ],
+        "summary": {
+          "format": "Your JavaScript content is minified. Learn more about {{BEGIN_LINK}}minifying JavaScript{{END_LINK}}.",
+          "args": [
+            {
+              "type": "HYPERLINK",
+              "key": "LINK",
+              "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+            }
+          ]
+        }
+      },
+      "MinimizeRenderBlockingResources": {
+        "localizedRuleName": "Eliminate render-blocking JavaScript and CSS in above-the-fold content",
+        "ruleImpact": 8,
+        "groups": [
+          "SPEED"
+        ],
+        "summary": {
+          "format": "Your page has {{NUM_CSS}} blocking CSS resources. This causes a delay in rendering your page.",
+          "args": [
+            {
+              "type": "INT_LITERAL",
+              "key": "NUM_CSS",
+              "value": "1"
+            }
+          ]
+        },
+        "urlBlocks": [
+          {
+            "header": {
+              "format": "Approximately {{PERCENTAGE}} of the above-the-fold content on your page could be rendered without waiting for the following resources to load. Try to defer or asynchronously load blocking resources, or inline the critical portions of those resources directly in the HTML.",
+              "args": [
+                {
+                  "type": "PERCENTAGE",
+                  "key": "PERCENTAGE",
+                  "value": "4%"
+                }
+              ]
+            }
+          },
+          {
+            "header": {
+              "format": "{{BEGIN_LINK}}Optimize CSS Delivery{{END_LINK}} of the following:",
+              "args": [
+                {
+                  "type": "HYPERLINK",
+                  "key": "LINK",
+                  "value": "https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery"
+                }
+              ]
+            },
+            "urls": [
+              {
+                "result": {
+                  "format": "{{URL}}",
+                  "args": [
+                    {
+                      "type": "URL",
+                      "key": "URL",
+                      "value": "http://xomorod.com/Content/stylesheets?v=gEWniNRV265Ch43pHxYZOvJ2rlU7S9cmE7X5Ip-FdwQ1"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "OptimizeImages": {
+        "localizedRuleName": "Optimize images",
+        "ruleImpact": 0,
+        "groups": [
+          "SPEED"
+        ],
+        "summary": {
+          "format": "Your images are optimized. Learn more about {{BEGIN_LINK}}optimizing images{{END_LINK}}.",
+          "args": [
+            {
+              "type": "HYPERLINK",
+              "key": "LINK",
+              "value": "https://developers.google.com/speed/docs/insights/OptimizeImages"
+            }
+          ]
+        }
+      },
+      "PrioritizeVisibleContent": {
+        "localizedRuleName": "Prioritize visible content",
+        "ruleImpact": 8,
+        "groups": [
+          "SPEED"
+        ],
+        "summary": {
+          "format": "Your page requires additional network round trips to render the above-the-fold content. For best performance, reduce the amount of HTML needed to render above-the-fold content."
+        },
+        "urlBlocks": [
+          {
+            "header": {
+              "format": "The entire HTML response was not sufficient to render the above-the-fold content. This usually indicates that additional resources, loaded after HTML parsing, were required to render above-the-fold content. {{BEGIN_LINK}}Prioritize visible content{{END_LINK}} that is needed for rendering above-the-fold by including it directly in the HTML response.",
+              "args": [
+                {
+                  "type": "HYPERLINK",
+                  "key": "LINK",
+                  "value": "https://developers.google.com/speed/docs/insights/PrioritizeVisibleContent"
+                }
+              ]
+            },
+            "urls": [
+              {
+                "result": {
+                  "format": "Only about {{PERCENTAGE}} of the final above-the-fold content could be rendered with the full HTML response {{SCREENSHOT}}.",
+                  "args": [
+                    {
+                      "type": "PERCENTAGE",
+                      "key": "PERCENTAGE",
+                      "value": "4%"
+                    },
+                    {
+                      "type": "SNAPSHOT_RECT",
+                      "key": "SCREENSHOT",
+                      "value": "snapshot:0"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "SizeContentToViewport": {
+        "localizedRuleName": "Size content to viewport",
+        "ruleImpact": 0,
+        "groups": [
+          "USABILITY"
+        ],
+        "summary": {
+          "format": "The contents of your page fit within the viewport. Learn more about {{BEGIN_LINK}}sizing content to the viewport{{END_LINK}}.",
+          "args": [
+            {
+              "type": "HYPERLINK",
+              "key": "LINK",
+              "value": "https://developers.google.com/speed/docs/insights/SizeContentToViewport"
+            }
+          ]
+        }
+      },
+      "SizeTapTargetsAppropriately": {
+        "localizedRuleName": "Size tap targets appropriately",
+        "ruleImpact": 0,
+        "groups": [
+          "USABILITY"
+        ],
+        "summary": {
+          "format": "All of your page's links/buttons are large enough for a user to easily tap on a touchscreen. Learn more about {{BEGIN_LINK}}sizing tap targets appropriately{{END_LINK}}.",
+          "args": [
+            {
+              "type": "HYPERLINK",
+              "key": "LINK",
+              "value": "https://developers.google.com/speed/docs/insights/SizeTapTargetsAppropriately"
+            }
+          ]
+        }
+      },
+      "UseLegibleFontSizes": {
+        "localizedRuleName": "Use legible font sizes",
+        "ruleImpact": 0,
+        "groups": [
+          "USABILITY"
+        ],
+        "summary": {
+          "format": "The text on your page is legible. Learn more about {{BEGIN_LINK}}using legible font sizes{{END_LINK}}.",
+          "args": [
+            {
+              "type": "HYPERLINK",
+              "key": "LINK",
+              "value": "https://developers.google.com/speed/docs/insights/UseLegibleFontSizes"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "version": {
+    "major": 1,
+    "minor": 15
+  },
+  "screenshot": {
+    "mime_type": "image/jpeg",
+    "data": "_9j_4AAQSkZJRgABAQAAAQABAAD_2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj_2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj_wAARCAI5AUADASIAAhEBAxEB_8QAHAABAAEFAQEAAAAAAAAAAAAAAAQBAgMFBgcI_8QAVRAAAQMCAwQFBQgOBwcEAwAAAQACAwQRBRIhBjFBUQcTImFxFDKBkdEIFUJSkqGx0hYXGCMkMzRTVWJylMHhJTVUVnOCkzZDREVjovBGg7LxJoTC_8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwUE_8QAMREBAQACAQQBAgQEBQUAAAAAAAECESEDEjFBEwRRFCIyYQVxsdGBkZKh4TNCUmKT_9oADAMBAAIRAxEAPwD6MREVYEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAVk8ghhkkcHEMaXENFybC-g5q9WTl7YZDC0OlDSWNcbAm2gJ8VYl8Oa-zSj_sGLfuv80-zSj_ALBi37r_ADV3l-1v6Kw_96PtTy_az9FYf-9H2r6_jw-0_wBUeN-I6_8A5Zf_ADrLQbVUtbWw00dHiTHyuyh0lPlaPE30XQrQUNZtJJWQsrcOoo6YutI9lQXOaOYF9VvwuHVkl4_rt9_0meeeNudt_njcf9qLjemB8kfRvjj4ZHxyCJpDmOLSO23iF2S4rpodk6Mcedyhb_8ANqv0_wD1cP5z-r6c_wBNeXdHnSHjlE2KmrJPfClGmWY9seDvavbcK2iocQha7OaeQi5jm0PoO4-hfJ2CYmKbK4C5HBdOduJmCNpqXMynRrNzfFe39V_DceplvpzTxOl9f1Onlcc-Y9e246RRhEL4sIpxPUbutl0Y3wG8_MvOOizaHF8c6WIZsVxCeoLoJBkLrMaNNA0aBcrjO0Lq9t5SHX-EOK2PQVL1nSjT24QSfwTqfSYdD6XOyc68u30v1PU6_W3l4fTNBiVHXy1UdFUxTvpZBDMI3XyPtfKe-y0kG2uEPfixnlNNT4dMKd80tgJJDe7Wjed1l5PBj2IbM7QY1R7JVXvnSvfJLI00pPVP4uzfCtr3FQ4BBU7O0dc7EPLayqxZjqoOiyZDY_B43ud2i-CfRSc28XWvv_w--9a-nruAbeYdixc90FTRUpkEUNTUgCOZxvYA8CbbvnW5O0OEDEJaE4jTCqiBL2F9sttTruuBwXKdLMEVPspRwwRsjiFZE0MaLACx0HJaPZXZui2gxDHW1mdroazMwsdqLk3F-IPzLjOl08sPk5k_z-y3PKXt8u4odssIrH1ro58tJShuapfox5JOjeJ3K3DNsaGumlvFPBTNcGNqZQAxxJsBfgV5niVLFST4xBA3LDFWRMb3AZuHFehbewRU2yfV08bI2CRgDWtsOK1n0enLJPf_AB_dJ1MrLfs2eM7TUWGyiAZqmpJt1UJBI8SpkGMUctNJM6UQ9WB1jJNHR34ELz6ixA4fi1cYqQVNS8gRXF8mmpVA7yqirKueoz1b3tzsy5bC-9T8PNT_AA_3Z-au4pNo6Spme0MkZC0265w7Pp5KVX4vTUnZzdZJp2GH6Stbi8MUOzLRExrQQw6DetPSSOir4y1rXG7dHC_ALnj08cuYufUyw_LXY0dbFVN7BLXgXLHbwpS0tL_tBP8As_wC3S4ZTV4dsMrZyIiLLYiIgIiICIiAiIgIiICIiAiIgKydrnwyMjeY3uaQ14F8ptofQr0RLN8OY94cb_vRVf6DfanvDjf96Kr_AEG-1dOi7fPn-3-U_s-P8B0f_b_Vl_dz9Bg-LQVkMtRtDUVMLHXdC6FoDxyvddAiLnlnc7uu_S6OPRmsd_423-toouKUkFdh9RTVdLHVwSsLXwSAZZByN1KRSXXLq-RdutlZsOxeoFFQTYZE43ZSyvLhb9V_JcPMZaaQxzscx_Jw3r7mxPDaPFKY0-IU0VRCfgvbe3hyXmOPdEEE9Wx-FVTY4C65jnbmLP2Svc-m_i3bO3qPj6n0mOV3Hzrh-HVtWQWgxMPF28-AX0h0J7LwYTQuq5sGfT1rhbyyZ13yDub8ELp9lthMIwANkbF5TVj_AH0wuR4DcF1gFl8n1n8Qy-onbPDr0uhj0-Z5cj0e7N1GA0-Jmu6nrKyrdO1keoY07hfv3nvKizdHlG-Kod5TKKmWt8tEgAAaQTZtuViRzXcovi-fPuuUvNdeya087q9mMf2kxcP2jq44MOgfmjpqVxyv10JB7uJ1W62LwGpweqxeapLA2rqDJGxhvlbc2v3ldUiuXXyyx7fRMJLtyNZsVTVRr5JKiTr6qYTB4t2LbgB6VgrsExrHMQ6vFJ2QYdGezHATZ-ulwePeV2qKTrZxL08a5zZ_BZaHE8RqJgwRzOtE3eco4lVqdmYZ5q2Uylr53BzbDRll0SKfJlve17MdaczPhuJV0raeoe2OkjsBlPnAcfFSXYZLQyOmog2RzmhoDhq3vC3qJ8l8J8ePlqsKoZYpTUVLyZXC1r39a2qIsZZXK7rWOMxmoIiKNCIiAiIgIiICIiAiIgIiICLyI9KOKfo-g9b_AGp9tHFP0fQet_tV1U29dReRfbRxT9H0Hrf7U-2jin6PoPW_2pqm3rqLyL7aOKfo-g9b_an20cU_R9B63-1NUeuovIj0o4p-j6D1v9qxy9KmKsic8YdQXA5ye1NUt1y9hReKjpcxc_8ALcO9cn1k-25i_wCjcO9cn1lrsrl8-D2pF4r9tzF_0bh3rk-sn23MX_RuH-uT6ydlT8Rg9qReLfbbxf8ARuHeuT6yoelzF-GG4d65PrJ2Vfnwe1IvFftuYv8Ao3DvXJ9ZWnpexcf8sw71yfWTsqfiMI9sReJfbfxf9GYd65PrKn238Xt_VmHeuT6ydlPxHT-725F4j9uDF7297MO9cn1k-3BjF7DDMNPpk-snZU_E9P7vbkXiX238Xv8A1bh3rk-so9f0zYzTUNTOzC8Nc6KMvAJksbf5k7LFn1GFunuqL5i-6J2h0_oTBvlTfWT7oraH9CYN8qb6y5d8fT2V9Oovl9_ujNomi4wTBvlTfWWVvuiNoCBfBMHv-1N9ZS9SRZ08q-m0XzN90NtBwwXB_lTfWWN_uidoW_8AJMG-VN9ZPkxX4cn06i-YR7onaIn-pMG-VN9ZX_dDbR_oTBvlTfWT5MV-HJ9NovmQ-6G2jH_I8F-VN9ZWH3RW0Q34Hg3ypvrJ8mKfDk-nkXzAfdG7QAa4Jg_ypvrK5vui8eduwXB_lTfWTvh8WT6dRfMn3ROPndguD_Km-sqfdE4-P-S4P8qb6yfJivw5PpxF8xH3RO0P6Ewf5U31k-6K2h_QmDfKm-snyRPhyfTqL5hPuitoR_yPB_lTfWVPui9of0Jg3ypvrJ3w-HJXr4-_1IJ4_wBb1KMi-nTgk9fH-t6k6-P9b1KOlk7RIE8f63qQTx_repR0TtEkzxn43qWOWaN0bxc6g8FiKoU7UyvDAzUehU4lGWsi6PNqtksqEoom1QlkbqFdbS6KstvVpCvVpCqVYQqEWCvdqLqxx0RmqNG9GDiqHRXMPZJVSKFuhPJa_HzbAa_mYXLZH8WAtXtDrgddbd1TlMp-Wt9PjKPPSqFVKovOe-xy-YrjIALK2bd6VkFIHC_WanuWbZPLWO7eFhl-KbBXR2cQSblV8jH5w-pXNpC3VstvQp3R0kz9xlYLDRXjdyWAxS2_HE-hZoYJRH1k01ogdABq48gsWfu1uz0qWuedGkrE-K29wB46q-cyyaNe1jBuaAsJjkt-MB9CsOfsOia7S4VBEG6XTqpTucPUr2xztcM-VzeRV3-7PvwxmM20Vpa4HS9lIlikNzA8OaN4I1CjZ5TpdtvBWcloc3EKva70Bl_V9SqOtvplVNqZ3clQm-9C6QE-aqZpCfNahuvaDBKNcwIG_crX3yHKbOtobblPI0UEi1wvQl283SMKerIH4YO_7yNfnVRTVf8AbR_oD2rYRAFl7K8tu0gaG29LWJMmt8lq_wC2j_RHtVPJasf8aP8ARHtVktHUw5ZIsYmYzL2hPG2UX-ay2sbbxtzEONtSBa6ncusvu1roKm1hVi_Pqh7VnZewDjcjQnddTHMHJRSO0Vre0m96qOOXFUPnI_svd4qu9afDl5q0hGm-9VVg0cFWKvad4VRporAddFW-qaWVV3FUO5L3Vo43TSF7grHxVwNrrG477b1dM0cVkYbMWEntBXZrHwVkSVkeew48lqtoD_Qdd_gn-C2cx-9-JWo2i_qOv_w_4hTLxXTD9ccGTqrbq47zdW3XmPfjHLw8VsQeyNRuWvl-D4rZZRYaDcufUdul5qhIG8qlwTv0Vx1OugVBw4-lcnbbJTxdfO2NpGu8ngOJVKqYSynq9I29lg5BSYwIKGWX4cp6tvhvd_AKGd2m9VnzVg3bwjeV1eTc2-ZUOX08kXZqGjVULz4qvAb9FRx1togpq12dpLXX4K_ydtSPvdm1Pxdwf4d6ppfXX0q03a_sn0qys2I7QbkWIO43WQsceN-5S5meWxOljH4VGLvA_wB4OfiocTnyaMaTzstX7wl9GQB2qua240CuNm6PLb-N1QvA4qXZuR7SDcX1USQWkeFKuo0_4zxC9OPLGOcI7My5v1tyqX1GlmwX43LljabE-Kyhytxcpnq6RDhz7vdHiNa3Ob5XOa9re4AjQKdCDFE1jpHSOA1e4AE-rRA5ULlNNd_C9zxxCjO89ZC5YnecFZGZluo0l-tI7rq2_BXTaSjvasZJv3LpHxdXjOryVYd2iqDcWvqseZ2c3LcultNb8bqsVfvb3o49lUbvKsceyRyOiumdspdaxKONirB2m3Vb-bdXS7Wu0WG9ye5ZpyLm3AKMXWaVdM5L73cFa92UDXW6tY6wbc8bq2fgrIykSHUnwWp2hN8Er_2B9IWzvmjB4ZQtLtG4jCqsc2j6Qpn-mu3T_XHGnefFWq52887q3VeQ9-LH-ey3NbFshtrmFlrzrJH4qeRbiNVjN16RmNjvOqoXHmVQ3vbRZqKnE9XEx1g0uu7uA1PzLnp12zYheMU8Ot4ohcfrO1P8FDudSSVkqpDPUSSm13uJ9iw62sbKk8Lr68UJN9R86sA0sbKl9RchF2yEgDeFQkEbgfQrSW33hAAd5KaF2c20BVpcSBYXKyRtMjw2Npe4mwACzveyjGVha6o4vG5ncOZ70Z2rFekc2STSUaiMb_Ty8Fir84hjmYR1L9HNaAA13JRXEuJzE3PEnepdC5hzwS_iZRZ1-B4FanCWe0VhvY2WQDuCsex1NNJDJo5pt4q4PHh3qVZY9i64ciscjg4ggWsruq_WPqVHx5Re5K9R5bHY30VQTyRozOAvZWVgkigL48rnC2hWt-nPLGeayBx5EoXG3mla3rq9zLthhPylkY6uc3QUwd8UhyasZnbUwuvwKpre61_XYlexgp_W5ZaaomfKGTMjbvvYnerqpLhtfVjtsPcQsRdwO9Z6odlpHNRjYjvW8eY-X6iazVvfUaFUf2gHcVY02Niqg6rWnDa9j-B32VjzrceBVruzqjzr-q4fOmja6N5Zv4FXSHK7XzSsObt2O8rKPvsJHwmq6Wc8Dwct-Qsokxy71Kjd1jMvNtvSFGqxmiDx6VYmU4YnuAIssrhnja4b7WKjF13G-4hZKN-YOY7huVSMsL7wDuJC0u0V_emc8LAfOFtIjkMjD-0PQtftIB7z1BHHL_8AILPUn5a69L9ccc49oqmiqd5VF5D34s_30amaWURv49ikm5dYaLnm6dNfYX3XUylHU0U83wnfeWHx3_N9KitBuABcngpVeRG6KmabiEdrved_s9Cx-7rfshhosrS0cke4A7ljMt9zVZLV2vyc7WQNAOoHqWIvfbQplc4XLj61dG2fs7yAstLE6ocRGBYaucdA0cyVWChaxgmrXmOI-a0ee_wH8SraiqL2CGJgigB0Y3j3k8SppNs01VFA10VKSbiz5bWLu4cgoL7u3aITodAhNmiyqeGMmxHFVZIWg8_oVOR3KjwcpNlrSbSqk-W0XWjWensHc3M4H0LXtk71npJzT1DZCLt3PHNp3hY62n8nq3MbqzzmHm07lrTlbZXuGqsk1afBVuqFeg-JhabOae9ZKhx6tzY8hkI7LXG11i3DwVnXVL_OorHdfrWn0qU0xO8teAHQU5_zlR3x4n1hy09Ll4XmN7epTYaaWMj8Jzi25zVSppJpWlrZmMvvOU-1SZWM3DGoRZiwddtLSnxnPsWSP3wdOw1NJTRs4uZPcj0WVrsJqevdK3FKttzoy4LRryssTsIrjX-UuxSQsz5zCGnKe4aq91JhIm1l-ouOBCi5rgncVMqPxDjyF1BeLjM3dxXbp-Hx_Uz82x7czbjeseY94QuLdQfSr8okGZnpC66fKobuGnJGm7cp9CtBs7Luv9Kq05jlOjgmha64FuLdQVVj-rkDvgu0WUtDmn4yxBoN2u0vofFF0y5Q1znN80i_pVHRhzXcA4X9KtheW3D-GhCzAFrrHUHVvep4dJNtNJ97msRodPSjXZHh7b6HUKbXwBzcwHitfGO1kd4X7lucufbpMkIDmSbwBr4LW7SaYJUdxaB8oKfTkG7Ha6LX7RgtwWZh3gt9WYLPU_RXXoz80ced6pdXEKmVeM91bEL1LPBS3bwo8DSalvOy2sVKxjBPVgtj-CwedJ4ch3rnl5den4Vp2-Tx-VP37oWn4TufgPpUEuJcSSSSeKz1E755c7vANA0aOQUd41vuWP2dP3VIDhqLrG-NttApEEckxtHG557hdSPJoYReqlu7f1UZufSdwSbibiBBSyTvDIWlx48h3lS2iCi_F5amoHwrfe2eA4n5lbU1b3t6qMNhgv5jOPieKi6gbtFrZollmmlL5XFzjvJKx5rEq--m5CNAQirC5M24XRxHJUDOLb3V0gb2PEK5pBuFTtX9CqHHSwSijmNKkVTetw-GSxzRHqz4HULE4Em97KXSNEkFTDxfGSPEaqSs2betqhWLrD-qqZ3dy9R5yjtC4d6zMPZCwm5NygcQABZBrqqaoOcMjmDWOcXOyixtrp8y20Ts0bCb3LQfmVhldYXDbBOtP6vzqaGRzgDqbcFcozyH2zsY6x0ur-td8VqqMUmsTrfFKgxFsjAW6Ot61sbaeK1rYsvm6HiF0wfP157JGC5sN-8c1G7UBzNuWjf3KXcjz9Qjm3FwV2l-75ritLGVEQfHYFR23Lsp0kB071kMbon54iR3LLlZVMuOzIN_cr4Tt2uYc7TweFFe5zZsrgBfdf6FnaHZrP0kbx5hXTRiRvjz4qRe3bEzK8AOBDt2vDuVzXdV598hO_4p71Fc98bgyXRwFmuO5w5FTIXhwLXC_AhytiyL5G6ku1G4rV1lM5ti3ncLasGQAHWPgeX8kkiBFj5p3KS6W47aWN5zjNpfiou0euEy3Oocy3f2gttVUhynjxutPjgPvW9rt-Zv0qdW7wrXSx1lHLZdUy8tVnLLbtUyLxnsKYWA3EmFwFspvfwUiRjZZnuqKlwIOUGxJtwUVrbSPPcryO8LOUdMGS1Kw6CaTvcQ0fMrvKGNH3uCEHmQXH51HI8FYdD7FnTrtnkqamVuUzHJ8VvZHqCjOa61rgI7Q71Yb8yronC4tcTqQhzC26ysueZt4q07-PrTRtdd5PBCXblZcjiVQk8yro2uueIVQRxBCsuearcnimhkJ5IDrqrBYcVQm6mhmFjqFKw59q6EHQF2U-nRQA8AC11Io3XrIP22_Spovh65lHp8VXKArJIY3m5b2uY0KrEwMFg5x_addeo8rd2o_QiyqyxvccVSTd6VSPziEVkyNO8J1bOXzqtk4IKCNp4fOrsrR8EI3eFV29Bhdo8gblBzAPe1_A2U5_n37lElZ98fcXub7lvDy5dXmKFjSNNQsJY5pzRnTiFlDCN3qV9gdTpbiusfPpZG8OGoseRVskN-3GTccle5u4ube3wmrY1mE19DSUtXV00kMNUCYXPFi8C1yBvtqFd6WYtY14lAEos4HRwVxuy19R3cVPwvBq3Gqh8WH00ks0bS95aOy1o3lx3AJiuE4hgVY6jxWlkp5hrlcNHDmDuI8FNxZjfLW1MDZ4iBYrX9uA2mDrDQO4gLbloc3Mz0hWljJ7NDe3uAtqe7vWpdGkSnqNQ0kEndyd_NShYNu3tM4g72q3GsBxDBZ4462mfBLLGJRE_flO424HRTNmsDxfHC_wB66KSdkZax77hrWkkAAk6XJPil1rZMbvSK61tTdvNaXaWEDDXEDXO36V0VdS1FFVy0tZA-nqYzZ8UjbEHvC0-OU8tRQMgp4nyTSTRsZE1uZziToABvXLqX8tdOnPzRxmXTRUsul2h2M2g2fpGVeLYZPT0zn9WZNHNY74riPNPcVzxbZeXp6TC1t5Hg7rBVMd10ez-xW0e0FI-swbCp6mnzFjZBZokcGlxay_nGwOgWjqIKmCaSKaB0csbi17H6OaRvBB3FSyt4VGMZWMx77LZYXhuJ4viENFhtFJVVcxsyKMXLv5d-5S9o9l8e2cMBxjDZKZk4vFJmDmP5gOGlxy3qct90c85hVpZoszhKB-L-dY3NlO-M28UXcYi3XcrS3Xcr7S_m_nVpMt_M-dRZYtyqmVVIlP8Au_nVCJfiH1obihFuKelLSfmyqDrL_iyhuBBCoDvCqc_GMqhEhOkZWom1NwU_AYH1WLU8bBftZndwHFQckriAI3Ek7gF2VBCzZ3CHVFRbyuVuo4jkEYyy-zt8w5JmHJY845pmHNejw-Da5xu0i1lYw9oKuYcwrB_FRWe_JVF1jDhzVwe228KptkZ5yud5yxxubm3hXvc3gQoVZIBmHgsTnZXkW4BZH9oixurH6PG7ULWPljPwrdp1Oniu16J6Siq9opvKYIaiaKAyU8UjQ4OeCOBPK-vDvXEl3cCuq6OcGo8axiYVrpBHSxddkikyPecwAAPp4a-CuU4csP1RWq2Fxh-LGkbTMzzxmdsglGQMOtyeFr2ta63fS3COrwaNzhHUMpyXQt81os2xHjbu3blsXbfYVT1LKJsFWcObTGGSQtGcPsLkX1sCN57XIrmukfBqbDZaKtoH1HV1sRc-OWTO9rgBz1G_cSf4LM3bNul7ZjdOq2wxEbLYZTUWCUVKyGspsrJ8uVzQCbusN5ObefUtRsVEcYwXaqbG_wAMuxjzPP8AfHseGyZcpO7XiPUsvS869VhWYh03UHO5vmE3G638deZKydGsVRBgePyyQmJ0kAMMkgtG5uWS-_eeVtd-qk_Ttf8Av0g9GFJTDCcernUkU9dTRgsEjQcrMpLiCdx036rcNxrZMVcldh1NDJide-KKODybL1bnOF-5mtrnW613R3Nm2Q2m61t4wwWYy2cu6t1iO7nbX0aLi8JmjdidDna9wM8QIaNT2xu71dbt2zMtSadZ0lRQz9I2HwVRJgeYWTNAsGAvs4Aa6WPepPSRtBV4BM_BsFpKahBEczKiAZZGts3KGgaDVt9b-hX7dvP2y8FyPivmp-qJsQ0dbpmtpv3_APhWn6WGRHa-QsuD1LLkkWJ11FtLeFlcedbXK63piwyGOs6IcWrsUja-qirHuhqnjNI6Q9XcFx1At437lJ2YroME6L6vaKLD6WtrKWrDpetAHYDmhoDt9tdQBrzCnYZSy0_RFjcUsL4ZZHuc4TC2eM9WRlB1v4ac76Ws2Xlw7Dei1lRjrHzYbBiJldHE0OcAHtvmHEXt3brgrPUv5b_NrD9U_k53YWDava_auhx7EYmTYRDVu_BZn2hu9jgQyNx7W-9z61pqTBsDl6cve1sUT8HFS8CEMBZmEZcG5d1s4Ate3fxXZ4Rt9hG2lW7BMTpMQi8oqy6n6hwYTGWm4c5hBaQBfTs24LlNkcFbs905U-GUVRG6KnklaySVwIyGB5sTaxNiRe1r8OC-J9jJ0lbdYtSYvV7PYdBBhDKGoka-WjJa-TNmNrjRoDX2sNe9WbT4fRu6FdmcQnpomYjn6uOdrBnljL5M2Z28620PrK5XpEjbJ0hY62lZKGuqrMY8XcdB6-63oXd7UU89J0E4LTSxup5o6loqIZxaTNnksQN4b46cgNb4vmumPEjothqOpoOjrBKzZPB8OrMUnhlklfUERl0lj8Le61tB2RfitX0YbUVm1GKSbN7R4ZRVjaenndLLKwOeGZmgtLSbEgkWsRbvO_a4Jj2H7N9G-yOJ4y2eUQ07mwilDTqQ7K14Ol9PhXG-wC5LobdPiXSXXY5NSTMhqWTubKG2iZK57HAOceza19DfhxsVfsfd5VjcUMGMV8VL-TxzvbF-yHED5lr3C_8A9rb7UGQ7R4t1mVz_ACuXM5u4nOdR3LUkHkuWnaMRGmv0qy2-yyOzAearSdPNUa2xEG6tynfqsm8-arXb7WUFuu5Ne9XHQaiytIN9yBfRVjDid_zIABzUmii62dgAuL3N9wHFCt3s9QMiYcQrABGzWMEfOue2gxN-JVZINo2mzR3LY7Q422riFNRtLIWaO5WC51rb6rrJqPn3cq9kynkUyu5Fad3vg2ZodM8Qne_rwCPRZUgfVGo6qarqGOIJG7UL0pjvh5_fr03Nj8UqoaeS0cjqzyx0UddNlaLuNh2QpMsdY2LPHXS34ZrEH5lnKzG6qzLc3I2mV3IoGO5Fa6i8rlY7rq2RsgNi0NGipC-rMkwkrHtjYbB4Ased-S1pJnvjTaNaRw-ZXZXX3LXy-VxMdkq5JJALhhYLlR46rE3h1s1wbC72i_gs2yNS28N00HkfUouINt1ZLeY3KymkqXQ9ZNPLGc2XLlBPrV0-aRkeaaWRpdbVoGU99lrCzcrPU32-EcMPAWPcV1OxG0Q2Yq6yrdBJPUPg6uDK_LkfmBuTysDpxXPOp3tbmEmiRjMLOmIda5a5nBdc8sdcvm6cyt_KukvM57nHV5JNtN-9bHGcWxLGp2TYhUPlMbBGxos1rGgWAAWsdm0MVpBzDSFnpIZJy4yOMeXXUb07prZ25eHQ4ftR1klOzaanditPTQuip8zrOivuJ-PbTQrY7U9IVXihmpsMZLRYa9jYjHnDnOa29gTwGp0C4ucTwzhpZmadQ9ovorpoiI83WscRrbKs3s3tud-tOl2d2shwXBMWpGQPNVWgMbITZrGZSDfnv3Ln6asbDUxTwvY2SJ7XsLtdWkEfOFrxKfhRhOsiIOaKx4arcwnlzuV8NviWJ12J4k-vrKgz1TnZus3EW3WtusuhwraylfiXl21OHSYlVMbG2OoDtWNY4GxboCSLjNvXCfe9TqCqCTKOzK8eJurcJeCZ12G122uIbQdfB1kkGHSSdZ5NmDiSAAMzrXdo0LU4ztQym6NpcApqdwkqqnNPMX2aW5gQA3iezv0stHJM62sjT4tWuxtx8jaCWk9YNx8Vy6mMmFjr0s7c9oWB4rV4Fi9PiOGyCOsp3F0by0OyktLb2Om4lWtxbEG4wMVbWTjEus63ynN28_O6hndqg3LznovRtktvsKo8RqcYx_BX1u0Ek5n8uilyF3YLQA3dHqQbtvuXPbX7Z4vtQ5rMQqHeSRyPkip22ysLnFxJ07R1OpXLx638SriFnLl1wnG3R4LtTNBS0OF45G_FNnqeoFQaF0nV6i47LhqBqdNxXUY_0pzxYfR4fsdTPwimgifG55LSe1vyN1DNw1v6l5mW6_QrHNNt5U3Y32yrJHSPkc55zOcbkk6krHJe2lvFXO9KsJIWdNMZLtyxuceQWRxWPfvPqUsGJzysZJO5Zyxp4plaNApxFRyXE6gq4FwG5ZSRdLt5qbWRiBN9QVJqHmlpuraD5RMO1r5reA8SssPVxQuqZgCxps1p-E7l4c1HpaWTEa7I8uu7tyu5N5eJVxm-XPPLXC2nwyorIwIA1sW90jzbMe7uUr7HqwAdV1cg_at9K6qGBsbWxtYAAALD6FLY0NsGlb5cu7Tk6jaVtQzLNRZm3vbrBvV79p2uY1rqN3ZGh6wXC5TrO5M_cV3-XJy-PHw6yDahkRdajeS7eS8G6M2mia_MKJ-moHWCy5XPruVQ6-qlzuXknTk8OvO1bC65pJATvs8arIzauINy-SSgXvo4LjgVeCtfLl4T4sd7dfHtTCwi1LMNfjBdJsdFW7WVVUzC6XIymjMs8ksrWtY2xPiSbGwC8wBXtHuf3f0Dtu15zwOpYs0LDaSQ5ZrFvhre1ju14Gd9vFL08fLu6vY7A42V-DU9ZK7H6OlbUPY6WNwPnZrtvu0bu7Wuq8v2nkqtmselwXEIRJUscGgU8rHtN9Ba26_I2K82jnlEomEjxMTm6wOOa53m--6nYM97scoH5x1jquJ2d-va6xup5670nUs8Fwl4e84fslTYXhFTim2k5paaFsZEUUzTlLtbOI1JAvo265TEqGjr8MxPaDZ6OpqsDo6g0xdO4MnsGtdmy31b2h38wrPdGSf_AJxC28hvTB73F12SPzOGdu4btN3A796mdHLrdC-2piPVSlzw57z2Xt6uPsNHxt50tvG_ctXqW8VmdLGeFej3B6naeOR-HRdTRMmZFJLK8XLnOaLNbe5PaB5Bb_aCLZlmNU2z2CVdY_HpaoU1nlrohdo1e8aDXN5t-9azo2pqnEehXHKKkvJUT15ZTRxOyvZKRCA821y6gXBFtdDw3GynRzhuysBxLEmvxzEqeqiEbMOLiY_MccrNC49oi5I8EmdXsjiqioq6faH3ilpJDiXWCIRtc0gk7rOva1tbrunbM4Fs1hQrttK2WMmcwtbTSBwFgb5QO043tra3NcPhO0FRtF07YZiRjNBK-raxrKgAOjDI3NGawABsOVr8F0GMbGUW0_SPis9di1NRUNPURsfSTVGWctMeZzxfRjCRo4DjuCd9p2xzO0-HSM2fpNpcOEjsIq5Xxsc8hsoyvc0F7AdCS3eLjwWz6PtjcS2mjpK6okFPhMkhYX9Y3rXhrXOcWtO4dki7tFg6QNsMAZsrJsnsnTyCjFUZJJc-aKzXktyE3Lr333A36XN1NxiRzfc7YGXPL3CctYYjbqmGWW7X2567yQeQ3nXzZRm9HG8rsTwvAsZxyLB9iaiafEWsnfM2pcBDaMmwEnxiLfq965XBKXEMX2hbgtJTAV-dzHNkeGtZY2cXO3WHp7rqV0Eln2x6Iva5wEE5BabBpy6OOhFh3gjuK6Xo7kl-3xjhfUQlx8sEjxo2QZ23Db33-nj6LOvkl6OKbimz2zGzGBU79rK6qGIVUL5IxSWcbi2UNby33LrBcBthgVZhOG4VWTxsNLiETKmCVjwey5odZw3tcAR3civQcD6MYsT2lkxPaCa2H1E00sOHulc2Z0bXDIHONyLh24X8Quc6XcdZJhuDbP02F11BR0MYlb5UzL1hLALs3kt7yTw3blnLq5WXbU6OMu4zbEdGMlfBDiu0kwpcHdA6pyxTMEpYMti6-jQcw77LW1uyuG49WVv2BTTVMVDSsnqWVTgwFx0IicdXag-dbuut90xSOGwuxeZxfI6lY18kZ-9lohjLWEfGG_W_O_AZfc_0VZT12KV0lNNTxTUYbTVcrS2LMHa6nQ7x_AjeuWvTr6edbJbNYjtNVTU2GtiBgY6WV8z8jWNF_STodAvVaroqwGKimw011UMfZR-VNeZGZHkZswDeLbZdB2tV5Lgu1GKYBSYzT4XMyH3xZ1U78gLsrXOPZvu8467-Vl6L0_yOjqNmjC90UbKV_Vxl332HUXDjvB9Z36lTh0m-I4DanZrENmtoDhOJOpzOC0B0Moe0gmwOmo8DYrddKOytFsri-HYZh0k89Q6nBqHSEHNKXkdm2gG7TfzXGwyl9ZE55c9zpWlxvdzjmF9eJXrnTq532ebOhkjAxscYiY7V0Q6_c_dqD6e871j1W-ZYjYN0YUuF4VV4rt1VCCniZGWxU8zdC4_DI1JtfRt1yWMbJx1dBiuO7KPmqdn6OpMBNUWsnAytdmy_Cb2hrv5hdN7oV19tIAM5Jpg97s12SPzOGdu4btN3DjvUno7u3oe20MZ6uUl4c9_mvb1bOwB8bfutvG_cl1vRN67nkLoHdS2QscInOLA-3ZJFiQDz1GnepuzWDjG9o8NwtshiNZUNhz28253r2DoqGHu6J8Ubj7G1GENxQSSwjzmgCHM88cuXS4Itrv4Ug6NafDtrcLxvAayGvwaLEYs1NDMZZGxkMN2vHnC77X0OnFTtq3Ocx5n0k4Lh-z-1tVhuEmd1LAyMB05DnlxaC4kjTfy0XLZRbReg9N-d_SRiJkljlPVw2dHYi3Viw0AFxu3DwC4JzTbQ2XPK8t4cxiy3J0Wanp2SZnSEMiYLvfyHtVIKaaZ-Vj2gbyXDQDiSrsRnjiiYHj8HbrHEdDM747uQUxm2c8u3hHq5etdG_qux5tNB8bvPdf1rpMGofI6UZ7unecz3c3H-C1uzFC-pldiNYdSOxcbhzA-hdVEwuN945cl216cLSGOzbg38Vmaw67r8fYsrGWF7b0tewGhW5GLXjubxTMrUQ2uDtVXNqsauQ2vDleCsQV7ShtmBXqvQhtBheEU-01HiNbHQVVfShtNUPJGrWyZmX3drM3R2mnOy8mB0WRp4IbepbIdFGJ4hRVGIbRddg2HQ0wqWl8d5JAc2XT4AOU9p3qUbpHqdl6XazCqfZSOmkw3DmsZPLAHFtQ4SZnEl2rjbQnUctNFx0m0eMzYSMMlxStfh4AHk7pnFlhewtxAubDdqtcCqj2jpMoajpE2tpazZB3vnQiijzyNJEdJd5AY9ztQRfcdeQstvi1JhHR30ebQbO1uMNrcQrbFtI6MscJXRs7YbyFt7uWhBXiOD4xiODzumwqtqKSVwyudC8tzC97EbjqOKwVdXUVtTLU1k8s9RKcz5ZXlznHmSd6bHtXRtiFVhPQltFiVC80lTT1pljqQMwe9ohLWEWy6HUX56cVyfR_ttjUW2VJ5bj88VJXVkb66Wd4c02N87r6Aiw1HDRcL75VnvaMOFVN5AJTN5OHnq85ABcW7ibAC_co102PW48YoMe90Bh9dhUQqqSSrjDQC4CUtjILwXDNqRe5108Cue6ZjfpKxq85qLOYC9wIPmN01103a66arjKCvqcOrIquhnkp6qI5o5Y3Wcw2IuDwNiViklfJI58j3Pe83c5zrknmSd6bGTNxuvVY8Sp8d6GMM2cwaQyY5FWND8PiDjJUEyPcHgbiACBcctTZeSZlfBPJBKyWCR8UrCHNexxa5p5gjcUHu_R5seNg5qTabarF2YXNeeHydwOUNyuDgZBvcS21mahanoirafEumnEKyhp_weZlVLEAHAwtLm2cABfS-4WOvivK8XxzFMZdE_FsQqawxAhnXSFwbckmw3akkk7ypmzPlEXlM9JW1NJK9hgc6B-UuY4AubffY2CbHTbTbaY_Ftc-WDHai-GTyQ0b2ENDGBxHmgWNwNbjXit30rbT4fi2x-y1GzEIq7FYqdk1TIy_3nNE28Z-CCDwby11XAuwSHX77L8ytOCxDTrZLeAWdtaezbcYph2EbOdH9TjOFsr6NtKD73SPc1usLPvoO433283nrqsuzfSphVXPXOrerwzB6DDWQRUr5C41TiQC0Bo083zRprqvG8SpqnEXRvrcRqKh0UbYY-uOYMY0Wa0cgABoFq5KaSiGYNa8_nPi-hXuNVie8OEhAsCHG3jdexe6H_ACvZ1xvLmpHfhRuDMLjWx3Ad2mui8XaCd62M9dV1lNTU9XVTTQ0wLYGSPLhGDqQ2-4dyzbI7THwtpXAVUOuW0jdeWo1XpfTHtBhWLbcUE-Hzx10VGGMqKhlyJyJMx3jXTTTTlpovMMgDlkYzvXO58adO329c6R6Kfb_amlq9k3e-NE2jZne0kMpbvIDHOdqDruOvIWW0xSlwno-2Ax_AK3F21lfWgFtIYyxwlcxvaDeQtvdy0sV4_heJV2ETGbDKyopJHDK50Ty3MN9iNx9KjVcs1bUy1NXNLPUSuzPlkeXOceZJU7559p2Xx6eqbF3HQTtW4AwNNQ8GYXIl7MX3s8O-51104rg9k9r8Y2Xm_ouqeymdI2WSmJ-9yFpBBI4HTeNVq_K6tuHjDxUzeQ9aZuoDyI85AGYjibAD0KP1bVLl401MfO2728x6DabaWoxanpHUgnYzNEX5yHBoDjm3m51udVzwBe8NaCSdABxUplMZXBsbbuPBYq-pjw1nV02V9U4fjN4Z-z7VJLlUuUxmmfE6qDCaXyZobLWO1e3e1vcfDktHhVHNjOJ_fXOc0HNI88uSi9XJNK1rQXyyOsOZJXoWB4a3DaFkQaHSnVzhxPNd5JPD58r90uGARsbGxrQ1otYKQ1gaL6gfSr4mAAW0PJZcvavfduW5HO1YW21Gh5K21tD5yyEX1OhVCQ38YQCdBqtJtx52Sw_85U_LHsVPsRoPztT8oexbwmot5rPnVC6cfBZ86y00Z2SoeE1T6x7FT7EqP8_Uf9vsW8zT38xioXzj4LfWhpo_sSpOFRUf9qDZOl_tM_qat51k_wARnrVOsm_Nt9am1jSHZSnH_EzfJCq3ZWDhVTfJC3Qlm_ND1oZpfzQ9aDTfYtEN1XL8gIdl4h_xb_kBbjr5fzQ-Uhnl_Nf9yK0_2Ms_tb_Swe1UOzI4VZ_0_wCa3HXyfmr_AOZU8pk4xf8AcommmOzY4VR_0_5q07OW3VQ_0_5rcuqH2_FH1rH5S6-sTvWmzTUHZ42_Kh8j-atOz7v7S30sPtW5NQ7hE71q11QfzTk2umnOASb_AChnySqe8Mg31MfyStwakj_duVpqdPxblNmmoOBSj_iI_klbHC6R1FE9j3teXOvcDuV_lN_gOVDU8C1ym1kSc5VC5RhNncAGu1WeZj4XZZGkG1xfkihdcLE8ggg2IO9ULirC4qDn6odRVPjF7A6eCNmdbmrcYd-Hu4dkKM1_JWzhvGtk2YnQ71kY4uAF_nWta-x3rMx9rHMuVjrK2WVzgO186BhHH51gjkuBqdykMcDvLvUudrS7taWIWWnpnyXkdI2OFvnPO4e09yl0tGx0BmqXOjjOjRxcfYtdX17In5ZmC0f4qBvm-JPFbxwt5rnc_UZK-tEMFogY4Tuv58p7-7uWhLXSl80rrcSeSq-WSqnMkxLnH1BT8IoHYpXCHUU0esp58mrpJ6jF4m62uyOGAA19S0gkfegRubz8SuriaS7Nf0KxjbBrI7ZG6AKVG3QEBdpHC1c0W5Kmjj4Jv7irHvY0hriGnv4rbA-RrdXnQKjo2yEPfldGBppdYd4cGtyi_aB4n2rPG0guII13nv8ABB5A3Eq5hBFZUXH_AFCtnjeLVpkga2okjHVBxyHLcnmpDNnaE0_lHvs00w3vDQB9KvxKiwirfG6LFoosjAyx7VwFzbaUYhiBjzivlFr6GY39Sz4Zi2ICuhBqpXtc6xa91wQpDcFoHuDWY3TEnQDL_NTIsBpaCqikrMTibbVrSMt7elCNXiOMV5rZstVKxocQGsNgLLG7FMSYNa6U620kuthWYTQzVMkkWMUrWvOazjqPnVsOzkc5Ip8TpZCNSGgn-KCuC4xXGWYSzOlAYXDPrYhQm41icjwBWSAuPcAtvQ4TS0ckwqcSgL3NLCA4C3rK15wOP4OKURH7SRWF-MYnGQDVvuRfeCthBjlZ70zvfIHStcGteQL6rE3ZuYxmRldSlg1zAm3rUiPCYm4dLAcQpjK9wdmDhYWSmmvZjWJPeGtqnEnQaD2K339xD-0n5I9iye8Mh0bWUZ_9xXu2eqmDtT0wB5uI_goiRV45VjD6ZzHNbJICXODeXcoTMaxFwcRMCG6nsNU2rwfPR08cVVAXxgg3cADdQhgNU7zZKd3hIi0Zj1c1wJla4cQWDVS8TxqqjmayEsY3KCeze5PiogwGqDgHvgaOPbWfEcHnlmD4XxOGUA3dbcp7GEYxiGXMXNsQSCWBX0eN1L6hjJSxzXGxAbZYBgtdY2EZHdIslJhFU2ojdJ1bWtNzZ11eCbX1mN1LamRsYjaxpsAW3WP36q956v5CtqsJqjUSOYGPa4kg5gFiOGVpFurHygk0cttgmLTTVrY5WsIOt2iy6zaIgT09t_Uj6SuMwPDamOua-UBrRpvuuu2kdaqgH_RH0lPVWNW4q0uVpcrXFYbc9jDvw937IUdh11WTGXfh79OAUQP53WtcJMpKmh1joCsjXm-jdFCbMBxK2mD0E2JPJjvHAzz5n6Nb7T3LFxde-JNIySVzWRRue87mjeVt5oqegg_CnB9WRcRNPZb4nio1TidJhEJgoSc7hZ0x89_hyC1NRMchmnDm5t2bisdukuW2xqMVkc15mLS426sAaNC0MznySl73XJPNUlqonG-p9Cxdey66TabxjPC2WSZkNOLzSHK0L0XCKBuGULIGAF5F3O4kneVo9j8MMbDX1LO3IPvYPAfzXUNFyTc3W8Y45ZbrLE0cBY9yzaAab1Y0W1uq34u0PBdIwuvwPnKO6JrMw0s83u7geaukky6fCI9Sthlc5pbbNbQ5uKC9jbW1Jc7n9NlmAsAG7grGWBOW-Y7weCqHG-UixPqKqPIgbYI8cDMPoUKMt7Wc8NPFTS0-8YdbQzb_AEKCx2Uk91lzjpVFPxl2apjub2iaFAG9TsaFq0A_m2_Qns9Id29XuOe_ospeDEtxGMg2Nju8FFJb1IFu3fepWDD8Pb-y76FL4SIb9XuJ3kkqhtwQ71fKWuddjbC25USoHluE1DQSAXt0UIAX1At4KXH_AFXN_iNUaPKD29ykWrCByCn4nI58VIHuJtHfVQTvNtymYj5tKP8ApBPaIYAtw9SkYe5zK2EtJBzAaKPwWeg1rYP2grSFe90lbO5xuS871hIADbOvca9yyVf5VN-2fpWM20tfvSeBNw6aSOGqDHuA6u-h4qFd1959ak0f4ir_AMNRVJ5Wq5nfGd60zu-M71lBqbXVctzbM31rSNrs3NI3EmtD3ZTvBPeu12k_LIr_AJlv0lcPs4P6Uj_84rttpPy6Mcom_wAVm-Ks9NUVY7uVSVaSOCw6RzeL_l7_AAH0K3DqOSvrIqaAXkkdYd3eq4ub4hJ6PoWx2Lqo6TaKnfMQGuBZc8CRouk5c75dfBsbhdJAH1eeUtF3EusCtHtFipbC2GjjEVMzssY0WA77Lqcekc6NzGvc4vNz7B3Lnm4LJWuaJexA3WR3dyHemd51IuP3rQYZRPqQ6onJDBucRvKsxOqa9whjGaNnE66rYbQYhHE0UtHZrGiwtwC50Fc5Pbe2RxHFgWy2bwz3yrwZG2p49Xcj3LWQxvqZ2QxC73mwC9Kwihbh9EymisTveeZW4xll6TogC0Bh7DRYKQwcrX4qxo0FgL96vHIaOW4wvuHHlZWvdYdoX4Acym8hu5XZQ5wzbgtMqRtytu7W_Hmkke97fOIt325K_v8AgqoPwhuQWsaerBOr_C1lW9-y62Y_Oq8zxKWBHa3lB5qdp7xdU7DaUxfEubepZsNxTD6qV7J8Kpo7NLrsaDuXMHLkba-bipeE_jpf8J30LnfDcbIY5RtkzRYNTCxu031-hXT7QU1SQ6owmCRw0Bc7X6Fz7AC5oJsDxR4tYcba-KDp3VmD-9wqfeuPPmy9X3-KwU2O0VM4ugwmONx3lr_5LVOP9Es_xT9CiNF734AlIt4b330wmSW8uENGY9otf_BZsQnwWllaxuHdYS3MbOLbXXN8VNxf8rHcxv0JfKem0GM4aKYwDC7Qne3OPpSikwWqn6s0L4idQTISPpWjLG9Tmub2ve-l77llwv8ALWeB-hL4PbYPqsFZKQ2gmeAdD1mh9F1lqcSwqpDOtoJeyLDK4Cw9C0Bvcq-ZrWPs03tvQbyJmCSUsk3UzNyb2l5v6Fjgq8IgkEkdLUZhuLnXt8610X9Xz_tNUZps4EqRfDbzVGETTOe6Cpa5xucp0V9TBhEMcbyahwkFwGu1stIpVb-JpP8AD_ihtsIarCoo3sbFUEPFnZtbrFEzCZZAxrqlpdoM25aobislP-UR_tBNG2xqIcMhkLDJUEjfbWywlmGfnKn1BRqz8qm_aKwkiw5obdLs6ygFa0wPe5-nn6LpNpD_AEg3_Cb_ABXF7NC-Js9H0rs9pP6wH-Ez6E9VZ5jUlWOKuKsKw253Ffy-T0fQooHEKVif5dL6PoUdpsts65b3D8frAI4ZWic3DWk-dyHiu6xqnqjQNgpQM4b2tbXNl5xguX33os9svXsvfxXsNUWsjc9xFhdbwm5ds58WaeOYhhtZSvLquOzjqSDdQHaBdRtBXtnkqTf4Og7lzlJF18wzXyN1K57bdNsnRinjNXMwGR-jAeAXWQPFibG_FctRTuaRqbDcOS39K_rGhwNra2Wcct1MsdNi11wTudyWQHcPhFR4zcXdoeCztNvOGq7RzXuNhaxKMka9xY3UN87mO5WucW3AOvEn4KtpiHxtIYQHDMDe5tzvz7lUSNRu1YrgQ7UHRYxmaLM7Q481UWdqw68VUX7zfcQnDXQq0EOOuhCrfi7cg8q-x3Ff7G_5Q9qm4Vs_iDHymeLqrxlozEak-C0XllVe_lM_-oVUV1YN1VUD_wBwrm34SzgOKNNjRyHwIP8AFWnBMTH_AAM3qClVGK1pwen_AAmQOLyC8GziB3rXDEa3hV1H-oUG0lwSvGFRt6hxkDy4sBF7Fa84TiA30U_yVWHFa9krSKyc6jRziR6lLxbF67y17WVMkbWgABhtwQqGzCa9zw3yOYXO8tsPWpeMYXWCqDm08j2lo1YL7lEGLYgP-Nn-Up-EYzWid4lndK3ITZ-u5L9yNWaCsG-ln_0ypmE4fVGqzGCRrQDq5tt_isRxrEXOv5XKL8Bayr79Yj_a5Pm9iXlUaSjqWPcHU8wINvMKsNPN-Zl-QVuW45W-9hcZAZc-XPbWyhDG8R_tLj6B7FIlIqOp965ndTJbMD5uth3KF1UjSCY36c2lTm45iAIJnv4tCmYjjVW10bYXNZdgcdL3ui-Wj6t5Ngx9_wBkqZiMEscVLnjcBktuWX36xAi_XC37IWWjxirfUsZK5jmuNj2bJyTTUC9iLHVZaRjnVMYa0k5hwU-fGarrXhmRrQSAMoKyYdWYliFdBR0oidPM8MaC0AeJPAAXJPAApzU4Qn0lTVYo6mpoJZqh7jljjYXOPoC2D9nzBZuI4rhNDKNDG-cyvb3ObE19j4qfim1D6aN-H4I9raMDLNUhln1hG9xO8M-KzlqbkrSDFKgC2SG3D72qvDoNmdnpJsRa7DsQw3ECLdiCYtedeDJGtJ9AW42ojfFiz45WOZI1jAWvFiDbiFzmzmIPnrmxyMaNQeyLLucUq48Sr_e7FXtF2MZTVj_OgdbRrj8KMnQ383eOIU9LOLHIkqwnRZaiGSmqJYJ2FksTyx7Tva4GxHrWIrDe3O4l-XS-P8FgaQs2Jfl0vj_BRgFtjeqzB9iC02INweS66p2tFXhscUocya1pCNx7wuNCodEnHhq3fNT6ud1dMyGnYddPFbmhwgx2Zm3amw4rYbK4T5HS-UztBqJh2QfgtXQCJrGXyjN_5qs3HbMy5aeKj3NbbTethTx3IG63JZgwGwAsVlaAeyRZJjouVXR6-fu4LISQ1xtc20ure53mjior6vK-5ZnpjcZmm5Ft7rcW94XWcMNhG0Rt4kfOrere2TPE_R29h3ejkkZ7IkY4PjIuNbg94KyMcD2hoeRVRZC4gFrnXl-EbWF-Sve257N2v5qpANiQM_0Kh10PnFVC4ccjtHDiP4IHG-V_DjzVHj4J-VyVOTHetFeMsdlcDa-_RHuzOvYDQCwW_hocCnlbHHX1LXO0GdgHz2VanDMFp5jFLiUweN4DAbeoLm01lR_VNJ-25QmkDNfiLBdLO3ApaOKnbWyMEZuH5CSfHRY6bBcNqmudBihcG6u7AFvWk4Xy5-Pz2-IUjFPy-XxH0LZxUGDsla5-LZ2g3sGWv6VkrqTCampdLHijY828FlxdT2RoXvDmtAFiBY96k4b-Pk_w3LaPwGlZA2Z2KRCJ255ZofnV1DRYZTue6TFInlzS3TRL4SOdbvCq-2Y5TpwW5bg1M94bDitO4ncLa_Sqz4EyB2WXEaZjt9nCx-lXY13_ACv_AN3-CijeugOG0hoBC3EYM-bPmuLLBHgTpL9TW0z-eUkqRWm4KViP42PujapvvLZ2V9dSjn2tVnrsLbM9joaun0aGkOdyTfI0PBZ6H8si8VP94qi1xNAW8w42V9JhTo6hr5aiDK34rr3S0krUSfjHeJ-lbrAj5Lg-OV7dJWwx0kbvimZxzEf5GSD0qPLhEvWOySwFt7g57LbYVhU8uzuO0rXQl4EFWAH7xG5zXeoSk-hWU1XKoVPOFVI3Oiv_AIgXpEuyVDtts1FV7J0kNDtJh8AbW4VG-7atjRbror65ubeP0k04DZb-tGej6V1e0muKyA7srfoXSYFsph-w2EGfaiCKs2nxGK1Nhxd2aKM_72S3w-Q4etcztEbYrKD8Vuv-UKXw1j5ZNoyahuG17tZKukBlPxpI3GNx9OULTHctzj46mjwakPnw0nWPB4GV7pLH0EetaZYrcc7iP5dN4rC0cVkxC_lsvisY3LcZ9rtw3Lb7MYZ5ZV9fK38HiN7fGPJamnifU1DIWb3G1-S9Dwmkjp6dkMVwxnHmeabLdtjE0WL3C1uH8FR5ub7nclVzwRoSANw_irRrq7fwRjS8aDKfOPFXjQZT61aNB2t5WOolfEGxxtD5ZDZtxo0cSe4LURbXTdVC8C5Y0XeRqQOXif5rAylbPTwz0RLGZQWtDvM7mnl3HTwUhjcgtGbgXJffUO4lw4rEaYRxgQHq3lwdkY-zX25X3eCaVbBI6KoJjIYCdWkERvdxv8R3zeK2jHslcdcr2alp3j-SwBkdZGJQwxvIynMN45EcQsMMDC_qpC-OYOPVvvr4NPEdxVieWwabntizuCqdAc3FQ6WtbKwdcRl3NktYHhcj4P0clLLi25k83g7l4rSLtW6EXuqEWFhqCq-YC47voVgGftfBPweaI8cpfymL9ofSsmIn8On_AGyraFpfVwtYC45hoFdiQLa-drgQc50K5e3T0wvY5m-ylUBIiq7fmioheSLF1xe-9TMPBdT1haCbR8NUpPKIxpe7K3eqPaWmx32BVGuLTdpsVVzi43cblVEqYn3tphwzOKijjcqVUC2HUvi5RRrfVSLRp7TfFScUJdXSX1sAPmUZnnt8QpOJfl0vo-hPZ6RdMu_XlZS8LcWVV2mxyHdpwUTgpWHfj3fsOSk8ou_UjVHBoPZ3d4TgqutfRVEpj3DDJGgnKZALKJbwUlv9Wv8A8QKMEi0spuD178LxGKqjY2QNu18TvNlY4Wcw9xBIUK6rdVG0xrChSMjrKF7p8JqD94n4sP5qT4sg4jjvFwVFwrEqzCMRp6_DamSmrKd4fHLGbFp_84HersMxSrwx8hpJAGSjLLE9ofHKOT2HRw-jhZbA12B1GtXg00EnE0FXkafBsjXgeAQZ8IxOtxTaCasxCqlqKqok6yWSR1y5x4rsaqgjdiU-I4kC3DIS0WvZ1Q8NH3pnMnidzRrvsud2Wr8HhxBvkODyPkuLPr6rrQP8jGsafStntbW1Fbjcz6mV0mQNa0bmsbYaNA0A7gsVrHy12I1ctfWz1VQQZZXFzraAdw7gLAdwUUlXEq1xWHRzlcfw2X9pYSbaLLWn8Ll_aWXDoDLKHuF2jdfiVveptz81u9maItJebdY_5guxiGVgaDu32WqweHJCCAMx1utnfMco0KmPPK1do52vBXDXzt3BWjXsu3c1eN9neaOK0lJHtiYXyeaN3PwWCJz4Z7yFrpHjtRje0cA08fBZHZi8SgF8TfNHG_xu9RsjZGs1--kkg30eOJHs3haZXVtaaZ0ZYB1cmjpLbj_5w-hSqPJNGTHlLTvbfM2_hw8Fhc1mSfrrPjsAcwzZv1TzPeFJo44IIgyBoYSB2QeHd3KxGeR7WMdc5Q0XceQWrZXS1NRBHPShlLO4tjzO7ZI1Du4fOs9U7PUBjy4QMaXSOuQCeAB4-CYfS0gayeBt3Wc1ry4mwJ138VQqInxO6wyDdkzuFw8cnj-KlUYPbLHXpx2WtOtjxseLVUOzvMTb2A7Z5X4LMA1rQ1gAY0WAG7wCIoI23zAXaNQCdPUqnW7tyXzat5qgOY3OllUeaN2mq2m7aekB5iOyP2lqHm8lJRvPMsuvof7l3D_70V_7rH7U-5dw_wDvRX_usftWe2tbfOxx9x34fQ_6ayR7SSRtLWUNK0HeGghfQv3LuH_3or_3WP2p9y7h_wDeiv8A3WP2qdtNvnU43EfOwujPoVPfin-FhNIfD_6X0X9y7h_96K_91j9qfcuYf_eiv_dY_anau3gdXjFIaCEmhY8POkbrWbZa730ojvwmD5X8l9JSe5ioHwxR_ZPXjq76-Sx639Kxu9y9h7jf7KK_90j9qkxpa-c2YrRMeHNwqIOHEO_kpcVdh9e97qmia17W3vvuB4L6A-5cw_8AvRX_ALrH7Vlg9zFQRZ7bT15zNLfyWP2q9tJXzWa3Db6Ybp_iLLBidBASYqAtJ0JzAr6K-5cw_wDvRX_usftQe5dw8f8Aqiv_AHSP2p207ngNHTYZWx546ctJ3i5Flndg1Cd0TrftlfQ-H-5uoaNmUbSVz9b600Y_iph9z7RH_wBQVn7uz2rPbk1uPm84fSiAwiIdWTe1ze_itRXw4bSShj45XOIv2Xbl9TH3PdFb_aCs_d2e1ayv9zNQVc_WnaauabAWFLGf4qzGpbHzHnww_wC6qB_mV9PHh00mQCZpO65X0l9y7h-W32UV2-9_JI7_AEq6H3L-Hxytf9k9ebcPJY_arcam3zv700p1Bk-UqHCKf40nrX02Pc60QFvsjrf3aP2qv3OtD_eKt_do_as9uTW8XztgFFDTVrCwOLr3uSpmPn-l6nxH0BfQVL7nyigmEg2grHEcPJ2e1Vrvc-UVXVSTnaCsaXm9hTs0-dOy6O6bfNRVCvo77nOh_vHW_u0ftVD7nKhI_wBo6392j9qnZWrnHyfUtL62UDi4rc4fCGhrWjXcAvor7mLD-vdIdpq7tG9vJY_apsHucqGFwcNo60kbvwaP2plhlUxykeK0jAyMNGjlJGgynzjxXubOgajbvx6rJ5-Ts9qvb0F0gGuO1Z__AF2e1amNjO48L3dk-tYHPNROaeM_eY7dc7_-B38-Q8V70_oLpjE5rMfq2uI0d5Ow2PPerKfoGpKaGOKHHqoNbq7NTsJceJvfeVe2lseDyzAV9o3aMaAWc-QaPUr2vbUh7oWWe113RyCwcR9B5Fe6VHQHQzajHaxrwQQ4QM0t6dyrJ0DUkgYXY_WCRvw207AT86slZeGMe17g8tkYyNti0edGfjHn4jvUenLoXnUOa3Vrg7zmniP1uHI-he_noMp3y5n4_VZW-YG0zAR6b6rFVdAtNMYyzaCqiyuLnBtLH2jz36Jqjw-KojqQxj2tLL6tIG-2jXDh9BUx56prY2Nbndo0W0HeRyC9od0EULnxvONVGZgy38mZq3i067issHQdSROcRjlW69gAYWHKBwGquqPFooxBGGMub6kneTxKW4NOnFe3DoUpRe2N1Wv_AEGe1U-0nSjdjdVf_AZ7VUeJmx83S29V0ebHSy9rPQnScMbqgefUM9qfaTpMtvfuq_0Ge1B68iIqCIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAi8s6d8fxCiw_B8EwGqmp8WxarbGx8EhY9rAQDYjUXLmj1rF0GY7iUpx_ZzaGsmqsVwqrIMk8he9zCbbzrYFun7SD1hF82dImC7W7KYrgsP2dYtUNxisMDcssrBDd7QNOsN7Z92m5e1dH2zuKbN4ZU02M4_U45NLP1jJp812NygZRmc7S4J38UHUovLemg45gXvdtZgVbWdRh0jRXULZndVLFfziy9uJBPeDwWopNoa7pI6SKOHZ_EK6k2ZwuFk9U-nldF173WOR1rX17NuQceIQe0ovEcaxTarb7pAxbZ_ZnF3YLhWEHq56iO4e997HUWO8OAAIFmklMHxTarYDb7CcA2mxd2NYTi56uCokvnY-9hqbneWggkizgQg9uReR9G-LYjWdLu3dHV19XPR0zwIIJJnOZF2z5rSbD0LJs3iuITe6D2mw6Wvqn4fDQtfHSulcYmOywaht7A9p3rKD1hF8ubEMxvaejr6qr6TKrBnQVLomw1NY67xYHMLyN01tu4L03oB2kxXHMMxmkxisOIe91UIoaw6mVpvx4jS4J1s4IPVkXBdNuPYrs7sFU1uBksqjKyJ0wbcwsde7tdOQvwuuH6P58TxHFcLq9mukB2KtNnYjhuLvIktpmEbbE7r2I5DWxQe6ovnXpPxXEHdLtThjtsazZ3DPJIpOtE0nVtdl3ZWuGp59y33RxBJ754jU0_SRPtI2ChlzUl5bMLvNk7TyNC08OKD2xF8t7CxY3tHs27E6vpQqMJmY9zBT1VY8udlaDm1kBsb8ju4rf4Xj2020vQjjNWMTrW4nhFVeOsgkdG-aNoBcCW2vo4-oXQfQqLyXa7beZvQZT41R1EseIV1PFBHJG6zxK45XEEag9ly0eNVOO4HtH0V4ZPjGIuknt5cHVLz17jIwkP17VsxGvDRB7si8Vx7FtqNutv8U2b2XxY4LhmEgNqaqMHO9-46jXfcAAjzSSVtdhsO2_2c2w97cYrH47s_JHmNdK8ZoncLZjmvcWLdd4IQeqovlalxSvxTaHaGPE-kit2fZTV0rII5ZpXh7esf5tniwbYC3evaOhymkjwmvqPsvk2pglnDWTuL7RFrdWDM53MHgg9BREQEREBERAREQEREBERAREQEO5EQfP-L0-Pbb9M1dVbOVFLTfY-xsME9ZC58WbUOsLanM53q7ljgp9oNiOmHCMV2lqKWrGNg01RPRQujj-C0ZhbQg5DfjqvoREHjPT8x78e2ALGOdbE9crSbduFezBEQQcciZPg1dFKxskb4JGuY4XDgWnQheXe5hgEfR5NI6LJNJWvzOc2znAMZa_rK9fRB4NiFTivRZ0j49i7sIqcRwDGn9c6SnFyx1y619wILnaG1wRrolDU4r0qdIuBYqzCKnDtn8Ff1wkqBYvfcOsDuJJa3QXsAdV7yiD5-r8UrujLpY2ixWvwesrMLxiz45acd99CdLg3BBI4FbXofbiW0PSTtFtnVYdPQ0NXAIIRKCM2rALX32bGLkaXK9ssiD5e6M-jSg212Ux-eoE1Pi8NY-KlmJIYOy1wDm7iCSdd_qXo_QHjcbMMq9mKzDo8NxfDJHCVjIywTi9i_vcDofQRovWkQcd0oYnjmE7PiqwHCabF2B-WrpZY3SF0JGpa0HXvGu_cvDdoafBNo8Ywg9G2A4rh-PCpa-ZwhdFFAN9zwBBsbiwsDzX1GlkHzT0n1WGYf02VFVtHhE2LYcKGJroI2-c8s0O8DTXjxXT9HO0myVZiOJUWzGytXg9VNQSvkme0Brms-D5x4uXt9ksg-W-jvoupNr-jCpr42zQ4_HM9kD3uIY4Na0hpadNbkXXqHQnjNHjWyFRs_VYZFh9ZQh0FVSsiMbZGuuC-x4nUO7_ABC9URB8wbM4dW120uC7AVkMppMGxeoqpnuacr4m2LR6bn5YXc9LbHu6W-jgtY4gVJuQ0kD77HvXs1kQeE4nPinRf0kY5jbsJqcSwDGvvjpKcXdG-5dY8AQS7Q2uCNdF0Gwu2-022e15lpMI8g2Vjjs99VGesc7hldoCSbaC4AHevVkQfJWEYns1hO0u1H2WbM1WMOlxCU07o2fiwJJM28jfcepe59DeOYDi2E18OzOB1GDUlPOC-KUAZ3ubcuFieAC9CsiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIo762mjpzO-eJsIdkzlwAzZstr876IJCKzro-u6rO3rcubLfW17XVXPawtzOAzGwubXPJBciIgIitkkZGwvkc1rRvLjYILkRWSyshYHSvaxpcG3JtqSAB6SQEF6IresYZDHmbnAzFt9bc_mQXIiICIiAiIgIo7q2mbIGOnjDzL1IBdqX5c2XxtrZSEBERAREQEREBERAREQEREBERAREQEREBERAK5eWlFZilVhcoPk7Xuq3XGlnts0fKzn_KuoSyDjH1VXLSTVROVzZYqOd7pDFlDAc5zgEtBe61wN3LetlhlKMUoYzVyF7aeqdJTvjmc-1mlo--EAutmdr4amy6Gwta2iAACw0CDkaisxB1DO4uew0pZSyuLzGHHMM8mYAkdnLrY2uVttm5ZJaWfNK2SJspERbM6YBthcdY4DNrfXXldbiyoAALAWCDj_ACt_ltCW1sxxN88wlpetOXSOQtBZuABDbbr96jVkkdThcjGVlRUNdSiWqvM49XIHstf4h8-7RbRu5dZDhkUVUJzJPIWkuY2SUuawneQD4nwupoaBfQa7-9BpcaqzQYdSVlM58sMT26NeXdY1wLW3Pwrkt1PitHVeWE-9lVU1DnUz4XPmDiC_rJ48pv3dsDlZdvYWtbRLBByNVMaeaakdUzNgbVuY101U6NoHUxus6TV29xIF9edhZWbLytqMUiqKioc-Z9M5kZMrwJAyaVujSe1Ztt4vxOq7AtBFiAR3pYXBsLhBoKqonixVuHNkkL55PKGG5_FtF3NvwGYAW5OWpNbL73SPpq2olqTQySVQ6wkxSAC2nwDfMLC2g9K65tJGK11UczpSzqwXG4a3iAOF7C_gFnDQL2A13oNRhVcytxfEfJ6gTU7GwhuR2ZoJDibcOW5agPq4WRVNNPUy1Us9YwMfKXMOXrSxoadBYtb3rrg0NFgAB3Ktgg4qCtrRQ1bqSdsgFOxzy2qfMWuLgHOuWdg5cxygG1vN01zwVU3UPDqoDD_KI2vliqnzdW0tOb76QDbNkvYm1zqOHWgAXsLX1QNAbYAW5IOLoI4Z5oXQVrXxR4y5zHzPLjLaC2Vp-EeV-A3rtRuVAANwCqgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgJdRp6trDZnad8wUKSV8nnuNuXBBsX1ETd7x6NVjNZGNwcfQobIZH-aw25nRZRRyHeWhBm8tj-K9Xtq4j8IjxCj-RP8AjNWN1LK34IPgUGya9rhdpBHcqrT9pjuLXepSYqtzdJO0OfFBPRWse17btNwrkBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQCbLX1NSXktjNm8TzUup_EP8A2VqwgyQwulPZ0bxKnxU7I9wu7mUpfxDPBZkBERAREQWvY14s4AjvUOekI1i1HIqchQamKR0Trt9IWyglbKy49I5LX1X5Q_xWTD_xj_BBsEREBERAREQEREBERAREQEREH__Z",
+    "width": 320,
+    "height": 569,
+    "page_rect": {
+      "left": 0,
+      "top": 0,
+      "width": 411,
+      "height": 731
+    }
+  }
+}

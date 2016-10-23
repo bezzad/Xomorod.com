@@ -1,0 +1,62 @@
+﻿
+
+.feat-info-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.feat-info-views, .feat-info-comm {
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    float: left;
+    display: block;
+}
+
+
+.row-widget-img {
+    background: #000;
+    line-height: 0;
+    margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.items {
+    display: table;
+}
+
+
+.title-link {
+    color: black;
+    text-decoration: none !important;
+}
+
+    .title-link:hover {
+        color: coral;
+        cursor: pointer;
+    }
+
+
+/*.excerpt {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}*/
+
+.author-link {
+    color: crimson;
+    text-decoration: none !important;
+}
+
+.author-link:hover {
+    color: coral;
+    cursor: pointer;
+}

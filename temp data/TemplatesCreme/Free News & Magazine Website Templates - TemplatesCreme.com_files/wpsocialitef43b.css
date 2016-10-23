@@ -1,0 +1,53 @@
+.wpsocialite:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+/* visually hidden from HTML5 Boilerplate */
+.wpsocialite .vhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+
+/*
+ * Socialite
+ */
+
+/*
+.socialite-instance { display: none; opacity: 0; }
+.socialite-loaded .socialite-button { display: block; opacity: 1; }
+.socialite-button iframe { max-width: 100%; max-height: 100%; }
+*/
+
+/*
+ * Socialite Look-a-like defaults
+ */
+
+
+.wpsocialite.large { display: block; list-style: none; padding: 0; margin: 20px; overflow: visible; }
+.wpsocialite.large > li { display: block; margin: 0; padding: 10px; float: left; }
+.wpsocialite.large .socialite { display: block; position: relative; background: url('social-sprite.png') 0 0 no-repeat; }
+.wpsocialite.large .socialite-loaded { background: none !important; }
+.wpsocialite.large .twitter-share { width: 55px; height: 65px; background-position: 0 0; }
+.wpsocialite.large .googleplus-one { width: 50px; height: 65px; background-position: -75px 0; }
+.wpsocialite.large .facebook-like { width: 50px; height: 65px; background-position: -145px 0; }
+.wpsocialite.large .linkedin-share { width: 60px; height: 65px; background-position: -215px 0; }
+.wpsocialite.large .pinterest-pinit { width: 50px; height: 65px; background-position: -367px 0; }
+.wpsocialite.large .stumbleupon-share { width: 50px; height: 65px; background-position: -439px 0; }
+.wpsocialite.large .twitter-follow { width: 56px; height: 65px; background-position: -509px 0; }
+.wpsocialite.large .twitter-follow.socialite-loaded{ width:100%; }
+.wpsocialite.large .vkontakte-like { width: 50px; height: 65px; background:red; }
+/*
+ * Socialite Custom Default
+ */
+
+
+/* .small-load { margin: 0 0 0.625em 0; font-weight: bold; padding: 5px; } */
+
+.wpsocialite.small { display: block; list-style: none; padding: 10px; margin: 10px; overflow: visible; }
+.wpsocialite.small > li { margin: 0; display:inline; float:left; width:20%; }
+.wpsocialite.small .socialite { display: block; position: relative; width: 150px; height: 30px; background: url('custom-default.png') 0 0 no-repeat; }
+.wpsocialite.small .socialite-loaded { background: none; }
+
+.wpsocialite.small .twitter-share { background-position: 0 0; }
+.wpsocialite.small .googleplus-one { background-position: 0 -45px; }
+.wpsocialite.small .facebook-like { background-position: 0 -90px; }
+.wpsocialite.small .linkedin-share { background-position: 0 -135px; }
+.wpsocialite.small .pinterest-pinit { background-position: 0 -175px; }
+.wpsocialite.small .stumbleupon-share { background-position: 0 -225px; }
+.wpsocialite.small .twitter-follow.socialite-loaded{ width:200px; }

@@ -1,0 +1,71 @@
+﻿@using Xomorod.Helper.Resources
+@using Xomorod.Shared
+<section class="about-us" id="aboutus">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="white-text">@Localization.About</h2>
+            <br/>
+            <h6>&nbsp;</h6>
+            <h6 class="white-text">
+                @Localization.XomorodDescription
+            </h6>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 column zerif-rtl-big-title">
+                <div class="big-intro" data-scrollreveal="enter left after 0s over 1s">@Localization.XomorodSlogan</div>
+            </div>
+            <div class="col-lg-4 col-md-4 column zerif_about_us_center text_and_skills" style="@(CultureHelper.IsRighToLeft() ? "text-align: right;" : "")" data-scrollreveal="enter bottom after 0s over 1s">
+                <p>
+                    @Localization.AboutUsDescriptionP1
+                    <br/>
+                    <br/>
+                    @Localization.AboutUsDescriptionP2
+                    <br/>
+                    <br/>
+                    @Localization.AboutUsDescriptionP3
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 column zerif-rtl-skills" dir="ltr">
+                <ul class="skills" data-scrollreveal="enter right after 0s over 1s">
+                    <li class="skill skill_1">
+                        <div class="skill-count">
+                            <input type="text" value="90" data-thickness=".2" class="skill1">
+                        </div>
+                        <h6>@Localization.AboutUsSkill1</h6>
+                    </li>
+                    <li class="skill skill_2">
+                        <div class="skill-count">
+                            <input type="text" value="95" data-thickness=".2" class="skill2">
+                        </div>
+                        <h6>@Localization.AboutUsSkill2</h6>
+                    </li>
+                    <li class="skill skill_3">
+                        <div class="skill-count">
+                            <input type="text" value="75" data-thickness=".2" class="skill3">
+                        </div>
+                        <h6>@Localization.AboutUsSkill3</h6>
+                    </li>
+                    <li class="skill skill_4">
+                        <div class="skill-count">
+                            <input type="text" value="60" data-thickness=".2" class="skill4">
+                        </div>
+                        <h6>@Localization.AboutUsSkill4</h6>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="our-clients">
+            <h5><span class="section-footer-title">@Localization.ShowcaseClients</span></h5>
+        </div>
+        <div class="client-list">
+            <div data-scrollreveal="enter right move 60px after 0.00s over 2.5s">
+                <a target="_blank" href="@Localization.CafebazarXomorodLink">
+                    <img src="@Url.Content(Localization.CafebazarLogoUrl)" width="130" height="60" alt="cafebazar xomorod" title="@Localization.CafebazarTitle">
+                </a>
+                <a target="_blank" href="@Localization.MyKetXomorodLink">
+                    <img src="@Url.Content(Localization.MyKetLogoUrl)" width="130" height="60" alt="myket xomorod" title="@Localization.MyKetTitle">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

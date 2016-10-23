@@ -1,0 +1,101 @@
+﻿@using Microsoft.AspNet.Identity
+@using Microsoft.AspNet.Identity.EntityFramework
+@using Xomorod.Com.Core
+@using Xomorod.Com.Models
+@using Xomorod.Helper.Resources
+@using Xomorod.Shared
+
+@if (Request.IsAuthenticated)
+{
+    var manager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
+    var currentUser = manager.FindById(User.Identity.GetUserId());
+
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="#" class="dropdown-toggle iAnimate" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-user" id="loginUsernameIcon"></span><span id="loginUsername">&nbsp;@currentUser.UserName&nbsp;<span class="caret"></span></span>
+                </a>
+                <ul class="dropdown-menu" style="@(CultureHelper.IsRighToLeft() ? "text-align: right;" : "")">
+                    <li>
+                        <a class="menu-items" id="profileLink" href="#">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;@Localization.Profile
+                        </a>
+                    </li>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <li>
+                            <a class="menu-items" id="inboxLink" href="@Url.Action("Inbox", "Admin")">
+                                <span class="glyphicon glyphicon-envelope"></span>&nbsp;@Localization.Inbox&nbsp;<span class="badge">@currentUser.GetInboxMessageCount()</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu-items" id="inboxLink" href="@Url.Action("Ranking", "Admin")">
+                                <span class="glyphicon glyphicon-globe"></span>&nbsp;@Localization.Ranking&nbsp;
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu-items" id="settingLink" href="@Url.Content(@"~/errorsmanager")">
+                                <span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;@Localization.Errors&nbsp;<span class="badge">@currentUser.GetErrorsCount()</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu-items" id="settingLink" href="@Url.Content(@"~" + HangfireSetting.HangfireDahsboardRout)">
+                                <span class="glyphicon glyphicon-fire"></span>&nbsp;@Localization.BackgroundJobs
+                            </a>
+                        </li>
+                    }
+                    <li>
+                        <a class="menu-items" id="settingLink" href="@Url.Action("Index", "Manage", routeValues: null)">
+                            <span class="glyphicon glyphicon-cog"></span>&nbsp;@Localization.Setting
+                        </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                        <a class="menu-items" href="javascript:document.getElementById('logoutForm').submit()">
+                            <span class="glyphicon glyphicon-log-out"></span>&nbsp;@Localization.LogOut
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    }
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right responsive-nav" id="splitedLoginMenu">
+        <li>
+            <a class="menu-items" href="@Url.Action("Register", "Account", routeValues: null)">
+                <span class="glyphicon glyphicon-user"></span>&nbsp;@Localization.Register
+            </a>
+        </li>
+        <li>
+            <a class="menu-items" href="@Url.Action("Login", "Account", routeValues: null)">
+                <span class="glyphicon glyphicon-log-in"></span>&nbsp;@Localization.Login
+            </a>
+        </li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right responsive-nav" id="combinedLoginMenu">
+        <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" title="@Localization.LoginOrRegister" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-log-in gi-2x"></span>
+            </a>
+            <ul class="dropdown-menu" style="@(CultureHelper.IsRighToLeft() ? "text-align: right;" : "")">
+                <li>
+                    <a class="menu-items" href="@Url.Action("Register", "Account", routeValues: null)">
+                        <span class="glyphicon glyphicon-user"></span>&nbsp;@Localization.Register
+                    </a>
+                </li>
+                <li>
+                    <a class="menu-items" href="@Url.Action("Login", "Account", routeValues: null)">
+                        <span class="glyphicon glyphicon-log-in"></span>&nbsp;@Localization.Login
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+}

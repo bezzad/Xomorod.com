@@ -1,0 +1,15 @@
+﻿@using Xomorod.Helper.Resources
+@{
+    ViewBag.Title = $"{Localization.Confirm_Email}";
+}
+
+<br /><br />
+<h1>@ViewBag.Title</h1>
+
+<div style="padding: 20px;">
+    <div class="centered minForms">
+        <p>
+            @Localization.Thank_confirming_email_Please @Html.ActionLink(Localization.Click_here_to_Log_in, "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })
+        </p>
+    </div>
+</div>

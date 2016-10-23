@@ -1,0 +1,91 @@
+﻿@using GridMvc
+@using GridMvc.Columns
+@using GridMvc.Html
+@using GridMvc.Sorting
+@using Xomorod.Com.Models
+@using Xomorod.Helper.Resources
+@model IEnumerable<Xomorod.Com.Models.AdminModels.InboxViewModel>
+
+@{
+    ViewBag.Title = @Localization.Inbox;
+}
+
+@section scripts{
+    @Scripts.Render("~/bundles/jquery")
+    @Styles.Render("~/Content/gridmvc")
+    @Scripts.Render("~/bundles/gridmvc")
+    <script>
+        jQuery(window)
+            .load(function () {
+                pageGrids.InboxGrid.onRowSelect(function (e) {
+                    $("#name")[0].value = e.row.Name;
+                    $("#email")[0].value = e.row.Email;
+                    $("#subject")[0].value = e.row.Subject;
+                    $("#message")[0].value = e.row.Message;
+
+                    var id = e.row.ContactMeId;
+                    if ($("#isRead_" + id).prop("checked") === false) {
+                        $.get('/authorize/messageReadAsync', { id }, function (data) {
+                            if (data === true) {
+                                var isReadCellOfSelectedRow = $("#isRead_" + id);
+                                isReadCellOfSelectedRow.prop("checked", true);
+                                isReadCellOfSelectedRow.closest("tr").removeClass("success");
+                            }
+                        });
+                    }
+                });
+            });
+    </script>
+}
+
+<section>
+    <div class="container">
+        <div class="section-header">
+            <h2 class="dark-text">@ViewBag.Title</h2>
+            <br />
+            <h6>&nbsp;</h6>
+            <h6>@Localization.YourMessage</h6>
+        </div>
+        <div style="padding-bottom: 50px">
+            @Html.Grid(Model).Named("InboxGrid").Columns(cols =>
+            {
+                /* Adding not mapped column, that renders body, using inline Razor html helper */
+                cols.Add().Encoded(false).Sanitized(false).SetWidth(50)
+                    .RenderValueAs(m => @<i class='fa fa-trash-o'>&nbsp;<b>@Html.ActionLink(Localization.Remove, "RemoveFromInbox", new { id = m.ContactMeId })</b></i>);
+
+            /* Adding "IsRead" column: */
+            cols.Add(c => c.IsRead).Encoded(false).Sanitized(false).SetWidth(30).Titled(Localization.IsRead).SortInitialDirection(GridSortDirection.Descending)
+                .RenderValueAs(m => @<input @( m.IsRead ? "checked" : "") disabled id="isRead_@m.ContactMeId" type="checkbox" />);
+
+
+            }).AutoGenerateColumns().SetRowCssClasses(item => item.IsRead ? string.Empty : "success").Filterable(true).Sortable(true).WithMultipleFilters()
+        </div>
+    </div>
+</section>
+
+<section class="contact-us" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="pirate_forms_wrap">
+                <form id="pirate_forms_5558" class="pirate_forms">
+                    <div class="form_field_wrap  col-lg-4 col-sm-4 ">
+                        <p>@Localization.Name</p>
+                        <input id="name" name="name" class="form-control" type="text" value="" placeholder="@Localization.Name">
+                    </div>
+                    <div class="form_field_wrap  col-lg-4 col-sm-4 ">
+                        <p>@Localization.Email</p>
+                        <input id="email" name="email" class="form-control" type="text" value="" placeholder="@Localization.Email">
+                    </div>
+                    <div class="form_field_wrap -lg-4 col-sm-4 ">
+                        <p>@Localization.Subject</p>
+                        <input id="subject" name="subject" class="form-control" type="text" value="" placeholder="@Localization.Subject">
+                    </div>
+                    <div class="form_field_wrap  col-lg-12 col-sm-12 ">
+                        <p>@Localization.Message</p>
+                        <textarea id="message" name="message" class="form-control" placeholder="@Localization.Message"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

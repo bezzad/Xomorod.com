@@ -1,0 +1,80 @@
+﻿@using Xomorod.Helper.Resources
+@model Xomorod.Com.Models.ManageLoginsViewModel
+@using Microsoft.Owin.Security
+@{
+    ViewBag.Title = $"{Localization.Manage_external_logins}";
+}
+
+<br /><br />
+<h1>@ViewBag.Title</h1><br /><br />
+
+<div style="padding: 20px;">
+    <p class="text-success">@ViewBag.StatusMessage</p>
+    <div class="centered minForms">
+        @{
+            var loginProviders = Context.GetOwinContext().Authentication.GetExternalAuthenticationTypes();
+            if (loginProviders.Count() == 0)
+            {
+                <div>
+                    <p>
+                        @Localization.No_external_authentication_services_configured
+                    </p>
+                </div>
+            }
+            else
+            {
+                if (Model.CurrentLogins.Count > 0)
+                {
+                    <h4>@Localization.RegisteredLogins</h4>
+                    <table class="table">
+                        <tbody>
+                            @foreach (var account in Model.CurrentLogins)
+                    {
+                                <tr>
+                                    <td>@account.LoginProvider</td>
+                                    <td>
+                                        @if (ViewBag.ShowRemoveButton)
+                                        {
+                                            using (Html.BeginForm("RemoveLogin", "Manage"))
+                                            {
+                                                @Html.AntiForgeryToken()
+                                                <div>
+                                                    @Html.Hidden("loginProvider", account.LoginProvider)
+                                                    @Html.Hidden("providerKey", account.ProviderKey)
+                                                    <input type="submit" class="zocial @account.LoginProvider.ToLower()" value="Remove" title="@string.Format(Localization.Remove_this_0_login_from_your_account, Localization.ResourceManager.GetString(account.LoginProvider))" />
+                                                </div>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            @: &nbsp;
+                                }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+                if (Model.OtherLogins.Count > 0)
+                {
+                    using (Html.BeginForm("LinkLogin", "Manage"))
+                    {
+                        @Html.AntiForgeryToken()
+                        <div id="socialLoginList">
+                            <p>
+                                @foreach (AuthenticationDescription p in Model.OtherLogins)
+                                {
+                                    <button type="submit" class="zocial @p.AuthenticationType.ToLower()" id="@p.AuthenticationType" name="provider" value="@p.AuthenticationType" title="@string.Format(Localization.Log_in_using_your_0_account, Localization.ResourceManager.GetString(p.Caption))">@Localization.ResourceManager.GetString(p.AuthenticationType)</button>
+                                }
+                            </p>
+                        </div>
+                    }
+                }
+            }
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.2.0/css/zocial.min.css" rel="stylesheet" />
+}

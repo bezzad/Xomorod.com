@@ -1,0 +1,339 @@
+﻿@model Xomorod.API.Models.ErrorModel
+
+@{
+    Layout = null;
+    ViewBag.Title = "Bug Tracker";
+}
+
+<div style="margin:0;background-color:#ededed">
+
+    <div style="background-color:#ededed">
+        <table style="border-collapse:collapse;table-layout:fixed;color:#808285;font-family:Roboto,Tahoma,sans-serif" align="center">
+            <tbody>
+                <tr>
+                    <td style="padding:10px 0 5px 0;vertical-align:top" width="300">
+                        <p style="Margin-top:0;Margin-bottom:0;font-size:12px;line-height:19px">@ViewBag.Title</p>
+                    </td>
+                    <td style="text-align:right;padding:10px 0 5px 0;vertical-align:top" width="300"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="border-collapse:collapse;table-layout:fixed;Margin-left:auto;Margin-right:auto" align="center">
+            <tbody>
+                <tr>
+                    <td style="padding:0" width="600">
+                        <div style="font-size:26px;line-height:32px;Margin-top:0px;Margin-bottom:20px;color:#c3ced9;font-family:Roboto,Tahoma,sans-serif">
+                            <div style="font-size:0px!important;line-height:0!important" align="center"><a style="text-decoration:none;color:#c3ced9" href="http://xomorod.com/" target="_blank"><img style="min-height:auto;width:100%;border:0;max-width:121px" src="http://xomorod.com/favicon.ico" alt="Xomorod" width="121" height="107" class="CToWUd"></a></div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="border-collapse:collapse;table-layout:fixed;Margin-left:auto;Margin-right:auto;word-wrap:break-word;word-break:break-word;background-color:#ededed;background-position:0px 0px;background-image:url(http://i.share.pho.to/935f18e1_o.png);background-repeat:no-repeat" align="center">
+            <tbody>
+                <tr>
+                    <td style="font-size:14px;line-height:21px;padding:0;text-align:left;vertical-align:top;color:#808285;font-family:Avenir,sans-serif" width="300">
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-top:24px">
+                            <div style="line-height:20px;font-size:1px">&nbsp;</div>
+                        </div>
+
+                        <div style="Margin-left:20px;Margin-right:20px">
+                            <h2 style="Margin-top:0;Margin-bottom:16px;font-style:normal;font-weight:normal;font-size:28px;line-height:36px;color:#58595b;font-family:bitter,georgia,serif;text-align:right">
+                                <span>
+                                    <br>
+                                    <strong><span style="color:rgb(255,255,255)">@ViewBag.Title</span></strong>
+                                </span>
+                            </h2>
+                        </div>
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-bottom:24px">
+                            <div style="display:block;font-size:2px;line-height:2px;width:40px;background-color:#bababa;Margin-left:110px;Margin-right:110px">&nbsp;</div>
+                        </div>
+
+                    </td>
+                    <td style="font-size:14px;line-height:21px;padding:0;text-align:left;vertical-align:top;color:#808285;font-family:Avenir,sans-serif" width="300"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="font-size:30px;line-height:30px">&nbsp;</div>
+
+        <table style="border-collapse:collapse;table-layout:fixed;Margin-left:auto;Margin-right:auto;word-wrap:break-word;word-break:break-word;background-color:#e6f0c0;border-top:1px solid #bababa;border-bottom:1px solid #bababa" align="center">
+            <tbody>
+                <tr>
+                    <td style="font-size:0;padding:0;width:1px;background-color:#bababa">​</td>
+                    <td style="font-size:14px;line-height:21px;padding:0;text-align:left;vertical-align:top;color:#808285;font-family:Avenir,sans-serif" width="200">
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-top:24px">
+                            <h2 style="Margin-top:0;Margin-bottom:16px;font-style:normal;font-weight:normal;font-size:20px;line-height:28px;color:#58595b;font-family:Roboto,Tahoma,sans-serif"><strong>Application Info</strong></h2>
+                        </div>
+
+                        <div style="font-size:12px;font-style:normal;font-weight:400" align="center">
+                            <img style="display:block;border:0;max-width:200px" src="@Model.HeaderIcon" alt="" width="200" height="200" class="CToWUd">
+                        </div>
+
+                    </td>
+                    <td style="font-size:14px;line-height:21px;padding:0;text-align:left;vertical-align:top;color:#808285;font-family:Avenir,sans-serif" width="400">
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-top:24px">
+                            <div style="line-height:5px;font-size:1px">&nbsp;</div>
+                        </div>
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-bottom:24px">
+                            <p style="Margin-top:0;Margin-bottom:0">@Model.AppName v @Model.Version</p><p style="Margin-top:20px;Margin-bottom:0">&nbsp;</p>
+                        </div>
+
+                    </td>
+                    <td style="font-size:0;padding:0;width:1px;background-color:#bababa">​</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="font-size:20px;line-height:20px">&nbsp;</div>
+
+        <table style="border-collapse:collapse;table-layout:fixed;Margin-left:auto;Margin-right:auto;word-wrap:break-word;word-break:break-word;background-color:#fefff5;border-top:1px solid #bababa;border-bottom:1px solid #bababa" align="center">
+            <tbody>
+                <tr>
+                    <td style="font-size:0;padding:0;width:1px;background-color:#bababa">​</td>
+                    <td style="font-size:14px;line-height:21px;padding:0;text-align:left;vertical-align:top;color:#808285;font-family:Avenir,sans-serif" width="200">
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-top:24px;Margin-bottom:24px">
+                            <h2 style="Margin-top:0;Margin-bottom:0;font-style:normal;font-weight:normal;font-size:20px;line-height:28px;color:#58595b;font-family:Roboto,Tahoma,sans-serif"><strong>Error Type</strong></h2>
+                        </div>
+
+                    </td>
+                    <td style="font-size:14px;line-height:21px;padding:0;text-align:left;vertical-align:top;color:#808285;font-family:Avenir,sans-serif" width="400">
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-top:24px">
+                            <div style="line-height:5px;font-size:1px">&nbsp;</div>
+                        </div>
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-bottom:24px">
+                            <p style="Margin-top: 0; Margin-bottom: 0">@Model.ErrorType</p>
+                        </div>
+
+                    </td>
+                    <td style="font-size:0;padding:0;width:1px;background-color:#bababa">​</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="font-size:20px;line-height:20px">&nbsp;</div>
+
+        <table style="border-collapse:collapse;table-layout:fixed;Margin-left:auto;Margin-right:auto;word-wrap:break-word;word-break:break-word;background-color:#fefff5;border-top:1px solid #bababa;border-bottom:1px solid #bababa" align="center">
+            <tbody>
+                <tr>
+                    <td style="font-size:0;padding:0;width:1px;background-color:#bababa">​</td>
+                    <td style="font-size:14px;line-height:21px;padding:0;text-align:left;vertical-align:top;color:#808285;font-family:Avenir,sans-serif" width="200">
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-top:24px;Margin-bottom:24px">
+                            <h2 style="Margin-top:0;Margin-bottom:0;font-style:normal;font-weight:normal;font-size:20px;line-height:28px;color:#58595b;font-family:Roboto,Tahoma,sans-serif"><strong>Message</strong></h2>
+                        </div>
+
+                    </td>
+                    <td style="font-size:14px;line-height:21px;padding:0;text-align:left;vertical-align:top;color:#808285;font-family:Avenir,sans-serif" width="400">
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-top:24px">
+                            <div style="line-height:5px;font-size:1px">&nbsp;</div>
+                        </div>
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-bottom:24px">
+                            <p style="Margin-top:0;Margin-bottom:0">@Model.Message &nbsp;</p>
+                        </div>
+
+                    </td>
+                    <td style="font-size:0;padding:0;width:1px;background-color:#bababa">​</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="font-size:20px;line-height:20px">&nbsp;</div>
+
+        <table style="border-collapse:collapse;table-layout:fixed;Margin-left:auto;Margin-right:auto;word-wrap:break-word;word-break:break-word;background-color:#fefff5;border-top:1px solid #bababa;border-bottom:1px solid #bababa" align="center">
+            <tbody>
+                <tr>
+                    <td style="font-size:0;padding:0;width:1px;background-color:#bababa">​</td>
+                    <td style="font-size:14px;line-height:21px;padding:0;text-align:left;vertical-align:top;color:#808285;font-family:Avenir,sans-serif" width="200">
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-top:24px;Margin-bottom:24px">
+                            <h2 style="Margin-top:0;Margin-bottom:0;font-style:normal;font-weight:normal;font-size:20px;line-height:28px;color:#58595b;font-family:Roboto,Tahoma,sans-serif"><strong>Module</strong></h2>
+                        </div>
+
+                    </td>
+                    <td style="font-size:14px;line-height:21px;padding:0;text-align:left;vertical-align:top;color:#808285;font-family:Avenir,sans-serif" width="400">
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-top:24px">
+                            <div style="line-height:5px;font-size:1px">&nbsp;</div>
+                        </div>
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-bottom:24px">
+                            <p style="Margin-top:0;Margin-bottom:0">@Model.ModuleName &nbsp;</p>
+                        </div>
+
+                    </td>
+                    <td style="font-size:0;padding:0;width:1px;background-color:#bababa">​</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="font-size: 20px; line-height: 20px">&nbsp;</div>
+
+        <table style="border-collapse:collapse;table-layout:fixed;Margin-left:auto;Margin-right:auto;word-wrap:break-word;word-break:break-word;background-color:#fefff5;border-top:1px solid #bababa;border-bottom:1px solid #bababa" align="center">
+            <tbody>
+                <tr>
+                    <td style="font-size:0;padding:0;width:1px;background-color:#bababa">​</td>
+                    <td style="font-size:14px;line-height:21px;padding:0;text-align:left;vertical-align:top;color:#808285;font-family:Avenir,sans-serif" width="200">
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-top:24px;Margin-bottom:24px">
+                            <h2 style="Margin-top:0;Margin-bottom:0;font-style:normal;font-weight:normal;font-size:20px;line-height:28px;color:#58595b;font-family:Roboto,Tahoma,sans-serif"><strong>Method</strong></h2>
+                        </div>
+
+                    </td>
+                    <td style="font-size:14px;line-height:21px;padding:0;text-align:left;vertical-align:top;color:#808285;font-family:Avenir,sans-serif" width="400">
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-top:24px">
+                            <div style="line-height:5px;font-size:1px">&nbsp;</div>
+                        </div>
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-bottom:24px">
+                            <p style="Margin-top:0;Margin-bottom:0">@Model.Method &nbsp;</p>
+                        </div>
+
+                    </td>
+                    <td style="font-size:0;padding:0;width:1px;background-color:#bababa">​</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="font-size:20px;line-height:20px">&nbsp;</div>
+
+        <table style="border-collapse:collapse;table-layout:fixed;Margin-left:auto;Margin-right:auto;word-wrap:break-word;word-break:break-word;background-color:#fefff5;border-top:1px solid #bababa;border-bottom:1px solid #bababa" align="center">
+            <tbody>
+                <tr>
+                    <td style="font-size:0;padding:0;width:1px;background-color:#bababa">​</td>
+                    <td style="font-size:14px;line-height:21px;padding:0;text-align:left;vertical-align:top;color:#808285;font-family:Avenir,sans-serif" width="200">
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-top:24px;Margin-bottom:24px">
+                            <h2 style="Margin-top:0;Margin-bottom:0;font-style:normal;font-weight:normal;font-size:20px;line-height:28px;color:#58595b;font-family:Roboto,Tahoma,sans-serif"><strong>Location</strong></h2>
+                        </div>
+
+                    </td>
+                    <td style="font-size:14px;line-height:21px;padding:0;text-align:left;vertical-align:top;color:#808285;font-family:Avenir,sans-serif" width="400">
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-top:24px">
+                            <div style="line-height:5px;font-size:1px">&nbsp;</div>
+                        </div>
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-bottom:24px">
+                            <p style="Margin-top: 0; Margin-bottom: 0">Line: @Model.Line &nbsp;</p>
+                            <p style="Margin-top:0;Margin-bottom:0">Column: @Model.Column &nbsp;</p>
+                        </div>
+
+                    </td>
+                    <td style="font-size:0;padding:0;width:1px;background-color:#bababa">​</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="font-size:20px;line-height:20px">&nbsp;</div>
+
+        <table style="border-collapse:collapse;table-layout:fixed;Margin-left:auto;Margin-right:auto;word-wrap:break-word;word-break:break-word;background-color:#fefff5;border-top:1px solid #bababa;border-bottom:1px solid #bababa" align="center">
+            <tbody>
+                <tr>
+                    <td style="font-size:0;padding:0;width:1px;background-color:#bababa">​</td>
+                    <td style="font-size:14px;line-height:21px;padding:0;text-align:left;vertical-align:top;color:#808285;font-family:Avenir,sans-serif" width="200">
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-top:24px;Margin-bottom:24px">
+                            <h2 style="Margin-top:0;Margin-bottom:0;font-style:normal;font-weight:normal;font-size:20px;line-height:28px;color:#58595b;font-family:Roboto,Tahoma,sans-serif"><strong>Stack Trace</strong></h2>
+                        </div>
+
+                    </td>
+                    <td style="font-size:14px;line-height:21px;padding:0;text-align:left;vertical-align:top;color:#808285;font-family:Avenir,sans-serif" width="400">
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-top:24px">
+                            <div style="line-height:5px;font-size:1px">&nbsp;</div>
+                        </div>
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-bottom:24px">
+                            <p style="Margin-top:0;Margin-bottom:0">@Model.StackTrace &nbsp;</p>
+                        </div>
+
+                    </td>
+                    <td style="font-size:0;padding:0;width:1px;background-color:#bababa">​</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="font-size:20px;line-height:20px">&nbsp;</div>
+
+        <table style="border-collapse:collapse;table-layout:fixed;Margin-left:auto;Margin-right:auto;word-wrap:break-word;word-break:break-word;background-color:#fefff5" align="center">
+            <tbody>
+                <tr>
+                    <td style="font-size:14px;line-height:21px;padding:0;text-align:left;vertical-align:top;color:#808285;font-family:Avenir,sans-serif" width="200">
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-top:24px;Margin-bottom:24px">
+                            <h2 style="Margin-top:0;Margin-bottom:0;font-style:normal;font-weight:normal;font-size:20px;line-height:28px;color:#58595b;font-family:Roboto,Tahoma,sans-serif"><strong>Additional Data</strong></h2>
+                        </div>
+
+                    </td>
+                    <td style="font-size:14px;line-height:21px;padding:0;text-align:left;vertical-align:top;color:#808285;font-family:Avenir,sans-serif" width="400">
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-top:24px">
+                            <div style="line-height:5px;font-size:1px">&nbsp;</div>
+                        </div>
+
+                        <div style="Margin-left:20px;Margin-right:20px;Margin-bottom:24px">
+                            <p style="Margin-top:0;Margin-bottom:0">@Model.ExtraData &nbsp;</p>
+                        </div>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="font-size:20px;line-height:20px">&nbsp;</div>
+
+        <table style="border-collapse:collapse;table-layout:fixed;Margin-right:auto;Margin-left:auto;border-spacing:0" width="600" align="center">
+            <tbody>
+                <tr>
+                    <td style="padding:0 0 40px 0">
+                        <table style="border-collapse:collapse;table-layout:auto;border-spacing:0" align="right">
+                            <tbody>
+                                <tr>
+                                    <td style="padding:0"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="border-collapse:collapse;table-layout:fixed;border-spacing:0;color:#808285;font-family:Roboto,Tahoma,sans-serif" width="400">
+                            <tbody>
+                                <tr>
+                                    <td style="padding:0;font-size:12px;line-height:19px">
+                                        <table style="border-collapse:collapse;table-layout:fixed">
+                                            <tbody>
+                                                <tr>
+
+                                                    <td style="padding:0" width="26"><a style="text-decoration:underline;color:#808285" href="https://www.facebook.com/Xomorod/" target="_blank"><img style="border:0" src="http://i.share.pho.to/0451f4c6_o.png" width="26" height="26" class="CToWUd"></a></td>
+                                                    <td style="padding:0 0 0 3px" width="26"><a style="text-decoration:underline;color:#808285" href="https://twitter.com/xomorod" target="_blank"><img style="border:0" src="http://i.share.pho.to/4f973427_o.png" width="26" height="26" class="CToWUd"></a></td>
+                                                    <td style="padding:0 0 0 3px" width="26"><a style="text-decoration:underline;color:#808285" href="https://instagram.com/xomorod" target="_blank"><img style="border:0" src="http://i.share.pho.to/8344d650_o.png" width="26" height="26" class="CToWUd"></a></td>
+                                                    <td style="padding:0 0 0 3px" width="26"><a style="text-decoration:underline;color:#808285" href="https://ir.linkedin.com/in/xomorod-corporation-155017115" target="_blank"><img style="border:0" src="http://i.share.pho.to/b58cf948_o.png" width="26" height="26" class="CToWUd"></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div style="Margin-top:26px">
+                                            <div>Sent from <a style="text-decoration:underline;color:#808285" href="http://api.xomorod.com/" target="_blank">Xomorod</a>- Bug Tracker API at @Model.ErrorTime</div>
+                                        </div>
+                                        <div>
+                                            <!--<a style="text-decoration:underline;color:#808285" href="http://api.xomorod.com/" target="_blank">Unsubscribe</a>-->
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>

@@ -1,0 +1,736 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>درباره ما</value>
+  </data>
+  <data name="AboutUsDescriptionP1" xml:space="preserve">
+    <value>ما در زمرد، از ابزار مناسب برای کارها استفاده میکنیم. تیم های مختلف نیازهای مختلفی دارند، و ما به کارمندان مان اختیار حل مشکلات با روش ها و تکنولوژی ها خودشان را داده ایم.</value>
+  </data>
+  <data name="AboutUsDescriptionP2" xml:space="preserve">
+    <value>به تیم فعال ما بپیوندید. شما در کنار بهترین رهبران و ذهن فنی در فضای کاملا آزاد خواهید بود.</value>
+  </data>
+  <data name="AboutUsDescriptionP3" xml:space="preserve">
+    <value>ما یک محیط کار صمیمی و بسیار رقابتی همراه با پاداش و مزایای کارکنان و با فرهنگ حمایت از یکدیگر را برایتان فراهم میکنیم.</value>
+  </data>
+  <data name="AboutUsSkill1" xml:space="preserve">
+    <value>استفاده از تکنولوژی روز</value>
+  </data>
+  <data name="AboutUsSkill2" xml:space="preserve">
+    <value>ساخت اپ سیستم عامل ویندوز</value>
+  </data>
+  <data name="AboutUsSkill3" xml:space="preserve">
+    <value>توسعه پروژه های وب</value>
+  </data>
+  <data name="AboutUsSkill4" xml:space="preserve">
+    <value>توسعه برنامه های آموزشی موبایل</value>
+  </data>
+  <data name="Android" xml:space="preserve">
+    <value>اندروید</value>
+  </data>
+  <data name="AndroidService" xml:space="preserve">
+    <value>محقق شدن ایده های شما در قالب برنامه های اندرویدی در کمترین زمان ممکن</value>
+  </data>
+  <data name="Apple" xml:space="preserve">
+    <value>اپل</value>
+  </data>
+  <data name="AppleService" xml:space="preserve">
+    <value>ساخت برنامه های مالتی پلتفرم با تکنولوژی زامارین برای اپل و دیگر سیستم عامل ها</value>
+  </data>
+  <data name="AtYourService" xml:space="preserve">
+    <value>خدمات قابل ارائه</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>بهزاد خسروی فر</value>
+  </data>
+  <data name="BackgroundJobs" xml:space="preserve">
+    <value>کارهای پشت زمینه</value>
+  </data>
+  <data name="Blogs" xml:space="preserve">
+    <value>بلاگ</value>
+  </data>
+  <data name="CafeBazar" xml:space="preserve">
+    <value>کافه بازار</value>
+  </data>
+  <data name="CafebazarLogoUrl" xml:space="preserve">
+    <value>~/Content/images/cafebazar.png</value>
+  </data>
+  <data name="CafebazarTitle" xml:space="preserve">
+    <value>محصولات ما در فروشگاه اندرویدی کافه بازار</value>
+  </data>
+  <data name="CafebazarXomorodLink" xml:space="preserve">
+    <value>https://cafebazaar.ir/search/?q=xomorod&amp;l=fa</value>
+  </data>
+  <data name="CompanyAddress" xml:space="preserve">
+    <value>ایران - تبریز - بلوار توانیر</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>تماس با ما</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>تماس با ما</value>
+  </data>
+  <data name="ContactUsSubTitle1" xml:space="preserve">
+    <value>آماده اید تا پروژه بعدی را با ما شروع کنید؟ عالیه!</value>
+  </data>
+  <data name="ContactUsSubTitle2" xml:space="preserve">
+    <value>شماره تماس یا آدرس ایمیلتان را برایمان ارسال کنید تا در اصرع وقت با شما تماس بگیریم</value>
+  </data>
+  <data name="ContactUsSubTitle3" xml:space="preserve">
+    <value>برای تماس با اعضای تیم میتوانید آنها را در شبکه های اجتماعی دنبال کنید یا از طریق ایمیل با آنها در تماس باشید</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>آدرس ایمیل</value>
+  </data>
+  <data name="Errors" xml:space="preserve">
+    <value>خطاها</value>
+  </data>
+  <data name="Features" xml:space="preserve">
+    <value>خدمات</value>
+  </data>
+  <data name="GetInTouch" xml:space="preserve">
+    <value>در تماس باشید</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>خانه</value>
+  </data>
+  <data name="Inbox" xml:space="preserve">
+    <value>صندوق</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>فارسی</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>ورود</value>
+  </data>
+  <data name="LogOut" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="MoreDownloadNow" xml:space="preserve">
+    <value>بیشتر دانلود کنید حالا !</value>
+  </data>
+  <data name="MyKetLogoUrl" xml:space="preserve">
+    <value>~/Content/images/myket.png</value>
+  </data>
+  <data name="MyKetTitle" xml:space="preserve">
+    <value>محصولات ما در فروشگاه اندرویدی مایکت</value>
+  </data>
+  <data name="MyKetXomorodLink" xml:space="preserve">
+    <value>https://myket.ir/search/xomorod?lang=fa</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>اخبار</value>
+  </data>
+  <data name="Newsletter" xml:space="preserve">
+    <value>آخرین اخبار</value>
+  </data>
+  <data name="Portfolio" xml:space="preserve">
+    <value>محصولات</value>
+  </data>
+  <data name="PortfolioMoreInfo" xml:space="preserve">
+    <value>اکثر پروژه های ما کد باز بوده و شما میتوانید آنها را از گیت هاب دانلود کنید.</value>
+  </data>
+  <data name="PortfolioSubTitle" xml:space="preserve">
+    <value>بهترین های محصولات ما</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>حساب من</value>
+  </data>
+  <data name="Ranking" xml:space="preserve">
+    <value>رتبه بندی</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>عضویت</value>
+  </data>
+  <data name="SelectLang" xml:space="preserve">
+    <value>انتخاب زبان</value>
+  </data>
+  <data name="SendMessage" xml:space="preserve">
+    <value>ارسال پیام</value>
+  </data>
+  <data name="ServiceSubTitle" xml:space="preserve">
+    <value>ارائه می دهیم آنچه را که نیاز دارید!</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>تنظیمات</value>
+  </data>
+  <data name="ShonizLogoUrl" xml:space="preserve">
+    <value>~/Content/images/bwShonizFa.png</value>
+  </data>
+  <data name="ShonizTitle" xml:space="preserve">
+    <value>سایت شونیز</value>
+  </data>
+  <data name="ShonizUrl" xml:space="preserve">
+    <value>http://www.shoniz.com/</value>
+  </data>
+  <data name="ShowcaseClients" xml:space="preserve">
+    <value>نمونه کارهای ما را اینجا ببینید</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>موضوع</value>
+  </data>
+  <data name="Subscript" xml:space="preserve">
+    <value>عضویت</value>
+  </data>
+  <data name="SubscriptEmailSubTitle" xml:space="preserve">
+    <value>ایمیل خود را وارد کنید تا جدیدترین خبرهایمان برایتان ارسال شود!</value>
+  </data>
+  <data name="TwitterCreator" xml:space="preserve">
+    <value>@xomorod</value>
+  </data>
+  <data name="TwitterSite" xml:space="preserve">
+    <value>@xomorod</value>
+  </data>
+  <data name="TwoLetterISOLanguageName" xml:space="preserve">
+    <value>fa</value>
+  </data>
+  <data name="WhatsComingNext" xml:space="preserve">
+    <value>چه خبر جدیدی خواهد آمد؟</value>
+  </data>
+  <data name="Windows" xml:space="preserve">
+    <value>ویندوز</value>
+  </data>
+  <data name="WindowsService" xml:space="preserve">
+    <value>تمام نرم افزارهای پلتفرم ویندوز دسکتاپ و وب پشتیبانی می شود</value>
+  </data>
+  <data name="Xomorod" xml:space="preserve">
+    <value>زمرد</value>
+  </data>
+  <data name="XomorodDescription" xml:space="preserve">
+    <value>شرکت بین المللی زمرد با خدمات اینترنتی و محصولات نرم افزاری آموزشی، کتابخانه ابری، اخبار تکنولوژی</value>
+  </data>
+  <data name="XomorodMoreInfo" xml:space="preserve">
+    <value>شرکت نرم افزاری زمرد یک شرکت کوچک جهت فراهم کردن نیازهای شما در زمینه ساخت برنامه های تحت وب، ویندوز، اندروید، اپل می باشد. اکثر برنامه ها در زمرد بصورت کد باز بوده و می توان آن را رایگان دانلود نموده و به راحتی استفاده کرد</value>
+  </data>
+  <data name="XomorodService" xml:space="preserve">
+    <value>راه حل مشکلاتتان را از ما بخواهید</value>
+  </data>
+  <data name="XomorodSiteName" xml:space="preserve">
+    <value>Xomorod</value>
+  </data>
+  <data name="XomorodSlogan" xml:space="preserve">
+    <value>باهوش تر زندگی کنید</value>
+  </data>
+  <data name="XomorodTitle" xml:space="preserve">
+    <value>شرکت زمرد - اخبار و نرم افزار رایگان</value>
+  </data>
+  <data name="XomorodUrl" xml:space="preserve">
+    <value>http://www.xomorod.com</value>
+  </data>
+  <data name="YourEmail" xml:space="preserve">
+    <value>ایمیل شما</value>
+  </data>
+  <data name="YourMessage" xml:space="preserve">
+    <value>پیام شما</value>
+  </data>
+  <data name="YourName" xml:space="preserve">
+    <value>نام شما</value>
+  </data>
+  <data name="AlertLeaveWithoutCaptcha" xml:space="preserve">
+    <value>شما نمیتوانید بدون تشخیص ربات پیام ارسال کنید</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>همه</value>
+  </data>
+  <data name="CaptchaHasNotValid" xml:space="preserve">
+    <value>عدم تشخیص هویت انسان از ربات!</value>
+  </data>
+  <data name="ContactedSuccessfull" xml:space="preserve">
+    <value>تماس با موفقیت برقرار شد</value>
+  </data>
+  <data name="GlobalHistoricalTrafficTrends" xml:space="preserve">
+    <value>تاریخچه روند ترافیک جهانی</value>
+  </data>
+  <data name="GlobalRankingToday" xml:space="preserve">
+    <value>رتبه بندی جهانی امروز</value>
+  </data>
+  <data name="IranHistoricalTrafficTrends" xml:space="preserve">
+    <value>تاریخچه روند ترافیک ایرانی</value>
+  </data>
+  <data name="IranRankingToday" xml:space="preserve">
+    <value>رتبه بندی امروز در بین سایت های ایرانی</value>
+  </data>
+  <data name="RankingScore" xml:space="preserve">
+    <value>نمره رتبه بندی</value>
+  </data>
+  <data name="RankingSubTitle" xml:space="preserve">
+    <value>ما الکسا را هر روز دنبال میکنیم تا اطلاعاتی نسبی از عملکرد خود در برابر همسالان داشته باشیم. این یک معیار برای قضاوت طرح های بازاریابی ما است. به عنوان یک مدیر عامل شرکت هدف گرا.</value>
+  </data>
+  <data name="SitesLinkingIn" xml:space="preserve">
+    <value>تعداد لینک ها به این سایت</value>
+  </data>
+  <data name="XomorodRanking" xml:space="preserve">
+    <value>رتبه بندی سایت زمرد</value>
+  </data>
+  <data name="_1month" xml:space="preserve">
+    <value>1ماه</value>
+  </data>
+  <data name="_1week" xml:space="preserve">
+    <value>1هفته</value>
+  </data>
+  <data name="_1year" xml:space="preserve">
+    <value>1سال</value>
+  </data>
+  <data name="_3day" xml:space="preserve">
+    <value>3روز</value>
+  </data>
+  <data name="_6month" xml:space="preserve">
+    <value>6ماه</value>
+  </data>
+  <data name="Desktop" xml:space="preserve">
+    <value>دسکتاپ</value>
+  </data>
+  <data name="EntryUrlEmpty" xml:space="preserve">
+    <value>آدرس وارده خالی است!</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>خطا</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>موبایل</value>
+  </data>
+  <data name="PleaseWait" xml:space="preserve">
+    <value>لطفا صبر کنید . . .</value>
+  </data>
+  <data name="RequestCompleted" xml:space="preserve">
+    <value>درخواست کامل شد</value>
+  </data>
+  <data name="RequestingSubscribe" xml:space="preserve">
+    <value>در حال ارسال درخواست</value>
+  </data>
+  <data name="SuccessSubscript" xml:space="preserve">
+    <value>ایمیل شما با موفقیت ثبت شد.</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>هشدار</value>
+  </data>
+  <data name="DuplicateEmailError" xml:space="preserve">
+    <value>آدرس ایمل قبلا ثبت شده بود!</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>کد</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>تایید رمز عبور</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>ایمیل</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>رمز عبور</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>مرا بیاد بسپار؟</value>
+  </data>
+  <data name="Remember_this_browser" xml:space="preserve">
+    <value>این مرورگر را بیاد بسپر ؟</value>
+  </data>
+  <data name="The_0_must_be_at_least__2__characters_long" xml:space="preserve">
+    <value>فیلد {0} باید حداقل {2} حرف داشته باشد.</value>
+  </data>
+  <data name="The_password_and_confirmation_password_do_not_match" xml:space="preserve">
+    <value>رمز عبور و تاییداش باهم برابر نیستند.</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>نام کاربری</value>
+  </data>
+  <data name="Invalid_code" xml:space="preserve">
+    <value>کد نامعتبر است.</value>
+  </data>
+  <data name="Invalid_login_attempt" xml:space="preserve">
+    <value>تلاش برای ورود نامعتبر</value>
+  </data>
+  <data name="Use_a_local_account_to_log_in" xml:space="preserve">
+    <value>از حساب محلی برای ورود به سایت استفاده کنید.</value>
+  </data>
+  <data name="Log_in" xml:space="preserve">
+    <value>ورود به سایت</value>
+  </data>
+  <data name="Register_as_a_new_user" xml:space="preserve">
+    <value>عضویت کاربر جدید</value>
+  </data>
+  <data name="Create_a_new_account" xml:space="preserve">
+    <value>ایجاد کاربر جدید</value>
+  </data>
+  <data name="PageNotFound" xml:space="preserve">
+    <value>این صفحه موجود نیست</value>
+  </data>
+  <data name="Oops_Something_is_missing" xml:space="preserve">
+    <value />
+  </data>
+  <data name="InternetError" xml:space="preserve">
+    <value>خطایی رخ داده است. لطفا اینترنت خود را بررسی کنید.</value>
+  </data>
+  <data name="Use_another_service_to_log_in" xml:space="preserve">
+    <value>استفاده از سرویس های دیگر برای ورود</value>
+  </data>
+  <data name="Facebook" xml:space="preserve">
+    <value>فیس بوک</value>
+  </data>
+  <data name="Google" xml:space="preserve">
+    <value>گوگل</value>
+  </data>
+  <data name="Microsoft" xml:space="preserve">
+    <value>مایکروسافت</value>
+  </data>
+  <data name="Twitter" xml:space="preserve">
+    <value>توییتر</value>
+  </data>
+  <data name="AssociateYourAccount" xml:space="preserve">
+    <value>ارتباط با حساب {0} شما</value>
+  </data>
+  <data name="AssociationForm" xml:space="preserve">
+    <value>فرم اتباط حسابها</value>
+  </data>
+  <data name="SuccessfullyAuthenticatedWithLoginProvider" xml:space="preserve">
+    <value>شما از {0} با موفقیت تایید هویت شدید.
+لطفا نام کاربری جدید برای این سایت را در زیر وارد کرده و در آخر روی {1} کلیک کنید.</value>
+  </data>
+  <data name="LoginOrRegister" xml:space="preserve">
+    <value>ورود یا عضویت</value>
+  </data>
+  <data name="XomorodSubject" xml:space="preserve">
+    <value>اخبار تکنولوژی، تولید نرم افزار، برنامه های موبایل</value>
+  </data>
+  <data name="SeoKeywords" xml:space="preserve">
+    <value>زمرد ,نرم افزار ,اخبار تکنولوژی, zomorod, رایگان ,برنامه های موبایل ,کتاب ساز, طراحی توسعه وب سایت, تکنولوژی جهانی, f56ce249532f51527774</value>
+  </data>
+  <data name="CompanyLocation" xml:space="preserve">
+    <value>موقعیت جغرافیایی شرکت</value>
+  </data>
+  <data name="Click_here_to_Log_in" xml:space="preserve">
+    <value>جهت ورود به سایت اینجا کلیک کنید</value>
+  </data>
+  <data name="Confirm_Email" xml:space="preserve">
+    <value>تایید ایمیل</value>
+  </data>
+  <data name="EmailLink" xml:space="preserve">
+    <value>ارسال آدرس</value>
+  </data>
+  <data name="Enter_your_email" xml:space="preserve">
+    <value>ایمیل خود را وارد کنید.</value>
+  </data>
+  <data name="Forgot_Password_Confirmation" xml:space="preserve">
+    <value>تایید رمز عبور فراموش شده</value>
+  </data>
+  <data name="Forgot_your_password" xml:space="preserve">
+    <value>رمز عبور را فراموش کرده اید؟</value>
+  </data>
+  <data name="LoginFailure" xml:space="preserve">
+    <value>ورود ناموفق</value>
+  </data>
+  <data name="Please_check_email_reset_password" xml:space="preserve">
+    <value>لطفا ایمیل خود را بررسی کرده و رمز عبور جدید ثبت کنید</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>ثبت دوباره</value>
+  </data>
+  <data name="ResetPassword" xml:space="preserve">
+    <value>ثبت رمز عبور جدید</value>
+  </data>
+  <data name="Reset_your_password" xml:space="preserve">
+    <value>رمز عبورتان را جدید کنید</value>
+  </data>
+  <data name="Thank_confirming_email_Please" xml:space="preserve">
+    <value>با تشکر از تایید ایمیلتان. لطفا </value>
+  </data>
+  <data name="The_0_field_is_required" xml:space="preserve">
+    <value>فیلد {0} الزامی است</value>
+  </data>
+  <data name="Unsuccessful_login_with_service" xml:space="preserve">
+    <value>متاسفانه سرویس مورد نظر قادر به ورود نیست</value>
+  </data>
+  <data name="Enter_verification_code" xml:space="preserve">
+    <value>کد تاییدیه را وارد کنید</value>
+  </data>
+  <data name="ResetPasswordConfirmation" xml:space="preserve">
+    <value>تایید ثبت دوباره رمز عبور</value>
+  </data>
+  <data name="Select_Two_Factor_Authentications" xml:space="preserve">
+    <value>انتخاب فراهم کننده تایید هویت دو مرحله ای</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>ارسال</value>
+  </data>
+  <data name="Send_verification_code" xml:space="preserve">
+    <value>ارسال کد تاییدیه</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>ارسال</value>
+  </data>
+  <data name="Verify" xml:space="preserve">
+    <value>بررسی</value>
+  </data>
+  <data name="Your_password_reset_Please_0" xml:space="preserve">
+    <value>رمز عبور شما دوباره سازی شد. لطفا {0}</value>
+  </data>
+  <data name="Add_phone_number" xml:space="preserve">
+    <value>اضافه کردن شماره موبایل</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>تغییر رمز عبور</value>
+  </data>
+  <data name="ChangePasswordForm" xml:space="preserve">
+    <value>فرم تغییر رمز عبور</value>
+  </data>
+  <data name="Change_account_settings" xml:space="preserve">
+    <value>تغییر تنظیمات حسابتان</value>
+  </data>
+  <data name="Change_your_password" xml:space="preserve">
+    <value>تغییر رمز عبورتان</value>
+  </data>
+  <data name="CreateLocalLogin" xml:space="preserve">
+    <value>ایجاد حساب در سایت</value>
+  </data>
+  <data name="CreatePassword" xml:space="preserve">
+    <value>ایجاد رمز عبور</value>
+  </data>
+  <data name="ExternalLogins" xml:space="preserve">
+    <value>ورود با سرویس های خارجی</value>
+  </data>
+  <data name="Log_in_using_your_0_account" xml:space="preserve">
+    <value>ورود با استفاده از حساب {0} شما</value>
+  </data>
+  <data name="Manage" xml:space="preserve">
+    <value>مدیریت</value>
+  </data>
+  <data name="Manage_external_logins" xml:space="preserve">
+    <value>مدیریت ورود خارجی</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>رمز عبور جدید</value>
+  </data>
+  <data name="No_external_authentication_services_configured" xml:space="preserve">
+    <value>سرویس تایید هویت خارجی در سایت موجود نیست.</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>رمز عبور قبلی</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>شماره موبایل</value>
+  </data>
+  <data name="RegisteredLogins" xml:space="preserve">
+    <value>ورودیه های ثبت شده</value>
+  </data>
+  <data name="Remove_this_0_login_from_your_account" xml:space="preserve">
+    <value>حذف این ورودی {0} از حساب شما</value>
+  </data>
+  <data name="SetPassword" xml:space="preserve">
+    <value>ایجاد رمز عبور</value>
+  </data>
+  <data name="VerifyPhoneNumber" xml:space="preserve">
+    <value>بررسی شماره موبایل</value>
+  </data>
+  <data name="You_not_have_local_username_password_site_Add_local_account" xml:space="preserve">
+    <value>شما نام کاربری/رمز عبور سایت را ندارید. یک حساب بسازید تا بدون نیاز به حساب های خارجی وارد سایت شوید.</value>
+  </data>
+  <data name="An_error_has_occurred" xml:space="preserve">
+    <value>خطایی رخ داده است.</value>
+  </data>
+  <data name="external_login_removed" xml:space="preserve">
+    <value>ورودیه خارجی حذف گردید.</value>
+  </data>
+  <data name="Your_password_changed" xml:space="preserve">
+    <value>رمز عبور شما تغییر یافت.</value>
+  </data>
+  <data name="Your_password_set" xml:space="preserve">
+    <value>رمز عبور شما ثبت گردید.</value>
+  </data>
+  <data name="Your_phone_number_added" xml:space="preserve">
+    <value>شماره تلفن شما اضافه گردید.</value>
+  </data>
+  <data name="Your_phone_number_removed" xml:space="preserve">
+    <value>شماره تلفن شما حذف گردید.</value>
+  </data>
+  <data name="Your_two_factor_authentication_provider_set" xml:space="preserve">
+    <value>فراهم کننده تایید هویت دو مرحله شما ثبت گردید.</value>
+  </data>
+  <data name="Or_address_below" xml:space="preserve">
+    <value>یا آدرس زیر</value>
+  </data>
+  <data name="Via_email_provider" xml:space="preserve">
+    <value>از طریق ایمیل های</value>
+  </data>
+  <data name="AOL" xml:space="preserve">
+    <value>آ.و.ال</value>
+  </data>
+  <data name="Gmail" xml:space="preserve">
+    <value>جمیل</value>
+  </data>
+  <data name="OutlookCom" xml:space="preserve">
+    <value>مایکروسافت اوتلوک</value>
+  </data>
+  <data name="Yahoo" xml:space="preserve">
+    <value>یاهو</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>شناسه</value>
+  </data>
+  <data name="IsRead" xml:space="preserve">
+    <value>خوانده شده؟</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>پیام</value>
+  </data>
+  <data name="ModifyUtc" xml:space="preserve">
+    <value>تاریخ ثبت</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>خیر</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>بله</value>
+  </data>
+  <data name="UserId" xml:space="preserve">
+    <value>شناسه کاربر</value>
+  </data>
+  <data name="DesktopPageSpeed" xml:space="preserve">
+    <value>سرعت صفحات برای دسکتاپ</value>
+  </data>
+  <data name="MobilePageSpeed" xml:space="preserve">
+    <value>سرعت صفحات برای موبایل</value>
+  </data>
+  <data name="UserExperience" xml:space="preserve">
+    <value>تجربه کاربری</value>
+  </data>
+  <data name="Make_your_web_pages_fast_on_all_devices" xml:space="preserve">
+    <value>صفحه ی وب تان را روی تمامی دستگاه ها سریع کنید.</value>
+  </data>
+  <data name="ANALYZE" xml:space="preserve">
+    <value>بررسی</value>
+  </data>
+  <data name="EnterWebpageURL" xml:space="preserve">
+    <value>آدرس یک صفحه وب را وارد کنید</value>
+  </data>
+  <data name="PageSpeedInsights" xml:space="preserve">
+    <value>نمایش سرعت صفحات وب</value>
+  </data>
+  <data name="SiteNameSiteMap" xml:space="preserve">
+    <value>شمای سایت زمرد</value>
+  </data>
+  <data name="SitemapDescription" xml:space="preserve">
+    <value>شمای سایت زمرد</value>
+  </data>
+</root>

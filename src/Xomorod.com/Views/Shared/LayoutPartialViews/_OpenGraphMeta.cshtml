@@ -1,0 +1,11 @@
+﻿@using Xomorod.Helper.Resources
+@using Xomorod.Shared
+
+<!-- Open Graph Meta Tags (https://blog.kissmetrics.com/open-graph-meta-tags/) -->
+<meta property="og:locale" content="@CultureHelper.GetCurrentCultureTwoLetter()" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="@Localization.XomorodTitle - @ViewBag.Title" />
+<meta property="og:description" content="@Localization.XomorodDescription" />
+<meta property="og:site_name" content="@Localization.XomorodSiteName" />
+<meta property="og:image" content="@Url.Content("~/Content/images/logo/logo.png")">
+<meta property="og:url" content="@Localization.XomorodUrl">

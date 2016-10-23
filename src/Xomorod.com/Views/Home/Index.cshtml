@@ -1,0 +1,54 @@
+﻿@using System.Diagnostics
+@using Xomorod.Shared
+
+@{
+    ViewBag.CultureRout = Context.Request.GetUrlCulture(false) ?? "";
+}
+
+<div class="home-header-wrap">
+    <div class="header-content-wrap">
+        <div class="container big-title-container">
+            <h1 class="intro-text">Xomorod</h1>
+            <h1 class="intro-text">Corporation</h1>
+            <!-- Scroll Down Arrow Button -->
+            <a class="scroll-arrow smoothScroll" href="@Url.Content($"~/{ViewBag.CultureRout}/#focus")">
+                <i class="fa fa-angle-down"></i>
+            </a>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+@if (false) //System.Diagnostics.Debugger.IsAttached;
+{
+    @Html.Action("Services", "Home")
+    @Html.Action("GreenSeparator", "Home")
+    @Html.Action("Portfolios", "Home")
+    @Html.Action("RedSeparator", "Home")
+    @Html.Action("About", "Home")
+    @Html.Action("Team", "Home")
+    @Html.Action("Packages", "Home")
+    @Html.Action("Subscribe", "Home")
+    @Html.Action("Testimonials", "Home")
+    @Html.Action("Map", "Home")
+    @Html.Action("Contact", "Home")
+    @Html.Action("LatestNews", "Home")
+}
+else
+{
+    @Html.Action("Services", "Home")
+    @Html.Action("GreenSeparator", "Home")
+    @Html.Action("Portfolios", "Home")
+    @Html.Action("RedSeparator", "Home")
+    @Html.Action("About", "Home")
+    @Html.Action("Subscribe", "Home")
+    @Html.Action("Map", "Home")
+    @Html.Action("Contact", "Home")
+}
+
+@section scripts
+{
+    @(Debugger.IsAttached
+        ? Scripts.Render("~/bundles/homepage")
+        : Scripts.RenderFormat("<script type=\"text/javascript\" src=\"{0}\" async></script>", "~/bundles/homepage"))
+}

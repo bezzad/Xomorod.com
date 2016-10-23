@@ -1,0 +1,58 @@
+﻿@using System.Diagnostics
+@using System.Reflection
+@using Xomorod.Helper.Resources
+@using Xomorod.Shared
+@{
+    var version = "v" + Assembly.GetAssembly(typeof(MvcApplication))?.GetName().Version?.ToString(3);
+}
+
+<footer id="footer" class="site-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+    <div class="container">
+        <div class="footer-box-wrap">
+            
+            <div class="col-md-3 footer-box company-details">
+                <div class="icon-top red-text">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </div>
+                <a href="#map" class="iAnimate">@Localization.CompanyAddress</a>
+            </div>
+
+            <div class="col-md-3 footer-box company-details">
+                <div class="icon-top green-text">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="dropup">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <span>feedback<i class="fa fa-at" aria-hidden="true"></i>Xomorod.com</span>
+                    </a>
+
+                    <ul class="dropdown-menu emails" style="@(CultureHelper.IsRighToLeft() ? "text-align: right;" : "")">
+                        <li class="dropdown-header"><strong>@Localization.Via_email_provider:</strong></li>
+                        <li class="sprit sprit-icon sprit-gmail"><a href="https://mail.google.com/mail/?view=cm&tf=0&to=feedback%40xomorod.com&su=feedback%20(via%20xomorod.com)&body=%0D%0A--%0D%0Avia%20xomorod%20corporation&bcc&cc&fs=1" target="_blank">@Localization.Gmail</a></li>
+                        <li class="sprit sprit-icon sprit-yahoo"><a href="http://compose.mail.yahoo.com/?To=feedback%40xomorod.com&subj=feedback%20(via%20xomorod.com)&body=%0D%0A--%0D%0Avia%20xomorod%20corporation&bcc&cc" target="_blank">@Localization.Yahoo</a></li>
+                        <li class="sprit sprit-icon sprit-outlook"><a href="https://mail.live.com/default.aspx?subject=feedback%20(via%20xomorod.com)&body=%0D%0A--%0D%0Avia%20xomorod%20corporation&to=feedback%40xomorod.com&cc&rru=compose" target="_blank">@Localization.OutlookCom</a></li>
+                        <li class="sprit sprit-icon sprit-aol"><a href="http://webmail.aol.com/30361-111/aol-1/en-us/compose-message.aspx?to=feedback%40xomorod.com&subject=feedback%20(via%20xomorod.com)&body=%0D%0A--%0D%0Avia%20xomorod%20corporation&to=feedback%40xomorod.com&cc&bcc" target="_blank">@Localization.AOL</a></li>
+                        <li class="dropdown-header"><strong>@Localization.Or_address_below:</strong></li>
+                        <li class="sprit"><i class="fa fa-envelope iAnimate">&nbsp;&nbsp;feedback<i class="fa fa-at" aria-hidden="true"></i>xomorod.com</i></li>
+                    </ul>
+                </div>
+            </div>
+            
+
+            <div class="col-xs-4 footer-box copyright">
+                <ul class="social">
+                    <li><a target="_blank" title="Telegram" href="http://telegram.me/xomorod"><i class="fa fa-paper-plane iAnimate"></i></a></li>
+                    <li><a target="_blank" title="Twitter" href="https://twitter.com/xomorod"><i class="fa fa-twitter iAnimate"></i></a></li>
+                    <li><a target="_blank" title="Facebook" href="https://www.facebook.com/Xomorod/"><i class="fa fa-facebook iAnimate"></i></a></li>
+                    <li><a target="_blank" title="Instagram" href="https://instagram.com/xomorod"><i class="fa fa-instagram iAnimate"></i></a></li>
+                    <li><a target="_blank" title="Google Plus" href="https://plus.google.com/112166949009339498430"><i class="fa fa-google-plus iAnimate"></i></a></li>
+                    <li><a target="_blank" title="LinkedIn" href="https://ir.linkedin.com/in/xomorod-corporation-155017115"><i class="fa fa-linkedin iAnimate"></i></a></li>
+                    <li><a target="_blank" title="Stack Overflow" href="http://stackoverflow.com/jobs/companies/Xomorod"><i class="fa fa-stack-overflow iAnimate"></i></a></li>
+                    <li><a target="_blank" title="GitHub" href="https://github.com/Xomorod"><i class="fa fa-github iAnimate"></i></a></li>
+                    <li><a target="_blank" title="RSS" href="#"><i class="fa fa-rss iAnimate"></i></a></li>
+                </ul>
+                <p id="zerif-copyright">&copy;&nbsp;2014-@DateTime.Now.Year&nbsp;&nbsp;Xomorod Corporation&nbsp;&nbsp;@(Debugger.IsAttached ? "debug" : "release")&nbsp;@version</p>
+            </div>
+        </div>
+    </div>
+</footer>

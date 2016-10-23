@@ -1,0 +1,166 @@
+﻿/* --------------------------------------------------------------------- */
+/* --------------- Sidebar menu styles --------------------------------- */
+
+/* adjust body when menu is open */
+body.slide-active {
+    overflow-x: hidden;
+}
+/*first child of #page-content so it doesn't shift around*/
+.no-margin-top {
+    margin-top: 0px !important;
+}
+    #page-content.slide-active {
+        padding-top: 0;
+    }
+/* put toggle bars on the left :: not using button */
+#slide-nav .navbar-toggle {
+    cursor: pointer;
+    position: relative;
+    line-height: 0;
+    float: left;
+    margin: 14px 15px 0 10px;
+    width: 30px;
+    height: 40px;
+    padding: 0 0 0 0;
+    border: 0;
+    background: transparent;
+}
+    /* icon bar prettyup - optional */
+    #slide-nav .navbar-toggle > .icon-bar {
+        width: 100%;
+        display: block;
+        height: 3px;
+        margin: 5px 0 0 0;
+        background: #10b3c8;
+    }
+
+    #slide-nav .navbar-toggle.slide-active .icon-bar {
+        background: orange;
+    }
+
+.navbar-header {
+    position: relative;
+}
+/* un fix the navbar when active so that all the menu items are accessible */
+.navbar.navbar-fixed-top.slide-active {
+    position: fixed;
+}
+/* screw writing importants and shit, just stick it in max width since these classes are not shared between sizes */
+@media (max-width:767px) {
+    #slide-nav .site-content {
+        margin: 0;
+        padding: 0 !important;
+    }
+
+    #slide-nav .navbar-header {
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    #slide-nav .navbar.slide-active {
+        position: absolute;
+        width: 250px;
+        top: -1px;
+        z-index: 1000;
+    }
+
+    #slide-nav #slidemenu {
+        background: #e5eaea;
+        left: 0;
+        width: 250px;
+        -moz-min-width: 0;
+        -ms-min-width: 0;
+        -o-min-width: 0;
+        -webkit-min-width: 0;
+        min-width: 0;
+        position: absolute;
+        padding: 14px 20px;
+        z-index: 2;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+        #slide-nav #slidemenu .navbar-nav {
+            min-width: 0;
+            width: 100%;
+            margin: 0;
+        }
+
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border-color: #F8F8F8;
+    }
+
+    #slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
+        -moz-min-width: 0;
+        -ms-min-width: 0;
+        -o-min-width: 0;
+        -webkit-min-width: 0;
+        min-width: 0;
+        white-space: normal;
+    }
+
+    #slide-nav {
+        border-top: 0;
+    }
+
+        #slide-nav.navbar-inverse #slidemenu {
+            background: #e5eaea;
+        }
+        /* this is behind the navigation but the navigation is not inside it so that the navigation is accessible and scrolls*/
+        #slide-nav #navbar-height-col {
+            position: fixed;
+            top: 0;
+            height: 100%;
+            width: 250px;
+            left: -250px;
+            background: #eee;
+        }
+
+        #slide-nav.navbar-inverse #navbar-height-col {
+            background: #333;
+            z-index: 1;
+            border: 0;
+        }
+
+        #slide-nav .navbar-form {
+            width: 100%;
+            margin: 8px 0;
+            text-align: center;
+            overflow: hidden;
+            /*fast clearfixer*/
+        }
+
+            #slide-nav .navbar-form .form-control {
+                text-align: center;
+            }
+
+            #slide-nav .navbar-form .btn {
+                width: 100%;
+            }
+
+    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+        max-height: 85vh;
+    }
+
+    .navbar-collapse {
+        max-height: 100%;
+        background-color: #fff;
+    }
+}
+
+@media (min-width:768px) {
+    .navbar.navbar-fixed-top.slide-active {
+        position: fixed;
+    }
+
+    .navbar-header {
+        left: 0 !important;
+    }
+
+    #ul_langSelector {
+        margin-left: 25px;
+    }
+}
+
+/* --------------- /Sidebar menu styles -------------------------------- */
+/* --------------------------------------------------------------------- */

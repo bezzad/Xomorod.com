@@ -1,0 +1,111 @@
+﻿@using System.Diagnostics
+@using Xomorod.Shared
+@using Xomorod.Helper.Resources
+
+@{
+    ViewBag.CultureRout = Context.Request.GetUrlCulture(false) ?? "";
+    var title = ViewBag.Title == null ? ViewBag.Title + " - " : "";
+}
+
+<!DOCTYPE html>
+<html lang="@CultureHelper.GetCurrentCultureTwoLetter()" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>@Localization.XomorodTitle @title</title>
+    <link rel="shortcut icon" href="@Url.Content("~/Content/images/logo/logo.png")">
+    <link rel="amphtml" href="@Localization.XomorodUrl" />
+
+    <!-- International Targeting by hreflang tags -->
+    <link rel="alternate" hreflang="x-default" href="http://xomorod.com" />
+    <link rel="alternate" href="http://xomorod.com/fa" hreflang="fa" />
+    <link rel="alternate" href="http://xomorod.com/en" hreflang="en" />
+
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="@Localization.XomorodDescription" />
+    <meta name="author" content="@Localization.Author" />
+    @RenderSection("head", required: false)
+
+    @Html.Partial("LayoutPartialViews/_OpenGraphMeta")
+    @Html.Partial("LayoutPartialViews/_TwitterCards")
+    @Html.Partial("LayoutPartialViews/_SEO")
+    @Html.Partial("LayoutPartialViews/_RssFeedsAlternate")
+    @Html.Partial("LayoutPartialViews/_PreloaderPartial")
+    @Html.Partial("LayoutPartialViews/_LoadCssAsync")
+    @Html.Partial("LayoutPartialViews/_LazyImagesLoadScripts")
+    @Styles.RenderFormat("<script>loadCSS(\"{0}\");</script>", "~/Content/stylesheets")
+</head>
+<body class="home @ViewBag.BodyClass" itemscope="itemscope" dir="@(CultureHelper.IsRighToLeft() ? "rtl":"ltr")">
+    <div id="preloader" class="fadeable">
+        <div id="status" class="fadeable">&nbsp;</div>
+    </div>
+    @RenderSection("PreScripts", required: false)
+    @(Debugger.IsAttached
+        ? Scripts.Render("~/bundles/scripts")
+        : Scripts.RenderFormat("<script type=\"text/javascript\" src=\"{0}\" async></script>", "~/bundles/scripts"))
+
+    <header id="home" class="header">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="slide-nav">
+            <div class="container">
+                <div class="navbar-header responsive-logo">
+                    <button id="menuBtn" class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="~/" class="navbar-brand">
+                        <img src='@Url.Content("~/Content/images/logo/LogoXomorod.png")' alt="Xomorod Logo" width="155" height="40">
+                    </a>
+                </div>
+                <div id="slidemenu" class="navbar-collapse collapse" style="@(CultureHelper.IsRighToLeft() ? "text-align: right;" : "")">
+                    <ul class="nav navbar-nav responsive-nav">
+                        <li><a class="menu-items" href="@Url.Content($"~/{ViewBag.CultureRout}/#home")">@Localization.Home</a></li>
+                        <li><a class="menu-items" href="@Url.Content($"~/{ViewBag.CultureRout}/#focus")">@Localization.Features</a></li>
+                        <li><a class="menu-items" href="@Url.Content($"~/{ViewBag.CultureRout}/#works")">@Localization.Portfolio</a></li>
+                        <li><a class="menu-items" href="@Url.Content($"~/{ViewBag.CultureRout}/#aboutus")">@Localization.About</a></li>
+                        @*<li><a class="menu-items" href="@Url.Content($"~/{ViewBag.CultureRout}/#subscribe")">@Localization.Newsletter</a></li>*@
+                        <li><a class="menu-items" href="@Url.Content($"~/{ViewBag.CultureRout}/#contact")" id="contactLink">@Localization.Contact</a></li>
+                        @*<li><a class="menu-items" href="http://news.xomorod.com">@Localization.News</a></li>*@
+                        @*<li>@Html.ActionLink(@Localization.Blog, "Index", "Blogs", new { area = "" },  new { @class = "menu-items" })</li>*@
+                    </ul>
+                    @Html.Partial("LayoutPartialViews/_LanguageSelectorPartial")
+                    @Html.Partial("LayoutPartialViews/_LoginPartial")
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!--wrap the page content do not style this-->
+    <div id="page-content">
+        <div id="content" class="site-content">
+            @RenderBody()
+        </div>
+    </div>
+    <!-- /#page-content -->
+    <a class="scroll-top fa fa-angle-up" id="scroll-top" href="#"></a>
+
+    @Html.Partial("LayoutPartialViews/_Footer")
+
+    @Styles.RenderFormat("<noscript><link rel=\"stylesheet\" href=\"{0}\"></noscript>", "~/Content/stylesheets")
+    @*@Html.Partial("LayoutPartialViews/_FacebookPixelCode")*@
+    <script>
+        var localization = {
+            entryUrlIsEmpty: "@Localization.EntryUrlEmpty",
+            warning: "@Localization.Warning",
+            error: "@Localization.Error",
+            pleaseWait: "@Localization.PleaseWait",
+            requestCompleted: "@Localization.RequestCompleted",
+            mobile: "@Localization.Mobile",
+            desktop: "@Localization.Desktop"
+        };
+
+        // Prevent zoom cross-browser
+        document.firstElementChild.style.zoom = "reset";
+    </script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,63 @@
+﻿@using Xomorod.Helper.Resources
+@model HandleErrorInfo
+
+@{
+    //Layout = null;
+}
+
+@section scripts{
+    @Styles.Render("~/Content/errors")
+
+    @if (Model != null && HttpContext.Current.IsDebuggingEnabled)
+    {
+        @Scripts.Render("~/bundles/clipboard")
+        <script>new Clipboard('.btn-clipboard');</script>
+    }
+}
+
+<section>
+    <div class="container">
+        <img src="@Url.Content("~/Content/images/error.jpg")" alt="Error" style="padding: 50px">
+        <div class="error_box">
+            <p class="error-number">@Localization.Error @Response.StatusCode!</p>
+            <p class="error-text">@Localization.Oops_Something_is_missing</p>
+            <p class="go-home">
+                <a href="/">@Localization.Home</a>
+            </p>
+        </div>
+        <br /><br />
+        @if (Model != null && HttpContext.Current.IsDebuggingEnabled)
+        {
+            <div>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#errorDetails" aria-controls="home" role="tab" data-toggle="tab">Error Details</a></li>
+                    <li role="presentation"><a href="#stackTrace" aria-controls="profile" role="tab" data-toggle="tab">Stack Trace</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="errorDetails" align="left">
+                        <div style="padding: 50px;">
+                            <div class="col-xs-2 "><b>Exception: </b></div><div class="col-xs-10">@Model.Exception.Message</div>
+                            <br /><br />
+                            <div class="col-xs-2 "><b>Controller: </b></div><div class="col-xs-10">@Model.ControllerName</div>
+                            <br /><br />
+                            <div class="col-xs-2 "><b>Action: </b></div><div class="col-xs-10">@Model.ActionName</div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="stackTrace" align="left">
+                        <div class="zero-clipboard">
+                            <span class="btn-clipboard" data-clipboard-demo data-clipboard-target="#stackTraceContent"><span class="glyphicon glyphicon-copy"></span> Copy </span>
+                        </div>
+                        <figure class="highlight">
+                            <pre>
+                            <code class="language-html" data-lang="html" id="stackTraceContent">@Model.Exception.StackTrace</code>
+                    </pre>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        }
+        <br /><br /><br /><br />
+    </div>
+</section>

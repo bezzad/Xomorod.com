@@ -1,0 +1,135 @@
+﻿@using Xomorod.Helper
+@using Xomorod.Helper.GooglePageSpeed
+@using Xomorod.Helper.Ranking
+@using Xomorod.Helper.Resources
+@using Xomorod.Shared.Resources
+@model Tuple<Xomorod.Helper.Ranking.Alexa, PageSpeed>
+
+@{
+    ViewBag.Title = Localization.XomorodRanking;
+}
+
+@section PreScripts{
+    @Styles.Render("~/Content/ranking")
+    @Scripts.Render("~/bundles/jquery")
+}
+@section scripts{
+    @Scripts.Render("~/bundles/highstock")
+    @Scripts.Render("~/bundles/exporting")
+}
+
+<section>
+    <div class="container" style="padding: 50px;">
+        <div class="section-header">
+            <h2 class="dark-text">@ViewBag.Title</h2>
+            <br />
+            <h6>&nbsp;</h6>
+            <h6>@Localization.RankingSubTitle</h6>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-4 focus-box" data-scrollreveal="enter left after 0.15s over 1s" data-sr-init="true" data-sr-complete="true">
+                <div class="service-icon">
+                    <a target="_self" href="http://www.alexa.com/siteinfo/xomorod.com#trafficstats"><i class="pixeden our-focus-widget-image global_widget"></i></a>
+                </div>
+                <h5 class="red-border-bottom">@Html.GlobalRanking(Model.Item1)</h5>
+                <p>@Localization.GlobalRankingToday</p>
+            </div>
+            <div class="col-lg-4 col-sm-4 focus-box" data-scrollreveal="enter left after 0.15s over 1s" data-sr-init="true" data-sr-complete="true">
+                <div class="service-icon">
+                    <a target="_self" href="http://www.alexa.com/siteinfo/xomorod.com#trafficstats"><i class="pixeden our-focus-widget-image iran_widget"></i></a>
+                </div>
+                <h5 class="red-border-bottom">@Html.LocalRanking(Model.Item1)</h5>
+                <p>@Localization.IranRankingToday</p>
+            </div>
+            <div class="col-lg-4 col-sm-4 focus-box" data-scrollreveal="enter left after 0.15s over 1s" data-sr-init="true" data-sr-complete="true">
+                <div class="service-icon">
+                    <a target="_self" href="http://www.alexa.com/site/linksin/xomorod.com"><i class="pixeden our-focus-widget-image linking_widget"></i></a>
+                </div>
+                <h5 class="red-border-bottom">@Html.Linksin(Model.Item1)</h5>
+                <p>@Localization.SitesLinkingIn</p>
+            </div>
+        </div>
+        <a href="http://checkpagerank.net/" title="Page Rank Checker" target="_blank"><img src="http://checkpagerank.net/pricon.php?key=269f4606217991ea29a3dd20fdbea1d5&t=1" width="100" height="50" alt="Check Page Rank" /></a>
+        <br />
+
+        <br />
+        <div dir="ltr" style="max-width: 1080px;">
+            <div>
+                @ViewData["GlobalChart"]
+            </div>
+            <br /><br />
+            <div>
+                @ViewData["IranChart"]
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <hr />
+        <div class="gc-appbar">
+            <h1>
+                <a href="https://developers.google.com/speed/pagespeed/insights/">@Localization.PageSpeedInsights</a>
+            </h1>
+        </div>
+
+        @using (Html.BeginForm("Ranking", "Admin", FormMethod.Post, null))
+        {
+            <div class="main-action">
+                <div class="main-subtitle">
+                    <img alt="PageSpeed" width="64" height="64" src="~/Content/images/pagespeed_64dp.png" />&nbsp;&nbsp;<span>@Localization.Make_your_web_pages_fast_on_all_devices</span>
+                </div>
+                <div class="url-and-analyze">
+                    <input type="text" name="url" class="url" placeholder="@Localization.EnterWebpageURL" aria-label="@Localization.EnterWebpageURL">
+                    <div class="analyze-cell">
+                        <button type="submit" class="button button-red analyze jfk-button main-submit jfk-button-standard jfk-button-clear-outline" role="button" aria-disabled="false" tabindex="0"> @Localization.ANALYZE </button>
+                    </div>
+                </div>
+            </div>
+        }
+        <br />
+        <div class="gc-appbar">
+            <h2>@Model.Item2.PageUrl.Value</h2>
+            <h3>@Model.Item2.PageTitle</h3>
+        </div>
+
+
+        <div class="row" style="padding-top: 50px;">
+            
+            <div class="col-lg-4 col-sm-4 focus-box border-@Model.Item2.UserExperienceState" data-scrollreveal="enter left after 0.15s over 1s" data-sr-init="true" data-sr-complete="true">
+                <div class="service-icon">
+                    <a target="_self" href="https://developers.google.com/speed/pagespeed/insights/?url=@SecurityKeys.WebSiteRout%2F&tab=mobile"><i class="pixeden our-focus-widget-image ux_widget svg-@Model.Item2.UserExperienceState"></i></a>
+                </div>
+                <h5 class="red-border-bottom score value @Model.Item2.UserExperienceState">@Model.Item2.UserExperiencePercent / 100</h5>
+                <p class="background-@Model.Item2.UserExperienceState">@Localization.UserExperience</p>
+            </div>
+            <div class="col-lg-4 col-sm-4 focus-box border-@Model.Item2.DesktopSpeedState" data-scrollreveal="enter left after 0.15s over 1s" data-sr-init="true" data-sr-complete="true">
+                <div class="service-icon">
+                    <a target="_self" href="https://developers.google.com/speed/pagespeed/insights/?url=@SecurityKeys.WebSiteRout%2F&tab=desktop"><i class="pixeden our-focus-widget-image SPRITE_desktop_@Model.Item2.DesktopSpeedState"></i></a>
+                </div>
+                <h5 class="red-border-bottom score value @Model.Item2.DesktopSpeedState">@Model.Item2.DesktopSpeedPercent / 100</h5>
+                <p class="background-@Model.Item2.DesktopSpeedState">@Localization.DesktopPageSpeed</p>
+
+                <div class="screenshot desktop">
+                    <div class="screenshot-img-container">
+                        <img src="data:@Model.Item2.DesktopScreenshotMimeType;base64,@Model.Item2.DesktopScreenshot">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 focus-box border-@Model.Item2.MobileSpeedState" data-scrollreveal="enter left after 0.15s over 1s" data-sr-init="true" data-sr-complete="true">
+                <div class="service-icon">
+                    <a target="_self" href="https://developers.google.com/speed/pagespeed/insights/?url=@SecurityKeys.WebSiteRout%2F&tab=mobile"><i class="pixeden our-focus-widget-image SPRITE_mobile_@Model.Item2.MobileSpeedState"></i></a>
+                </div>
+                <h5 class="red-border-bottom score value @Model.Item2.MobileSpeedState">@Model.Item2.MobileSpeedPercent / 100</h5>
+                <p class="background-@Model.Item2.MobileSpeedState">@Localization.MobilePageSpeed</p>
+
+                <div class="screenshot mobile">
+                    <div class="screenshot-img-container">
+                        <img src="data:@Model.Item2.MobileScreenshotMimeType;base64,@Model.Item2.MobileScreenshot">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>

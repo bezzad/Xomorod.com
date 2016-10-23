@@ -1,0 +1,33 @@
+﻿@using Xomorod.Helper.Resources
+@using Xomorod.Shared
+@using Xomorod.Shared.Resources
+
+<div id="ajax_subscribe_updates">
+    <section class="newsletter" id="subscribe">
+        <div class="container">
+            <form id="subscript-form" onsubmit="return subscriptFormSubmit();">
+                <h3 class="white-text" data-scrollreveal="enter left after 0s over 1s">@Localization.WhatsComingNext</h3>
+                <br />
+                <div class="sub-heading white-text" data-scrollreveal="enter right after 0s over 1s">@Localization.SubscriptEmailSubTitle</div>
+                <br />
+
+                <div>
+                    <input id="subscript-email-input" class="wp-caption-text" type="email" name="email" required="required" placeholder="@Localization.EmailAddress">
+
+                    <input type="submit" class="btn custom-button red-btn pirate-forms-submit-button" value="@Localization.Subscript">
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+
+<script>
+    function subscriptFormSubmit() {
+        postAsync("@SecurityKeys.ApiWebRout" + "General/SubscriptEmail",
+        {
+            culture: "@CultureHelper.GetCurrentCultureTwoLetter()",
+            email: document.getElementById("subscript-email-input").value
+        }).success(function () { document.getElementById("subscript-email-input").value = ""; });
+        return false;
+    }
+</script>

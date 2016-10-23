@@ -1,0 +1,61 @@
+﻿<style>
+        .fadeable {
+            -webkit-transition: opacity 500ms linear;
+        }
+        .fadeable.hide {
+            -ms-opacity: 0.1;
+            opacity: 0.1;
+        }
+
+        .fadeable.remove {
+           display: none;
+        }
+
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #fefefe;
+            z-index: 99999;
+            height: 100%;
+            width: 100%;
+            overflow: hidden !important;
+        }
+
+        #status {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background-image: url(@Url.Content("~/content/images/loading.gif"));
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: -100px 0 0 -100px;
+        }
+</style>
+<script type="text/javascript">
+    function jsFadeOut(elementId, delayMs) {
+        var elem = document.getElementById(elementId);
+        setTimeout(function () {
+            elem.classList.add("hide");
+
+            setTimeout(function () { elem.classList.add("remove"); }, delayMs / 2);
+        }, delayMs);
+    }
+    function closeLoader() {
+        jsFadeOut("status", 50);
+        jsFadeOut("preloader", 60);
+    }
+    if (document.loaded) {
+        closeLoader();
+    } else {
+        if (window.addEventListener) {
+            window.addEventListener('load', closeLoader, false);
+        } else {
+            window.attachEvent('onload', closeLoader);
+        }
+    }
+</script>

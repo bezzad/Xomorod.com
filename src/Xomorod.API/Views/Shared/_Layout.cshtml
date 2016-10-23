@@ -1,0 +1,63 @@
+﻿@using System.Diagnostics
+@using System.Reflection
+@{
+    string dir = ViewData["dir"]?.ToString() ?? "rtl";
+    var version = "v" + Assembly.GetAssembly(typeof(Xomorod.API.WebApiApplication))?.GetName()?.Version?.ToString(3);
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="slide-nav">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                @Html.ActionLink("Xomorod", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div id="slidemenu" class="navbar-collapse collapse">
+                <form class="navbar-form navbar-right" role="form">
+                    <div class="form-group">
+                        <input type="search" placeholder="search" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+                <ul class="nav navbar-nav">
+                    <li class="active">@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--wrap the page content do not style this-->
+    <div id="page-content">
+        <div class="container">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy;&nbsp;2014-@DateTime.Now.Year&nbsp;&nbsp;Xomorod Corporation API&nbsp;&nbsp;&nbsp;@(Debugger.IsAttached ? "debug" : "release")&nbsp;@version</p>
+            </footer>
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /#page-content -->
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

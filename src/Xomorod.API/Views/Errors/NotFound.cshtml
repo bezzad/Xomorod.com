@@ -1,0 +1,10 @@
+﻿@using Xomorod.Helper.Resources
+@section scripts{
+    @Styles.Render("~/Content/errors")
+}
+<br /><br /><br /><br /><img src="@Url.Content("~/Content/images/error.jpg")" alt="Page NotFound"><br /><br />
+<div class="error_box">
+    <p class="error-number">404</p>
+    <p class="error-text">@Localization.PageNotFound</p>
+    <p class="go-home"><a href="/">@Localization.Home</a></p>
+</div><br /><br /><br /><br /><br /><br />

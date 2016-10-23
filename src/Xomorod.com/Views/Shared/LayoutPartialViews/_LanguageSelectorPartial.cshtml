@@ -1,0 +1,7 @@
+﻿@using Xomorod.Shared
+@using (Html.BeginForm("SetCulture", "Shared", FormMethod.Post, new { id = "CultureChangePostForm" }))
+{
+    <ul class="nav navbar-nav responsive-nav navbar-right" id="ul_langSelector">
+        <li>@Html.DropDownList("culture", CultureHelper.LanguageSelectListItems(), new { @class = "selectpicker show-tick", id = "langSelector", data_width = "110px" })</li>
+    </ul>
+}
