@@ -439,6 +439,15 @@ namespace Xomorod.Helper.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Xomorod Corporation.
+        /// </summary>
+        public static string CompanyName {
+            get {
+                return ResourceManager.GetString("CompanyName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Confirm Email.
         /// </summary>
         public static string Confirm_Email {

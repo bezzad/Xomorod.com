@@ -12,14 +12,14 @@ namespace Xomorod.Com
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.IgnoreRoute("content/{*pathInfo}");
             routes.IgnoreRoute("favicon.ico");
-            routes.IgnoreRoute("sitemap.xml");
             routes.IgnoreRoute("robots.txt");
             routes.IgnoreRoute("scripts/{resource}.map/{*pathInfo}");
             routes.IgnoreRoute("content/{resource}.map/{*pathInfo}");
             //
             // First of all MapRoutes
             routes.MapRoute("sitemap", "sitemap", new { culture = CultureHelper.GetDefaultCulture(), controller = "Sitemaps", action = "Index", area = "" });
-            routes.MapRoute("sitemap_html", "sitemap.html", new { culture = CultureHelper.GetDefaultCulture(), controller = "Sitemaps", action = "Index", area = "" });
+            routes.MapRoute("sitemapHtml", "sitemap.html", new { culture = CultureHelper.GetDefaultCulture(), controller = "Sitemaps", action = "Index", area = "" });
+            routes.MapRoute("sitemapXml", "sitemap.xml", new { culture = CultureHelper.GetDefaultCulture(), controller = "Sitemaps", action = "SitemapXml", area = "" });
             //
             // Add Default MapRoute
             routes.MapRoute(

@@ -733,4 +733,7 @@
   <data name="SitemapDescription" xml:space="preserve">
     <value>شمای سایت زمرد</value>
   </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Xomorod Corporation</value>
+  </data>
 </root>

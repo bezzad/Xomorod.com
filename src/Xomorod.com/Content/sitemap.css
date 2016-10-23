@@ -59,7 +59,7 @@ svg {
 
 a {
     color: #0d47a1;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 nav {
@@ -71,6 +71,14 @@ h1 {
     font: 230%/1 'v',sans-serif;
     padding: 1em 0 .5em 0;
     margin: 0;
+}
+
+@media(min-width:40em) {
+    h1 {
+        font-size: 260%;
+        padding: 1.75em 0 .7em 0;
+        margin: 0;
+    }
 }
 
 @media(min-width:60em) {
@@ -108,7 +116,9 @@ h3 {
 hr {
     border: 0;
     height: 0;
+    border-top: 1px solid #212121;
     border-top: 1px solid rgba(33, 33, 33, 0.1);
+    border-bottom: 1px solid #ffffff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding-bottom: 10px;
 }
@@ -168,11 +178,7 @@ li a {
     margin: 0;
 }
 
-@media(min-width:40em) {
-    .top {
-        height: 85px;
-    }
-}
+
 
 .topcon, .con {
     max-width: 100%;
@@ -204,27 +210,55 @@ li a {
 }
 
 .in {
+    -webkit-animation-name: bounceIn;
+    -moz-animation-name: bounceIn;
+    -ms-animation-name: bounceIn;
+    -o-animation-name: bounceIn;
     animation-name: bounceIn;
 }
 
 .ani {
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
     animation-fill-mode: both;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -ms-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
     animation-duration: 0.5s;
 }
 
 .right {
+    -webkit-animation-name: right;
+    -moz-animation-name: right;
+    -ms-animation-name: right;
+    -o-animation-name: right;
     animation-name: right;
 }
 
 .left {
+    -webkit-animation-name: left;
+    -moz-animation-name: left;
+    -ms-animation-name: left;
+    -o-animation-name: left;
     animation-name: left;
 }
 
 .up {
+    -webkit-animation-name: up;
+    -moz-animation-name: up;
+    -ms-animation-name: up;
+    -o-animation-name: up;
     animation-name: up;
 }
 
 .fadein {
+    -webkit-animation-name: bounceIn;
+    -moz-animation-name: bounceIn;
+    -ms-animation-name: bounceIn;
+    -o-animation-name: bounceIn;
     animation-name: bounceIn;
 }
 
@@ -269,8 +303,6 @@ li a {
 @media(min-width:40em) {
     .block {
         margin: 0;
-        -webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,0.15);
-        -ms-box-shadow: 0 3px 3px 0 rgba(0,0,0,0.15);
         box-shadow: 0 3px 3px 0 rgba(0,0,0,0.15);
     }
 }
@@ -339,6 +371,7 @@ li a {
 }
 
 .circle {
+    -ms-border-radius: 50%;
     border-radius: 50%;
 }
 
@@ -394,10 +427,6 @@ li a {
         width: 25%;
     }
 
-    .20 {
-        width: 20%;
-    }
-
     .picky {
         width: 32%;
     }
@@ -428,6 +457,8 @@ li a {
     .new {
         max-width: 75%;
         padding: 0 4em 0 3em;
+        -webkit-box-shadow: 2px 0 2px -2px rgba(0, 0, 0, 0.16);
+        -ms-box-shadow: 2px 0 2px -2px rgba(0, 0, 0, 0.16);
         box-shadow: 2px 0 2px -2px rgba(0, 0, 0, 0.16);
     }
 }

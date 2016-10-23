@@ -90,5 +90,11 @@ namespace Xomorod.Com.Controllers
             return PartialView("Packages");
         }
 
+        [OutputCache(Duration = 172800, Location = OutputCacheLocation.Any, VaryByCustom = "culture", 
+                VaryByContentEncoding = "gzip;deflate", VaryByHeader = "X-Requested-With;Accept-Language")]
+        public ActionResult Privacy()
+        {
+            return View();
+        }
     }
 }

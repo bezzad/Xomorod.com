@@ -468,7 +468,6 @@
     <Content Include="Scripts\toastr.min.js" />
     <Content Include="Scripts\home-page.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="sitemap.xml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -535,6 +534,7 @@
     <Content Include="Views\Shared\_Grid.cshtml" />
     <Content Include="Views\Shared\LayoutPartialViews\_LanguageSelectorPartial.cshtml" />
     <Content Include="Views\Sitemaps\Index.cshtml" />
+    <Content Include="Views\Home\Privacy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201604121722045_Init.resx">

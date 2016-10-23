@@ -13,5 +13,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)ElmahHandleErrorAttribute.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ElmahHandleWebApiErrorAttribute.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Resources\SecurityKeys.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sitemap\ChangeFrequency.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sitemap\SitemapHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sitemap\SitemapNode.cs" />
   </ItemGroup>
 </Project>

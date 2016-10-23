@@ -1,8 +1,12 @@
-﻿@using Xomorod.Helper.Resources
-@using Xomorod.Shared
+﻿@using System.Diagnostics
+@using System.Reflection
+@using Xomorod.Helper.Resources
+
+@model IEnumerable<Xomorod.Shared.Sitemap.SitemapNode>
 
 @{
     Layout = null;
+    var version = "v" + Assembly.GetAssembly(typeof(MvcApplication))?.GetName().Version?.ToString(3);
 }
 
 @Styles.Render("~/Content/sitemap")
@@ -20,8 +24,7 @@
     <link rel="canonical" href="@Localization.XomorodUrl/sitemap.html" />
 </head>
 <body>
-<h1>CLEAN this <a href="https://dzone.com/articles/sitemap-action-result-aspnet">LINK</a></h1>
-<div class='top block' role="banner">
+<div class="top block" role="banner">
     <div class="topcon">
         <nav>
             <a href="/">
@@ -32,7 +35,7 @@
     </div>
 </div>
 <div>
-    <article role=main>
+    <article role="main">
         <div class="intro">
             <h1>Site map</h1>
         </div>
@@ -153,11 +156,11 @@
 
         <div style="clear: both;"></div>
     </article>
-    <p style=text-align: center; padding-bottom: 1em;>
+    <p style="text-align: center; padding-bottom: 1em;">
         <small>
             <small>
-                <a href="/">Home</a> | <a href="/pagespeed/">Pagespeed</a> | <a href="/mobile/">Mobile</a> | <a href="/tools/">Tools</a> | <a href="/about.html">About</a> | <a href="/privacy.html">Privacy</a> | <a href="/sitemap.html">Site Map</a> <br>
-                <small>Copyright © 2006-2015 Patrick Sexton. All rights reserved.</small>
+                <a href="/">Home</a> | <a href="/#focus">Features</a> | <a href="/#works">Portfolio</a> | <a href="/#aboutus">About</a> | <a href="/#Contact">Contact</a> | <a href="@Url.Action("Privacy", "Home")">Privacy</a> <br>
+                <small>Copyright&nbsp;&copy;&nbsp;2014-@DateTime.Now.Year&nbsp;&nbsp;@Localization.CompanyName&nbsp;&nbsp;@(Debugger.IsAttached ? "debug" : "")&nbsp;@version. All rights reserved.</small>
             </small>
         </small>
     </p>

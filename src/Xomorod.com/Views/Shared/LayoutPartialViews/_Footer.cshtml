@@ -9,7 +9,7 @@
 <footer id="footer" class="site-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
     <div class="container">
         <div class="footer-box-wrap">
-            
+
             <div class="col-md-3 footer-box company-details">
                 <div class="icon-top red-text">
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -37,7 +37,7 @@
                     </ul>
                 </div>
             </div>
-            
+
 
             <div class="col-xs-4 footer-box copyright">
                 <ul class="social">
@@ -51,8 +51,12 @@
                     <li><a target="_blank" title="GitHub" href="https://github.com/Xomorod"><i class="fa fa-github iAnimate"></i></a></li>
                     <li><a target="_blank" title="RSS" href="#"><i class="fa fa-rss iAnimate"></i></a></li>
                 </ul>
-                <p id="zerif-copyright">&copy;&nbsp;2014-@DateTime.Now.Year&nbsp;&nbsp;Xomorod Corporation&nbsp;&nbsp;@(Debugger.IsAttached ? "debug" : "release")&nbsp;@version</p>
+                <p id="zerif-copyright">Copyright&nbsp;&copy;&nbsp;2014-@DateTime.Now.Year&nbsp;&nbsp;@Localization.CompanyName&nbsp;&nbsp;@(Debugger.IsAttached ? "debug" : "")&nbsp;@version</p>
             </div>
         </div>
     </div>
+    <small>
+        <a href="/">Home</a> | <a href="/#focus">Features</a> | <a href="/#works">Portfolio</a> | <a href="/#aboutus">About</a> | <a href="/#Contact">Contact</a> | <a href="@Url.Action("Privacy", "Home")">Privacy</a> <br>
+        <small>Copyright&nbsp;&copy;&nbsp;2014-@DateTime.Now.Year&nbsp;&nbsp;@Localization.CompanyName&nbsp;&nbsp;@(Debugger.IsAttached ? "debug" : "")&nbsp;@version. All rights reserved.</small>
+    </small>
 </footer>

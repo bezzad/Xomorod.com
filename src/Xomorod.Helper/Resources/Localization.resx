@@ -742,4 +742,7 @@
   <data name="SitemapDescription" xml:space="preserve">
     <value>Sitemap of Xomorod.co</value>
   </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Xomorod Corporation</value>
+  </data>
 </root>
