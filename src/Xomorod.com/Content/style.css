@@ -69,7 +69,7 @@ body {
     position: relative !important;
     margin: 0 !important;
     min-height: 100% !important;
-    padding-bottom: 6rem !important;
+    /*padding-bottom: 6rem !important;*/
     background: #fff;
     -ms-word-wrap: break-word;
     word-wrap: break-word;
@@ -90,9 +90,9 @@ body {
     }
 
 #page-content {
-    overflow: auto;
+    /*overflow: auto;*/
     margin: 0 auto;
-    padding-bottom: 120px;
+    /*padding-bottom: 120px;*/
 }
 
 img.wp-smiley,
@@ -831,8 +831,9 @@ input:focus {
 /*---------------------------------------
  **   5.1 Links                 -----
 -----------------------------------------*/
+
 a {
-    color: royalblue;
+    
     text-decoration: none;
     cursor: pointer;
 }
@@ -2264,9 +2265,9 @@ video::-webkit-media-controls {
         width: calc(100% / 2);
     }
 
-    #page-content {
+    /*#page-content {
         padding-bottom: 180px;
-    }
+    }*/
 }
 
 @media screen and (max-width: 484px) {
@@ -2274,9 +2275,9 @@ video::-webkit-media-controls {
         width: 100%;
     }
 
-    #page-content {
+    /*#page-content {
         padding-bottom: 290px;
-    }
+    }*/
 }
 
 @media screen and (max-width: 300px) {
@@ -3279,7 +3280,7 @@ video::-webkit-media-controls {
     width: 100%;
     position: absolute;
     right: 0;
-    bottom: 0;
+    /*bottom: 0;*/
     left: 0;
     background-color: #272727;
     text-align: center;
@@ -7685,12 +7686,11 @@ input:not([type='checkbox']) {
 
     #loginUsernameIcon {
         font-size: 1.5em;
-        line-height: unset;
     }
 
-    #page-content {
+    /*#page-content {
         padding-bottom: 180px;
-    }
+    }*/
 }
 
 @media screen and (min-width: 390px) and (max-width: 768px) {
@@ -7704,9 +7704,9 @@ input:not([type='checkbox']) {
         width: 90%;
     }
 
-    #page-content {
+    /*#page-content {
         padding-bottom: 330px;
-    }
+    }*/
 }
 
 
@@ -7775,7 +7775,7 @@ li.sprit {
     animation: rubberBand 1s ease 1;
 }
 
-.button, .skill1, .skill2, .skill3, .skill4, .service-icon, button, a.btn, input {
+.service-icon, .btn {
     -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
     -ms-box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
