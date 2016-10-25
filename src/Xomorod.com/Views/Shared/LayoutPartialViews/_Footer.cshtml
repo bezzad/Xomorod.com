@@ -3,21 +3,21 @@
 @using Xomorod.Helper.Resources
 @using Xomorod.Shared
 @{
-    var version = "v" + Assembly.GetAssembly(typeof(MvcApplication))?.GetName().Version?.ToString(3);
+    var version = $"{Localization.Version} {Assembly.GetAssembly(typeof(MvcApplication))?.GetName().Version?.ToString(3)}";
 }
 
 <footer id="footer" class="site-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
     <div class="container">
         <div class="footer-box-wrap">
 
-            <div class="col-md-5 footer-box company-details">
+            <div class="col-md-3 footer-box company-details">
                 <div class="icon-top red-text">
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
                 </div>
                 <a href="#map" class="iAnimate">@Localization.CompanyAddress</a>
             </div>
 
-            <div class="col-md-5 footer-box company-details">
+            <div class="col-md-3 footer-box company-details">
                 <div class="icon-top green-text">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                 </div>
@@ -39,7 +39,7 @@
             </div>
 
 
-            <div class="col-xs-12 footer-box copyright">
+            <div class="col-md-5 footer-box copyright">
                 <ul class="social">
                     <li><a target="_blank" title="Telegram" href="http://telegram.me/xomorod"><i class="fa fa-paper-plane iAnimate"></i></a></li>
                     <li><a target="_blank" title="Twitter" href="https://twitter.com/xomorod"><i class="fa fa-twitter iAnimate"></i></a></li>
@@ -51,9 +51,8 @@
                     <li><a target="_blank" title="GitHub" href="https://github.com/Xomorod"><i class="fa fa-github iAnimate"></i></a></li>
                     <li><a target="_blank" title="RSS" href="#"><i class="fa fa-rss iAnimate"></i></a></li>
                 </ul>
-                <a href="/">Home</a> | <a href="/#focus">Features</a> | <a href="/#works">Portfolio</a> | <a href="/#aboutus">About</a> | <a href="/#Contact">Contact</a> | <a href="@Url.Action("Privacy", "Home")">Privacy</a> <br>
-                <small>Copyright&nbsp;&copy;&nbsp;2014-@DateTime.Now.Year&nbsp;&nbsp;@Localization.CompanyName&nbsp;&nbsp;@(Debugger.IsAttached ? "debug" : "")&nbsp;@version. All rights reserved.</small>
-                @*<p id="zerif-copyright">Copyright&nbsp;&copy;&nbsp;2014-@DateTime.Now.Year&nbsp;&nbsp;@Localization.CompanyName&nbsp;&nbsp;@(Debugger.IsAttached ? "debug" : "")&nbsp;@version</p>*@
+                <a href="@Localization.NewsUrl">@Localization.News</a> | <a href="@Url.Action("Privacy", "Home")">@Localization.Privacy</a> | <a href="@Url.Action("Index", "Sitemaps")">@Localization.Sitemap</a> <br>
+                <small>@Localization.Copyright&nbsp;&copy;&nbsp;2014-@DateTime.Now.Year&nbsp;&nbsp;@Localization.CompanyName&nbsp;&nbsp;@(Debugger.IsAttached ? Localization.debug : "")&nbsp;@version.&nbsp;@Localization.AllRightsReserved</small>
             </div>
         </div>
     </div>

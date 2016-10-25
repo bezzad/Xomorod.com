@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Web.Mvc;
+using Xomorod.Helper.Resources;
 using Xomorod.Shared.Sitemap;
 
 namespace Xomorod.Com.Controllers
@@ -10,10 +9,10 @@ namespace Xomorod.Com.Controllers
     public class SitemapsController : Controller
     {
         // GET: Sitemap
-        [OutputCache(Duration = 360, Location = System.Web.UI.OutputCacheLocation.Any, VaryByCustom = "none")]
+        //[OutputCache(Duration = 360, Location = System.Web.UI.OutputCacheLocation.Any, VaryByCustom = "none")]
         public ActionResult Index()
         {
-            ViewBag.Title = "Sitemap";
+            ViewBag.Title = Localization.SiteNameSiteMap;
             var sitemapNodes = SitemapHelper.GetSitemapNodes();
             return View(sitemapNodes);
         }

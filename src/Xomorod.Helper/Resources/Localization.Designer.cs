@@ -205,6 +205,15 @@ namespace Xomorod.Helper.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to All rights reserved..
+        /// </summary>
+        public static string AllRightsReserved {
+            get {
+                return ResourceManager.GetString("AllRightsReserved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to An error has occurred..
         /// </summary>
         public static string An_error_has_occurred {
@@ -520,6 +529,15 @@ namespace Xomorod.Helper.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Copyright.
+        /// </summary>
+        public static string Copyright {
+            get {
+                return ResourceManager.GetString("Copyright", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create a new account.
         /// </summary>
         public static string Create_a_new_account {
@@ -552,6 +570,15 @@ namespace Xomorod.Helper.Resources {
         public static string Current_password {
             get {
                 return ResourceManager.GetString("Current_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to debug.
+        /// </summary>
+        public static string debug {
+            get {
+                return ResourceManager.GetString("debug", resourceCulture);
             }
         }
         
@@ -687,6 +714,15 @@ namespace Xomorod.Helper.Resources {
         public static string Facebook {
             get {
                 return ResourceManager.GetString("Facebook", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FAQ.
+        /// </summary>
+        public static string FAQ {
+            get {
+                return ResourceManager.GetString("FAQ", resourceCulture);
             }
         }
         
@@ -1051,6 +1087,15 @@ namespace Xomorod.Helper.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to http://news.xomorod.com.
+        /// </summary>
+        public static string NewsUrl {
+            get {
+                return ResourceManager.GetString("NewsUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to No.
         /// </summary>
         public static string No {
@@ -1182,6 +1227,24 @@ namespace Xomorod.Helper.Resources {
         public static string PortfolioSubTitle {
             get {
                 return ResourceManager.GetString("PortfolioSubTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Privacy.
+        /// </summary>
+        public static string Privacy {
+            get {
+                return ResourceManager.GetString("Privacy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Privacy Policy.
+        /// </summary>
+        public static string PrivacyPolicy {
+            get {
+                return ResourceManager.GetString("PrivacyPolicy", resourceCulture);
             }
         }
         
@@ -1456,6 +1519,15 @@ namespace Xomorod.Helper.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sitemap.
+        /// </summary>
+        public static string Sitemap {
+            get {
+                return ResourceManager.GetString("Sitemap", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sitemap of Xomorod.co.
         /// </summary>
         public static string SitemapDescription {
@@ -1535,6 +1607,15 @@ namespace Xomorod.Helper.Resources {
         public static string SuccessSubscript {
             get {
                 return ResourceManager.GetString("SuccessSubscript", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Terms of Service.
+        /// </summary>
+        public static string TermsOfService {
+            get {
+                return ResourceManager.GetString("TermsOfService", resourceCulture);
             }
         }
         
@@ -1688,6 +1769,15 @@ namespace Xomorod.Helper.Resources {
         public static string VerifyPhoneNumber {
             get {
                 return ResourceManager.GetString("VerifyPhoneNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Version.
+        /// </summary>
+        public static string Version {
+            get {
+                return ResourceManager.GetString("Version", resourceCulture);
             }
         }
         

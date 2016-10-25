@@ -734,6 +734,36 @@
     <value>شمای سایت زمرد</value>
   </data>
   <data name="CompanyName" xml:space="preserve">
-    <value>Xomorod Corporation</value>
+    <value>شرکت زمرد</value>
+  </data>
+  <data name="AllRightsReserved" xml:space="preserve">
+    <value>کليه حقوق اين سايت متعلق به شرکت زمرد می‌باشد.</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>کپی رایت</value>
+  </data>
+  <data name="debug" xml:space="preserve">
+    <value>آزمایشی</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>حریم خصوصی</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>سیاست حفظ حریم خصوصی</value>
+  </data>
+  <data name="NewsUrl" xml:space="preserve">
+    <value>http://news.xomorod.com/fa</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>پرسش و پاسخ</value>
+  </data>
+  <data name="Sitemap" xml:space="preserve">
+    <value>نقشه سایت</value>
+  </data>
+  <data name="TermsOfService" xml:space="preserve">
+    <value>شرایط استفاده از خدمات</value>
   </data>
 </root>

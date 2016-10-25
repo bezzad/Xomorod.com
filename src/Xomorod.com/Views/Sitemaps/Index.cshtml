@@ -5,43 +5,30 @@
 @model IEnumerable<Xomorod.Shared.Sitemap.SitemapNode>
 
 @{
-    Layout = null;
     var version = "v" + Assembly.GetAssembly(typeof(MvcApplication))?.GetName().Version?.ToString(3);
+}
+
+@section head{
+    <meta name=robots content=noodp>
+    <meta name=robots content=noydir>
+    <link rel="canonical" href="@Localization.XomorodUrl/sitemap.html" />
 }
 
 @Styles.Render("~/Content/sitemap")
 
 
-<!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/Article">
-<head>
-    <meta name=robots content=noodp>
-    <meta name=robots content=noydir>
-    <meta name=viewport content="width=device-width, initial-scale=1">
-
-    <meta name=description content="@Localization.SitemapDescription">
-    <title>@Localization.SiteNameSiteMap</title>
-    <link rel="canonical" href="@Localization.XomorodUrl/sitemap.html" />
-</head>
-<body>
-<div class="top block" role="banner">
-    <div class="topcon">
-        <nav>
-            <a href="/">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAM1BMVEX///9lvGpvwHP1+/aV0ZnP6tDY7tqMzY/s9+x4xH2p2au74r7F5sef1aKy3bTi8uOCyYZzGZzQAAAA4klEQVR42u2Vyw6DMBAD8wI2QBr+/2vhVNWKupalnqrMkY3REAcIk3+kp/hBOqXwFYFNyb4isghZS5gtQWDDbMpC9pjSv5AucGpE6QbXT03aYHAJ0uNs1XZ6gVETd7rC0Ji0967t2vHIzq0dad4WP9MdFlTYTEeatJWp9MP5ZUlxpJ22iDRpi0iTthxp0haRJm050qyt6kjTthZHmrVVJGlsK2UiPWKiNNI0aWSl0vzPf0jS2Nb2SNdRmpMeQwthx2wFaa+t4/3s+G3gGEjj+8lpXZNGNGlElEaINKOvgIXJ5AYdbwiQWpldpQAAAABJRU5ErkJggg==" alt="varvy.com" class=logo width="30" height="30"/>
-                @Localization.Xomorod
-            </a>
-        </nav>
-    </div>
-</div>
 <div>
     <article role="main">
-        <div class="intro">
-            <h1>Site map</h1>
+        <div class="introTittle">
+            <h2>
+                @Localization.Sitemap
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAM1BMVEX///9lvGpvwHP1+/aV0ZnP6tDY7tqMzY/s9+x4xH2p2au74r7F5sef1aKy3bTi8uOCyYZzGZzQAAAA4klEQVR42u2Vyw6DMBAD8wI2QBr+/2vhVNWKupalnqrMkY3REAcIk3+kp/hBOqXwFYFNyb4isghZS5gtQWDDbMpC9pjSv5AucGpE6QbXT03aYHAJ0uNs1XZ6gVETd7rC0Ji0967t2vHIzq0dad4WP9MdFlTYTEeatJWp9MP5ZUlxpJ22iDRpi0iTthxp0haRJm050qyt6kjTthZHmrVVJGlsK2UiPWKiNNI0aWSl0vzPf0jS2Nb2SNdRmpMeQwthx2wFaa+t4/3s+G3gGEjj+8lpXZNGNGlElEaINKOvgIXJ5AYdbwiQWpldpQAAAABJRU5ErkJggg==" alt="varvy.com" class="logo" width="45" height="45"/>
+            </h2>
         </div>
 
         <div class="column half">
-            <h2><a href="/mobile/">Mobile SEO</a>
+            <h2>
+                <a href="/mobile/">Mobile SEO</a>
             </h2>
             <ul>
                 <li><a href="/mobile/avoid-plugins.html">Avoid plugins</a>
@@ -60,7 +47,8 @@
                 <li><a href="/mobile/vary-user-agent.html">Vary user agent http header</a>
             </ul>
 
-            <h2><a href="/">Google Guidelines</a>
+            <h2>
+                <a href="/">Google Guidelines</a>
             </h2>
             <ul>
                 <li><a href="/affiliates.html">Affiliate websites and Google</a>
@@ -98,7 +86,8 @@
 
 
         <div class="column half">
-            <h2><a href="/pagespeed/">Page Speed</a>
+            <h2>
+                <a href="/pagespeed/">Page Speed</a>
             </h2>
             <ul>
                 <li><a href="/pagespeed/avoid-bad-requests.html">Avoid bad requests</a>
@@ -131,7 +120,8 @@
                 <li><a href="/pagespeed/web-font-options.html">Web font page speed</a>
             </ul>
 
-            <h2><a href="/tools/">Tools</a>
+            <h2>
+                <a href="/tools/">Tools</a>
             </h2>
             <ul>
                 <li><a href="/tools/address/">Address schema tool</a>
@@ -156,14 +146,4 @@
 
         <div style="clear: both;"></div>
     </article>
-    <p style="text-align: center; padding-bottom: 1em;">
-        <small>
-            <small>
-                <a href="/">Home</a> | <a href="/#focus">Features</a> | <a href="/#works">Portfolio</a> | <a href="/#aboutus">About</a> | <a href="/#Contact">Contact</a> | <a href="@Url.Action("Privacy", "Home")">Privacy</a> <br>
-                <small>Copyright&nbsp;&copy;&nbsp;2014-@DateTime.Now.Year&nbsp;&nbsp;@Localization.CompanyName&nbsp;&nbsp;@(Debugger.IsAttached ? "debug" : "")&nbsp;@version. All rights reserved.</small>
-            </small>
-        </small>
-    </p>
 </div>
-</body>
-</html>

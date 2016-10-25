@@ -42,6 +42,7 @@ html {
     box-sizing: border-box !important;
     font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
     overflow-y: scroll; /* Keeps page centered in all browsers regardless of content height */
+    overflow-x: hidden;
     -webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
     -ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 }
@@ -90,9 +91,8 @@ body {
     }
 
 #page-content {
-    /*overflow: auto;*/
     margin: 0 auto;
-    /*padding-bottom: 120px;*/
+    min-height: 90vh; /* minimum height of content in body is 90% browser height */
 }
 
 img.wp-smiley,
@@ -3286,10 +3286,19 @@ video::-webkit-media-controls {
     text-align: center;
 }
 
+footer a, footer a:visited, footer a:active {
+    color: #939393;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e96656;
+}
+
 .company-details {
     color: #939393;
-    padding-top: 67px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
     .company-details a {
@@ -3307,8 +3316,8 @@ video::-webkit-media-controls {
     }
 
 .copyright {
-    padding-top: 72px;
-    padding-bottom: 68px;
+    padding-top: 28px;
+    padding-bottom: 20px;
     background: #171717;
 }
 
