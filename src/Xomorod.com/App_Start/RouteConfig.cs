@@ -13,6 +13,7 @@ namespace Xomorod.Com
             routes.IgnoreRoute("content/{*pathInfo}");
             routes.IgnoreRoute("favicon.ico");
             routes.IgnoreRoute("robots.txt");
+            routes.IgnoreRoute("sitemap.html");
             routes.IgnoreRoute("scripts/{resource}.map/{*pathInfo}");
             routes.IgnoreRoute("content/{resource}.map/{*pathInfo}");
             //

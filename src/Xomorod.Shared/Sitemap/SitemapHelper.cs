@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Text;
 using System.Xml.Linq;
 using Dapper;
 
@@ -16,7 +15,15 @@ namespace Xomorod.Shared.Sitemap
             return nodes;
         }
 
-        public static string GetSitemapDocument(IEnumerable<SitemapNode> sitemapNodes)
+        public static IEnumerable<SitemapNode> GetSitemapNodes(string culture)
+        {
+            var langId = CultureHelper.Languages[culture].LangId;
+            var nodes = Connections.Xomorod.SqlConn.Query<SitemapNode>("Select * From Sitemap Where LangId = @langId", new { langId });
+
+            return nodes;
+        }
+
+        public static string GetSitemapDocument(this IEnumerable<SitemapNode> sitemapNodes)
         {
             XNamespace xmlns = "http://www.sitemaps.org/schemas/sitemap/0.9";
             XElement root = new XElement(xmlns + "urlset");

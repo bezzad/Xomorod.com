@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using AdoManager;
-using Xomorod.Helper.Resources;
+using Dapper;
 
 namespace Xomorod.Shared
 {
@@ -299,14 +299,14 @@ namespace Xomorod.Shared
         public static readonly List<string> Cultures;
 
         // Include ONLY languages we are implementing
-        public static readonly Dictionary<string, string> Languages;
+        public static readonly Dictionary<string, Language> Languages;
 
         static CultureHelper()
         {
-            var langs = DataAccessObject.GetFrom("udfv_LanguagesView()", true).ToList();
+            var langs = Connections.Xomorod.SqlConn.Query<Language>("Select * From udfv_LanguagesView()").ToList();
 
-            Languages = langs.ToDictionary(l => (string)l.Culture, l => (string)l.LangFullName);
-            Cultures = langs.Select(l => (string)l.Culture).ToList();
+            Languages = langs.ToDictionary(l => l.Culture, l => l);
+            Cultures = langs.Select(l => l.Culture).ToList();
         }
 
         /// <summary>
@@ -434,7 +434,7 @@ namespace Xomorod.Shared
 
             var res = Languages.Select(lang => new SelectListItem()
             {
-                Text = lang.Value,
+                Text = lang.Value.LangFullName,
                 Value = lang.Key,
                 //Group = lstGroup,
                 Selected = string.Equals(currentCulture, lang.Key, StringComparison.CurrentCultureIgnoreCase)

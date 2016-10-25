@@ -7,12 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xomorod.News", "Xomorod.New
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xomorod.API", "Xomorod.API\Xomorod.API.csproj", "{588B75B9-D7AA-474E-AEC4-E371C97C2395}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DatabaseScripts", "DatabaseScripts", "{FC128E63-4C0D-4D6E-9235-34A4CB250C1E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DatabaseItems", "DatabaseItems", "{FC128E63-4C0D-4D6E-9235-34A4CB250C1E}"
 	ProjectSection(SolutionItems) = preProject
-		DatabaseScripts\DropCreateDatabase_schema.sql = DatabaseScripts\DropCreateDatabase_schema.sql
-		DatabaseScripts\DropDatabase_AllObjects.sql = DatabaseScripts\DropDatabase_AllObjects.sql
-		Xomorod.com\App_Data\ElmahSqlServer.sql = Xomorod.com\App_Data\ElmahSqlServer.sql
-		SitemapTableCreatorScript.sql = SitemapTableCreatorScript.sql
+		DatabaseItems\DropCreateDatabase_schema.sql = DatabaseItems\DropCreateDatabase_schema.sql
+		DatabaseItems\xomorod.com_xomorod.rar = DatabaseItems\xomorod.com_xomorod.rar
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1D8C7855-D53D-4249-A06B-E1699F3FEF16}"

@@ -1,12 +1,6 @@
-﻿@using System.Diagnostics
-@using System.Reflection
-@using Xomorod.Helper.Resources
+﻿@using Xomorod.Helper.Resources
 
 @model IEnumerable<Xomorod.Shared.Sitemap.SitemapNode>
-
-@{
-    var version = "v" + Assembly.GetAssembly(typeof(MvcApplication))?.GetName().Version?.ToString(3);
-}
 
 @section head{
     <meta name=robots content=noodp>
@@ -20,10 +14,10 @@
 <div>
     <article role="main">
         <div class="introTittle">
-            <h2>
-                @Localization.Sitemap
+            <h1>
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAM1BMVEX///9lvGpvwHP1+/aV0ZnP6tDY7tqMzY/s9+x4xH2p2au74r7F5sef1aKy3bTi8uOCyYZzGZzQAAAA4klEQVR42u2Vyw6DMBAD8wI2QBr+/2vhVNWKupalnqrMkY3REAcIk3+kp/hBOqXwFYFNyb4isghZS5gtQWDDbMpC9pjSv5AucGpE6QbXT03aYHAJ0uNs1XZ6gVETd7rC0Ji0967t2vHIzq0dad4WP9MdFlTYTEeatJWp9MP5ZUlxpJ22iDRpi0iTthxp0haRJm050qyt6kjTthZHmrVVJGlsK2UiPWKiNNI0aWSl0vzPf0jS2Nb2SNdRmpMeQwthx2wFaa+t4/3s+G3gGEjj+8lpXZNGNGlElEaINKOvgIXJ5AYdbwiQWpldpQAAAABJRU5ErkJggg==" alt="varvy.com" class="logo" width="45" height="45"/>
-            </h2>
+                @Localization.Sitemap
+            </h1>
         </div>
 
         <div class="column half">
