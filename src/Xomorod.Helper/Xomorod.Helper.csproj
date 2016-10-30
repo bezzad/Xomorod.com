@@ -84,6 +84,7 @@
   <ItemGroup>
     <Compile Include="Extensions.cs" />
     <Compile Include="GooglePageSpeed\PageSpeedStrategy.cs" />
+    <Compile Include="HtmlHelperExtensions.cs" />
     <Compile Include="Ranking\Alexa.cs" />
     <Compile Include="Ranking\AlexaHtmlExtensions.cs" />
     <Compile Include="Ranking\AlexaResources.cs" />
@@ -104,6 +105,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Localization.fa.resx</DependentUpon>
     </Compile>
+    <Compile Include="Sitemap\ChangeFrequency.cs" />
+    <Compile Include="Sitemap\SitemapNode.cs" />
+    <Compile Include="TreeNode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

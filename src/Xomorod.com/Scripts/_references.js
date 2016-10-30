@@ -7,6 +7,7 @@
 /// <reference path="clipboard.min.js" />
 /// <reference path="comment-reply.min.js" />
 /// <reference path="easing.js" />
+/// <reference path="easytree.js" />
 /// <reference path="exporting.js" />
 /// <reference path="gridmvc.customwidgets.js" />
 /// <reference path="gridmvc.lang.fa.js" />

@@ -1,6 +1,7 @@
 ﻿@using Xomorod.Helper.Resources
+@using Xomorod.Helper
 
-@model IEnumerable<Xomorod.Shared.Sitemap.SitemapNode>
+@model TreeNode<Xomorod.Helper.Sitemap.SitemapNode>
 
 @section head{
     <meta name=robots content=noodp>
@@ -8,136 +9,34 @@
     <link rel="canonical" href="@Localization.XomorodUrl/sitemap.html" />
 }
 
-@Styles.Render("~/Content/sitemap")
 
+
+@section scripts
+{
+    @Styles.Render("~/Content/easyTree")
+    @Scripts.Render("~/bundles/easyTree")
+    <script>
+        (function ($) {
+            function init() {
+                $('.easy-tree').EasyTree();
+            }
+
+            window.onload = init();
+        })(jQuery)
+    </script>
+}
 
 <div>
     <article role="main">
         <div class="introTittle">
             <h1>
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAM1BMVEX///9lvGpvwHP1+/aV0ZnP6tDY7tqMzY/s9+x4xH2p2au74r7F5sef1aKy3bTi8uOCyYZzGZzQAAAA4klEQVR42u2Vyw6DMBAD8wI2QBr+/2vhVNWKupalnqrMkY3REAcIk3+kp/hBOqXwFYFNyb4isghZS5gtQWDDbMpC9pjSv5AucGpE6QbXT03aYHAJ0uNs1XZ6gVETd7rC0Ji0967t2vHIzq0dad4WP9MdFlTYTEeatJWp9MP5ZUlxpJ22iDRpi0iTthxp0haRJm050qyt6kjTthZHmrVVJGlsK2UiPWKiNNI0aWSl0vzPf0jS2Nb2SNdRmpMeQwthx2wFaa+t4/3s+G3gGEjj+8lpXZNGNGlElEaINKOvgIXJ5AYdbwiQWpldpQAAAABJRU5ErkJggg==" alt="varvy.com" class="logo" width="45" height="45"/>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAM1BMVEX///9lvGpvwHP1+/aV0ZnP6tDY7tqMzY/s9+x4xH2p2au74r7F5sef1aKy3bTi8uOCyYZzGZzQAAAA4klEQVR42u2Vyw6DMBAD8wI2QBr+/2vhVNWKupalnqrMkY3REAcIk3+kp/hBOqXwFYFNyb4isghZS5gtQWDDbMpC9pjSv5AucGpE6QbXT03aYHAJ0uNs1XZ6gVETd7rC0Ji0967t2vHIzq0dad4WP9MdFlTYTEeatJWp9MP5ZUlxpJ22iDRpi0iTthxp0haRJm050qyt6kjTthZHmrVVJGlsK2UiPWKiNNI0aWSl0vzPf0jS2Nb2SNdRmpMeQwthx2wFaa+t4/3s+G3gGEjj+8lpXZNGNGlElEaINKOvgIXJ5AYdbwiQWpldpQAAAABJRU5ErkJggg==" alt="varvy.com" class="logo" width="45" height="45" />
                 @Localization.Sitemap
             </h1>
         </div>
 
-        <div class="column half">
-            <h2>
-                <a href="/mobile/">Mobile SEO</a>
-            </h2>
-            <ul>
-                <li><a href="/mobile/avoid-plugins.html">Avoid plugins</a>
-                <li><a href="/mobile/conditional-javascript.html">Conditional resource loading</a>
-                <li><a href="/mobile/configure-viewport.html">Configure the viewport</a>
-                <li><a href="/mobile/external-resource-blocking.html">Don't block resources</a>
-                <li><a href="/mobile/what-is-mobile.html">How to be mobile friendly</a>
-                <li><a href="/mobile/javascript-seo.html">Javascript for mobile seo</a>
-                <li><a href="/mobile/media-queries.html">Media Queries</a>
-                <li><a href="/mobile/mobile-first.html">Mobile first design and development</a>
-                <li><a href="/mobile/pagespeed.html">Mobile page speed</a>
-                <li><a href="/mobile/mobile-redirects.html">Mobile redirects</a>
-                <li><a href="/mobile/content-size-viewport.html">Size content to viewport</a>
-                <li><a href="/mobile/tap-target-size.html">Tap target size</a>
-                <li><a href="/mobile/legible-font-size.html">Use legible text size</a>
-                <li><a href="/mobile/vary-user-agent.html">Vary user agent http header</a>
-            </ul>
+        @Html.TreeViewItem(Model)
 
-            <h2>
-                <a href="/">Google Guidelines</a>
-            </h2>
-            <ul>
-                <li><a href="/affiliates.html">Affiliate websites and Google</a>
-                <li><a href="/howmanylinks.html">Amount of links per page</a>
-                <li><a href="/auto-generated.html">Auto generated content</a>
-                <li><a href="/block-unuseful-pages.html">Block unuseful pages</a>
-                <li><a href="/hierarchyandlinks.html">Clear hierarchy and text links</a>
-                <li><a href="/cloaking.html">Cloaking</a>
-                <li><a href="/usefulinformationrich.html">Create useful, information rich content</a>
-                <li><a href="/deceive.html">Deceiving users</a>
-                <li><a href="/doorway-pages.html">Doorway pages</a>
-                <li><a href="/dynamicpages.html">Dynamic content</a>
-                <li><a href="/spiderview.html">Ensure Google sees your site</a>
-                <li><a href="/hiddentext.html">Hidden text and links</a>
-                <li><a href="/ifmodified.html">If modified since useage</a>
-                <li><a href="/keyword-stuffing.html">Keyword stuffing</a>
-                <li><a href="/wordusage.html">Keyword usage</a>
-                <li><a href="/linkschemes.html">Link schemes</a>
-                <li><a href="/forusers.html">Make pages for users</a>
-                <li><a href="/be-better.html">Make your webpage stand out</a>
-                <li><a href="/badware.html">Malware</a>
-                <li><a href="/paidlinks.html">Paid links and advertisements</a>
-                <li><a href="/robottxt.html">robots.txt guide</a>
-                <li><a href="/scraped-content.html">Scraped content</a>
-                <li><a href="/dontconfusethebot.html">Session Ids and tracking</a>
-                <li><a href="/sitemaps.html">Site maps for users</a>
-                <li><a href="/redirects.html">Sneaky redirects</a>
-                <li><a href="/googlesubmit.html">Submit content to Google</a>
-                <li><a href="/textversusimages.html">Text vs images</a>
-                <li><a href="/titleandalttags.html">Titles and alt tags</a>
-                <li><a href="/avoidtricks.html">Tricks (how to avoid)</a>
-            </ul>
-            <br>
-        </div>
-
-
-        <div class="column half">
-            <h2>
-                <a href="/pagespeed/">Page Speed</a>
-            </h2>
-            <ul>
-                <li><a href="/pagespeed/avoid-bad-requests.html">Avoid bad requests</a>
-                <li><a href="/pagespeed/avoid-css-import.html">Avoid CSS imports</a>
-                <li><a href="/pagespeed/base64-images.html">Base64 images</a>
-                <li><a href="/pagespeed/combine-external-css.html">Combine external css</a>
-                <li><a href="/pagespeed/combine-external-javascript.html">Combine external javascript</a>
-                <li><a href="/pagespeed/content-delivery-networks.html">Content delivery networks</a>
-                <li><a href="/pagespeed/critical-render-path.html">Critical rendering path</a>
-                <li><a href="/pagespeed/combine-images-css-sprites.html">CSS image sprites</a>
-                <li><a href="/pagespeed/defer-images.html">Defer images</a>
-                <li><a href="/pagespeed/defer-loading-javascript.html">Defer loading javascript</a>
-                <li><a href="/pagespeed/defer-many-javascripts.html">Defer multiple javascripts</a>
-                <li><a href="/pagespeed/defer-videos.html">Defer videos</a>
-                <li><a href="/pagespeed/enable-compression.html">Enable compression / gzip</a>
-                <li><a href="/pagespeed/keep-alive.html">Enable keep alive</a>
-                <li><a href="/pagespeed/htaccess.html">.htaccess file</a>
-                <li><a href="/pagespeed/inline-small-css.html">Inline small CSS</a>
-                <li><a href="/pagespeed/inline-small-javascript.html">Inline small javascript</a>
-                <li><a href="/pagespeed/leverage-browser-caching.html">Leverage browser caching</a>
-                <li><a href="/pagespeed/minify-css.html">Minify CSS</a>
-                <li><a href="/pagespeed/dns-lookups.html">Minimize dns lookups</a>
-                <li><a href="/pagespeed/minimize-redirects.html">Minimize redirects</a>
-                <li><a href="/pagespeed/optimize-css-delivery.html">Optimize CSS delivery</a>
-                <li><a href="/pagespeed/style-script-order.html">Optimize style / script order</a>
-                <li><a href="/pagespeed/prioritize-visible-content.html">Prioritize visible content</a>
-                <li><a href="/pagespeed/render-blocking-css.html">Render blocking css</a>
-                <li><a href="/pagespeed/render-blocking.html">Render blocking javascript</a>
-                <li><a href="/pagespeed/improve-server-response.html">Server response time</a>
-                <li><a href="/pagespeed/web-font-options.html">Web font page speed</a>
-            </ul>
-
-            <h2>
-                <a href="/tools/">Tools</a>
-            </h2>
-            <ul>
-                <li><a href="/tools/address/">Address schema tool</a>
-                <li><a href="/search.html">Ask Google tool</a>
-                <li><a href="/tools/base64/">Base 64 image tool</a>
-                <li><a href="/tools/richsnippets/breadcrumb/">Breadcrumb rich snippet tool</a>
-                <li><a href="/tools/css-delivery/">CSS delivery tool</a>
-                <li><a href="/">Google guideline tool</a>
-                <li><a href="/tools/gzip/">Gzip compression checker</a>
-                <li><a href="/tools/headers/">HTTP header tool</a>
-                <li><a href="/tools/if-modified/">If modified since tool</a>
-                <li><a href="/tools/linkcount/">Link count / Nofollow tool</a>
-                <li><a href="/mobile/">Mobile SEO tool</a>
-                <li><a href="/pagespeed/">Pagespeed tool</a>
-                <li><a href="/tools/requests/">Requests checker</a>
-                <li><a href="/tools/">SEO overview tool</a>
-                <li><a href="/tools/social/">Social media count</a>
-            </ul>
-            <br>
-        </div>
-
-
-        <div style="clear: both;"></div>
     </article>
 </div>
+

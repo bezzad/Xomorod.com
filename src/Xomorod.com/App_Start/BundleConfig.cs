@@ -19,6 +19,8 @@ namespace Xomorod.Com
 
         private static void RegisterStyleBundles(BundleCollection bundles)
         {
+            bundles.Add(new StyleBundle("~/Content/easyTree").Include("~/Content/easyTree.css"));
+
             bundles.Add(new StyleBundle("~/Content/gridmvc").Include(
                 "~/Content/Gridmvc.css",
                 "~/Content/gridmvc.datepicker.min.css"));
@@ -46,6 +48,8 @@ namespace Xomorod.Com
 
         private static void RegisterScriptBundles(BundleCollection bundles)
         {
+            bundles.Add(new ScriptBundle("~/bundles/easyTree").Include("~/Scripts/easyTree.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/gridmvc").Include(
                 "~/Scripts/gridmvc.min.js",
                 "~/Scripts/bootstrap-datepicker.js"));

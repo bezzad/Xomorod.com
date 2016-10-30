@@ -233,6 +233,7 @@
     <Compile Include="Core\DbContext.cs" />
     <Compile Include="Core\GridColumnDisplayAttribute.cs" />
     <Compile Include="Core\HangfireSetting.cs" />
+    <Compile Include="Core\SitemapHelper.cs" />
     <Compile Include="Core\SqlDefaultValueAttribute.cs" />
     <Compile Include="Core\XomorodRankingWriter.cs" />
     <Compile Include="Filters\HangfireRestrictiveAuthorizationFilter.cs" />
@@ -265,6 +266,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\dashicons.min.css" />
+    <Content Include="Content\easyTree.css" />
     <Content Include="Content\errors.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
@@ -349,6 +351,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\easing.js" />
     <Content Include="Scripts\easing.min.js" />
+    <Content Include="Scripts\easyTree.js" />
     <Content Include="Scripts\gridmvc.customwidgets.js" />
     <Content Include="Scripts\gridmvc.js" />
     <Content Include="Scripts\gridmvc.lang.fa.js" />

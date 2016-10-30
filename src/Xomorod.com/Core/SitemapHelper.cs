@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using System.Xml.Linq;
 using Dapper;
+using Xomorod.Helper;
+using Xomorod.Helper.Sitemap;
+using Xomorod.Shared;
 
-namespace Xomorod.Shared.Sitemap
+namespace Xomorod.Com.Core
 {
     public static class SitemapHelper
     {
@@ -45,6 +49,26 @@ namespace Xomorod.Shared.Sitemap
             }
             XDocument document = new XDocument(root);
             return document.ToString();
+        }
+
+        public static TreeNode<SitemapNode> GetTreeNode(this IEnumerable<SitemapNode> sitemapNodes, string headerName = "")
+        {
+            var tree = new TreeNode<SitemapNode>(new SitemapNode() { Title = headerName, Url = "/", Id = null, ParentId = null });
+
+            sitemapNodes.FillTreeNodeOfThisParent(tree);
+
+            return tree;
+        }
+
+        private static void FillTreeNodeOfThisParent(this IEnumerable<SitemapNode> sitemapNodes, TreeNode<SitemapNode> parent)
+        {
+            var children = sitemapNodes.Where(s => s.ParentId == parent?.Value?.Id);
+
+            foreach (var child in children)
+            {
+                var pNode = parent.AddChild(child);
+                sitemapNodes.FillTreeNodeOfThisParent(pNode);
+            }
         }
     }
 }

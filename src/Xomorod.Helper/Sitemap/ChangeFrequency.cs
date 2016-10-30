@@ -1,4 +1,4 @@
-﻿namespace Xomorod.Shared.Sitemap
+﻿namespace Xomorod.Helper.Sitemap
 {
     public enum ChangeFrequency
     {

@@ -1,0 +1,123 @@
+.introTittle {
+    text-align: center;
+    padding: 20px;
+}
+
+/** Easy Tree style */
+.easy-tree {
+    min-height: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-top: none;
+    padding: 15px;
+}
+
+ul {
+    padding-left: 15px !important;
+    margin: auto;
+}
+
+.easy-tree > ul {
+    padding-left: 15px !important;
+}
+
+.easy-tree li {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px 5px 0 5px;
+    position: relative;
+}
+
+
+    /*Time for some hover effects*/
+    /*We will apply the hover effect the the lineage of the element also*/
+    .easy-tree li span:hover,
+    .easy-tree li a:hover + ul li a {
+        background: #dd4814;
+        border-color: #dd4814;
+        color: #fff;
+    }
+
+    .easy-tree li::before,
+    .easy-tree li::after {
+        content: '';
+        left: -30px;
+        position: absolute;
+        right: auto;
+    }
+
+    .easy-tree li::before {
+        border-left: 1px solid #ccc;
+        bottom: 50px;
+        height: 100%;
+        top: 0;
+        width: 1px;
+    }
+
+    .easy-tree li::after {
+        border-top: 1px solid #ccc;
+        height: 20px;
+        top: 30px;
+        width: 35px;
+    }
+
+    .easy-tree li > span {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        display: inline-block;
+        padding: 5px;
+        text-decoration: none;
+    }
+
+    .easy-tree li.parent_li > span {
+        cursor: pointer;
+    }
+
+.easy-tree > ul > li::before,
+.easy-tree > ul > li::after {
+    border: 0;
+}
+
+.easy-tree li:last-child::before {
+    height: 30px;
+}
+
+.easy-tree li.parent_li > span:hover,
+.easy-tree li.parent_li > span:hover + ul li span,
+.easy-tree li.parent_li > span:hover + ul li.li_selected span,
+.easy-tree li.parent_li > span:hover + ul li a {
+    background: #dd4814;
+    color: #fff;
+}
+
+
+
+.easy-tree li > span > a {
+    color: #666;
+    text-decoration: none;
+}
+
+.easy-tree li > span > span.glyphicon-minus,
+.easy-tree li > span > span.glyphicon-plus {
+    margin-right: 5px;
+}
+
+.easy-tree li.li_selected > span,
+.easy-tree li.li_selected > span > a {
+    background: #dd4814;
+    color: #fff;
+}
+
+    .easy-tree li.li_selected > span:hover,
+    .easy-tree li.li_selected > span:hover > a {
+        background: #dd4814;
+        color: #fff;
+    }
+
+.easy-tree li > span > a:hover,
+.easy-tree li > span:hover,
+.easy-tree li > span:hover > a {
+    color: #fff;
+}

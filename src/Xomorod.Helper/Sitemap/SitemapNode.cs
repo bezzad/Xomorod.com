@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Web.Mvc;
 
-namespace Xomorod.Shared.Sitemap
+namespace Xomorod.Helper.Sitemap
 {
     public class SitemapNode
     {
@@ -12,5 +13,13 @@ namespace Xomorod.Shared.Sitemap
         public string Url { get; set; }
         public int LangId { get; set; }
         public long? ParentId { get; set; }
+
+        public override string ToString()
+        {
+            var aTag = new TagBuilder("a");
+            aTag.Attributes.Add("href", Url);
+            aTag.InnerHtml = Title;
+            return aTag.ToString();
+        }
     }
 }
