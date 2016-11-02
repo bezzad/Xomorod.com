@@ -16,6 +16,8 @@ namespace Xomorod.Helper.Sitemap
 
         public override string ToString()
         {
+            if (string.IsNullOrEmpty(Title)) return string.Empty;
+
             var aTag = new TagBuilder("a");
             aTag.Attributes.Add("href", Url);
             aTag.InnerHtml = Title;

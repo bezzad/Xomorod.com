@@ -299,7 +299,6 @@
     <Content Include="Content\preloadStyle.css" />
     <Content Include="Content\ranking.css" />
     <Content Include="Content\select2.css" />
-    <Content Include="Content\sitemap.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\ScrollTop.css" />
     <Content Include="Content\toastr.css" />

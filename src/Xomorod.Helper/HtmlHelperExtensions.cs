@@ -10,20 +10,18 @@ namespace Xomorod.Helper
         {
             var mainDiv = new TagBuilder("div");
             mainDiv.AddCssClass("easy-tree");
-            var headerTag = new TagBuilder("h3") { InnerHtml = tree.Value.ToString() };
-            headerTag.AddCssClass("text-success");
-            mainDiv.InnerHtml = headerTag.ToString();
-
-            mainDiv.InnerHtml += tree.TreeNodeHtml();
+            mainDiv.InnerHtml = tree.TreeNodeHtml();
             return MvcHtmlString.Create(mainDiv.ToString());
         }
 
         private static string TreeNodeHtml<T>(this TreeNode<T> node)
         {
-            var result = node.Value + Environment.NewLine;
+            string result;
 
             if (node.Children.Any())
             {
+                result = string.IsNullOrEmpty(node.Value.ToString()) ? "" : "<span><span class='glyphicon glyphicon-minus'></span>&nbsp;" + node.Value + "</span>";
+
                 var ulTag = new TagBuilder("ul") { InnerHtml = Environment.NewLine };
 
                 foreach (var child in node.Children)
@@ -33,6 +31,10 @@ namespace Xomorod.Helper
                 }
 
                 result += ulTag.ToString();
+            }
+            else
+            {
+                result = "<span><span class='glyphicon glyphicon-link'></span>&nbsp;" + node.Value + "</span>";
             }
 
             return result;

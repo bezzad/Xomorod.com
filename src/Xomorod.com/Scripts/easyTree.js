@@ -29,42 +29,11 @@
             }
         };
 
-        var warningAlert = $('<div class="alert alert-warning alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><strong></strong><span class="alert-content"></span> </div> ');
-        var dangerAlert = $('<div class="alert alert-danger alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><strong></strong><span class="alert-content"></span> </div> ');
-
-        var createInput = $('<div class="input-group"><input type="text" class="form-control"><span class="input-group-btn"><button type="button" class="btn btn-default btn-success confirm"></button> </span><span class="input-group-btn"><button type="button" class="btn btn-default cancel"></button> </span> </div> ');
-
         options = $.extend(defaults, options);
 
         this.each(function () {
             var easyTree = $(this);
-            $.each($(easyTree).find('ul > li'), function() {
-                var text;
-                if($(this).is('li:has(ul)')) {
-                    var children = $(this).find(' > ul');
-                    $(children).remove();
-                    text = $(this).text();
-
-                    $(this).html('<span><span class="glyphicon"></span><a href="javascript: void(0);"></a> </span>');
-                    $(this).find(' > span > span').addClass('glyphicon-minus');
-                    $(this).find(' > span > a').text(text);
-                    //$(this).find(' > span > a').attr('href', 
-                    $(this).append(children);
-                }
-                else {
-                    text = $(this).text();
-                    $(this).html('<span><span class="glyphicon"></span><a href="javascript: void(0);"></a> </span>');
-                    $(this).find(' > span > span').addClass('glyphicon-link');
-                    $(this).find(' > span > a').text(text);
-                }
-            });
-
             $(easyTree).find('li:has(ul)').addClass('parent_li').find(' > span').attr('title', options.i18n.collapseTip);
-
-            // add easy tree toolbar dom
-            if (options.deletable || options.editable || options.addable) {
-                $(easyTree).prepend('<div class="easy-tree-toolbar"></div> ');
-            }
 
             // collapse or expand
             $(easyTree).delegate('li.parent_li > span', 'click', function (e) {

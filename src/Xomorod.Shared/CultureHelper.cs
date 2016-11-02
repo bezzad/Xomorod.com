@@ -368,7 +368,7 @@ namespace Xomorod.Shared
             if (routeData != null)
             {
                 var values = routeData.Values;
-                var controllerName = values["controller"].ToString().ToLower().Equals("home") ? "" : values["controller"] + "/";
+                var controllerName = values["controller"] + "/";
                 var actionName = values["action"].ToString().ToLower().Equals("index") ? "" : values["action"] + "/";
                 var routValues = request.UrlReferrer?.Query;
                 culture += string.IsNullOrEmpty(culture) ? "" : "/";

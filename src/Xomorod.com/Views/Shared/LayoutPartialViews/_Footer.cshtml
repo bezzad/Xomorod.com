@@ -51,7 +51,7 @@
                     <li><a target="_blank" title="GitHub" href="https://github.com/Xomorod"><i class="fa fa-github iAnimate"></i></a></li>
                     <li><a target="_blank" title="RSS" href="#"><i class="fa fa-rss iAnimate"></i></a></li>
                 </ul>
-                <a href="@Localization.NewsUrl">@Localization.News</a> | <a href="@Url.Content($"~/{ViewBag.CultureRout}/Home/Privacy")">@Localization.Privacy</a> | <a href="@Url.Content($"~/{ViewBag.CultureRout}/Sitemaps")">@Localization.Sitemap</a> <br>
+                <a href="@Localization.NewsUrl">@Localization.News</a> | <a href="@Url.Content($"~/{Context.Request.GetUrlCulture()}/Home/Privacy")">@Localization.Privacy</a> | <a href="@Url.Content($"~/{Context.Request.GetUrlCulture()}/Sitemaps/Index")">@Localization.Sitemap</a> <br>
                 <small>@Localization.Copyright&nbsp;&copy;&nbsp;2014-@DateTime.Now.Year&nbsp;&nbsp;@Localization.CompanyName&nbsp;&nbsp;@(Debugger.IsAttached ? Localization.debug : "")&nbsp;@version.&nbsp;@Localization.AllRightsReserved</small>
             </div>
         </div>
