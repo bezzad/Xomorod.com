@@ -104,9 +104,9 @@ namespace Xomorod.Com
 
             foreach (var seq in args)
             {
-                if (seq == "user" && context.Request.IsAuthenticated)
+                if (seq == "user")
                 {
-                    result += $"{User.Identity.Name}@{User.Identity.GetUserId()}_";
+                    result += context.Request.IsAuthenticated ? $"{User.Identity.Name}@{User.Identity.GetUserId()}_" : "NoAuth_";
                 }
                 else if (seq == "culture")
                 {
