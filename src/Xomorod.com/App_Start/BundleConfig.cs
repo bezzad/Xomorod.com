@@ -83,7 +83,10 @@ namespace Xomorod.Com
             bundles.Add(new ScriptBundle("~/bundles/highstock", "https://code.highcharts.com/stock/highstock.js").Include("~/Scripts/highstock.js"));
             bundles.Add(new ScriptBundle("~/bundles/exporting", "https://code.highcharts.com/stock/modules/exporting.js").Include("~/Scripts/exporting.js"));
             bundles.Add(new ScriptBundle("~/bundles/clipboard", "https://cdn.jsdelivr.net/clipboard.js/1.5.10/clipboard.min.js").Include("~/Scripts/clipboard.min.js"));
-            bundles.Add(new ScriptBundle("~/bundles/easyTree").Include("~/Scripts/easyTree.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/easyTree").Include(
+                "~/Scripts/jquery-{version}.js", 
+                "~/Scripts/easyTree.js").ForceOrdered());
         }
 
     }

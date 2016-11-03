@@ -92,7 +92,7 @@ body {
 
 #page-content {
     margin: 0 auto;
-    min-height: 90vh; /* minimum height of content in body is 90% browser height */
+    min-height: 99vh; /* minimum height of content in body is 99% browser height */
 }
 
 img.wp-smiley,
@@ -1677,11 +1677,6 @@ object {
     z-index: 1000;
     min-height: 75px;
     margin-bottom: 0;
-}
-
-.navbar-inverse .navbar-nav {
-    margin-left: 0;
-    margin-right: 0;
 }
 
     .navbar-inverse .navbar-nav > li {
