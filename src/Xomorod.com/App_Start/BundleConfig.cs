@@ -47,26 +47,26 @@ namespace Xomorod.Com
 
         private static void RegisterScriptBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include("~/Scripts/jquery-{version}.js"));
+            var layoutBundles = new string[]
+            {
+                "~/Scripts/jquery-{version}.js",
+                "~/Scripts/jquery-migrate.min.js", // smoothscrool.js dependency to jQuery v3 and migrated by this lib.
+                "~/Scripts/jquery.unobtrusive-ajax.min.js",
+                "~/Scripts/jquery.knob.min.js", // circle processBar control and more other controls
+                "~/Scripts/toastr.min.js",
+                "~/Scripts/bootstrap.min.js",
+                "~/Scripts/respond.js",
+                "~/Scripts/bootstrap-select.min.js",
+                "~/Scripts/smoothscrool.js", //mouse wheel very smoothly
+                "~/Scripts/scrollReveal.js", //scrolling slowly for display
+                "~/Scripts/easing.min.js",
+                "~/Scripts/site.js" // site.js must be loaded after toastr.js
+            };
 
-            bundles.Add(new ScriptBundle("~/bundles/scripts").Include(
-                                        "~/Scripts/jquery-{version}.js",
-                                        "~/Scripts/jquery-migrate.min.js",
-                                        "~/Scripts/jquery.unobtrusive-ajax.min.js",
-                                        "~/Scripts/jquery.knob.min.js",  // circle processBar control and more other controls
-                                        "~/Scripts/toastr.min.js",
-                                        "~/Scripts/bootstrap.min.js",
-                                        "~/Scripts/respond.js",
-                                        "~/Scripts/bootstrap-select.min.js",
-                                        "~/Scripts/smoothscrool.js", //mouse wheel very smoothly
-                                        "~/Scripts/scrollReveal.js", //scrolling slowly for display
-                                        "~/Scripts/easing.min.js",
-                                        "~/Scripts/site.js" // site.js must be loaded after toastr.js
-                                        ).ForceOrdered());
+            bundles.Add(new ScriptBundle("~/bundles/scripts").Include(layoutBundles).ForceOrdered());
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include("~/Scripts/jquery.validate*"));
-
-
+            
             bundles.Add(new ScriptBundle("~/bundles/gridmvc").Include(
                 "~/Scripts/gridmvc.min.js",
                 "~/Scripts/bootstrap-datepicker.js"));
@@ -89,6 +89,8 @@ namespace Xomorod.Com
                 "~/Scripts/easyTree.js").ForceOrdered());
         }
 
+
+     
     }
 
     internal class AsIsBundleOrderer : IBundleOrderer
@@ -111,5 +113,12 @@ namespace Xomorod.Com
             sb.Orderer = new AsIsBundleOrderer();
             return sb;
         }
+
+        public static string GetViewBundleName()
+        {
+            return "~/bundles/scripts";
+        }
     }
+
+    
 }

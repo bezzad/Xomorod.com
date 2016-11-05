@@ -67,7 +67,6 @@
                         <li><a class="menu-items" href="@Url.Content($"~/{ViewBag.CultureRout}/#aboutus")">@Localization.About</a></li>
                         @*<li><a class="menu-items" href="@Url.Content($"~/{ViewBag.CultureRout}/#subscribe")">@Localization.Newsletter</a></li>*@
                         <li><a class="menu-items" href="@Url.Content($"~/{ViewBag.CultureRout}/#contact")" id="contactLink">@Localization.Contact</a></li>
-                        @*<li><a class="menu-items" href="http://news.xomorod.com">@Localization.News</a></li>*@
                         @*<li>@Html.ActionLink(@Localization.Blog, "Index", "Blogs", new { area = "" },  new { @class = "menu-items" })</li>*@
                     </ul>
                     @Html.Partial("LayoutPartialViews/_LanguageSelectorPartial")
@@ -106,7 +105,7 @@
         // Prevent zoom cross-browser
         document.firstElementChild.style.zoom = "reset";
     </script>
-
+    
     @RenderSection("scripts", required: false)
 </body>
 </html>
