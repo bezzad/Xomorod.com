@@ -1,11 +1,4 @@
-﻿body {
-    font: 400 14px/20px Roboto,sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    overflow-x: hidden;
-}
-
-img {
+﻿img {
     border: 0;
     max-width: 100%;
 }

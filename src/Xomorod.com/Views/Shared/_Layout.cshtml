@@ -5,7 +5,7 @@
 
 @{
     ViewBag.CultureRout = Context.Request.GetUrlCulture(false) ?? "";
-    var title = ViewBag.Title == null ? ViewBag.Title + " - " : "";
+    var title = " - " + ViewBag.Title ?? "";
 }
 
 <!DOCTYPE html>
