@@ -1,5 +1,4 @@
-﻿@using Xomorod.Helper
-@using Xomorod.Helper.GooglePageSpeed
+﻿@using Xomorod.Helper.GooglePageSpeed
 @using Xomorod.Helper.Ranking
 @using Xomorod.Helper.Resources
 @using Xomorod.Shared.Resources
@@ -7,15 +6,6 @@
 
 @{
     ViewBag.Title = Localization.XomorodRanking;
-}
-
-@section PreScripts{
-    @Styles.Render("~/Content/ranking")
-    @Scripts.Render("~/bundles/jquery")
-}
-@section scripts{
-    @Scripts.Render("~/bundles/highstock")
-    @Scripts.Render("~/bundles/exporting")
 }
 
 <section>

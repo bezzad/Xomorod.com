@@ -1671,6 +1671,10 @@ object {
     text-align: left;
 }
 
+.navbar-right {
+    margin-right: 0 !important;
+}
+
 #main-nav {
     position: fixed;
     width: 100%;
@@ -3190,7 +3194,6 @@ video::-webkit-media-controls {
 }
 
     .purchase-now h3 {
-        text-align: left;
         line-height: 40px;
         margin-top: 14px;
     }

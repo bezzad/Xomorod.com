@@ -1,10 +1,11 @@
 ﻿@using System.Diagnostics
 @using Xomorod.Shared
 @using Xomorod.Helper.Resources
+@using Xomorod.Com
 
 @{
     ViewBag.CultureRout = Context.Request.GetUrlCulture(false) ?? "";
-    var title = ViewBag.Title == null ? ViewBag.Title + " - " : "";
+    var title = " - " + ViewBag.Title ?? "";
 }
 
 <!DOCTYPE html>
@@ -34,7 +35,8 @@
     @Html.Partial("LayoutPartialViews/_PreloaderPartial")
     @Html.Partial("LayoutPartialViews/_LoadCssAsync")
     @Html.Partial("LayoutPartialViews/_LazyImagesLoadScripts")
-    @Styles.RenderFormat("<script>loadCSS(\"{0}\");</script>", "~/Content/stylesheets")
+
+    @Styles.RenderFormat("<script>loadCSS(\"{0}\");</script>", Html.GetViewBundleName(1, BundleType.Styles))
 </head>
 <body class="home @ViewBag.BodyClass" itemscope="itemscope" dir="@(CultureHelper.IsRighToLeft() ? "rtl":"ltr")">
     <div id="preloader" class="fadeable">
@@ -42,8 +44,8 @@
     </div>
     @RenderSection("PreScripts", required: false)
     @(Debugger.IsAttached
-        ? Scripts.Render("~/bundles/scripts")
-        : Scripts.RenderFormat("<script type=\"text/javascript\" src=\"{0}\" async></script>", "~/bundles/scripts"))
+        ? Scripts.Render(Html.GetViewBundleName(1, BundleType.Scripts))
+        : Scripts.RenderFormat("<script type=\"text/javascript\" src=\"{0}\" async></script>", Html.GetViewBundleName(1, BundleType.Scripts)))
 
     <header id="home" class="header">
         <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="slide-nav">
@@ -67,7 +69,6 @@
                         <li><a class="menu-items" href="@Url.Content($"~/{ViewBag.CultureRout}/#aboutus")">@Localization.About</a></li>
                         @*<li><a class="menu-items" href="@Url.Content($"~/{ViewBag.CultureRout}/#subscribe")">@Localization.Newsletter</a></li>*@
                         <li><a class="menu-items" href="@Url.Content($"~/{ViewBag.CultureRout}/#contact")" id="contactLink">@Localization.Contact</a></li>
-                        @*<li><a class="menu-items" href="http://news.xomorod.com">@Localization.News</a></li>*@
                         @*<li>@Html.ActionLink(@Localization.Blog, "Index", "Blogs", new { area = "" },  new { @class = "menu-items" })</li>*@
                     </ul>
                     @Html.Partial("LayoutPartialViews/_LanguageSelectorPartial")
@@ -90,7 +91,7 @@
     <a class="scroll-top fa fa-angle-up" id="scroll-top" href="#"></a>
 
 
-    @Styles.RenderFormat("<noscript><link rel=\"stylesheet\" href=\"{0}\"></noscript>", "~/Content/stylesheets")
+    @Styles.RenderFormat("<noscript><link rel=\"stylesheet\" href=\"{0}\"></noscript>", Html.GetViewBundleName(1, BundleType.Styles))
     @*@Html.Partial("LayoutPartialViews/_FacebookPixelCode")*@
     <script>
         var localization = {
@@ -106,7 +107,7 @@
         // Prevent zoom cross-browser
         document.firstElementChild.style.zoom = "reset";
     </script>
-
+    
     @RenderSection("scripts", required: false)
 </body>
 </html>

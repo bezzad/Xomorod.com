@@ -2,7 +2,6 @@
 @using GridMvc.Columns
 @using GridMvc.Html
 @using GridMvc.Sorting
-@using Xomorod.Com.Models
 @using Xomorod.Helper.Resources
 @model IEnumerable<Xomorod.Com.Models.AdminModels.InboxViewModel>
 
@@ -11,9 +10,6 @@
 }
 
 @section scripts{
-    @Scripts.Render("~/bundles/jquery")
-    @Styles.Render("~/Content/gridmvc")
-    @Scripts.Render("~/bundles/gridmvc")
     <script>
         jQuery(window)
             .load(function () {

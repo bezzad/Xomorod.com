@@ -1,5 +1,4 @@
-﻿@using System.Diagnostics
-@using Xomorod.Shared
+﻿@using Xomorod.Shared
 
 @{
     ViewBag.CultureRout = Context.Request.GetUrlCulture(false) ?? "";
@@ -44,11 +43,4 @@ else
     @Html.Action("Subscribe", "Home")
     @Html.Action("Map", "Home")
     @Html.Action("Contact", "Home")
-}
-
-@section scripts
-{
-    @(Debugger.IsAttached
-        ? Scripts.Render("~/bundles/homepage")
-        : Scripts.RenderFormat("<script type=\"text/javascript\" src=\"{0}\" async></script>", "~/bundles/homepage"))
 }

@@ -32,7 +32,6 @@
 /// <reference path="loadcss/onloadcss.js" />
 /// <reference path="modernizr-2.8.3.js" />
 /// <reference path="parallax.js" />
-/// <reference path="recaptcha.js" />
 /// <reference path="respond.matchmedia.addlistener.min.js" />
 /// <reference path="respond.min.js" />
 /// <reference path="scrollreveal.js" />

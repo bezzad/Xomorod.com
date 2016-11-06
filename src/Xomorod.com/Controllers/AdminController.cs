@@ -26,6 +26,7 @@ namespace Xomorod.Com.Controllers
         //    VaryByContentEncoding = "gzip;deflate", VaryByHeader = "X-Requested-With;Accept-Language")] // cache to 1hour
         public async Task<ActionResult> Ranking(string url = null)
         {
+            ViewBag.Title = Localization.XomorodRanking;
             var alexa = new Alexa(url ?? SecurityKeys.WebSiteRout);
             var trends = ConnectionManager.GetDefaultConnection().SqlConn.Query("Select * From dbo.udft_TrafficRankings()").ToList();
 
@@ -100,6 +101,7 @@ namespace Xomorod.Com.Controllers
 
         public ActionResult Inbox()
         {
+            ViewBag.Title = Localization.Inbox;
             var data = Connections.Xomorod.SqlConn.Query<AdminModels.InboxViewModel>("Select * FROM  dbo.ContactMe WHERE UserId = @UserId", new { UserId = CurrentUser.Id });
             return View(data);
         }
