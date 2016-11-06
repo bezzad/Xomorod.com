@@ -1,20 +1,6 @@
 ﻿@using Xomorod.Helper.Resources
 @model HandleErrorInfo
 
-@{
-    //Layout = null;
-}
-
-@section scripts{
-    @Styles.Render("~/Content/errors")
-
-    @if (Model != null && HttpContext.Current.IsDebuggingEnabled)
-    {
-        @Scripts.Render("~/bundles/clipboard")
-        <script>new Clipboard('.btn-clipboard');</script>
-    }
-}
-
 <section>
     <div class="container">
         <img src="@Url.Content("~/Content/images/error.jpg")" alt="Error" style="padding: 50px">

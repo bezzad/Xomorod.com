@@ -1,1 +1,0 @@
-window.onload = function () { for (var t = document.querySelectorAll(".pirate_forms input, .pirate_forms textarea"), e = 0; e < t.length; e++) t[e].onfocus = t[e].onselect = function () { var t = document.getElementById("pirate-forms-captcha"); "block" !== t.style.display && (t.style.display = "block", t.style.opacity = 1) } };

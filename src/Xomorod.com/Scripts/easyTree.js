@@ -80,4 +80,10 @@
             };
         });
     };
+
+    function init() {
+        $('.easy-tree').EasyTree();
+    }
+
+    window.onload = init();
 })(jQuery);

@@ -1671,6 +1671,10 @@ object {
     text-align: left;
 }
 
+.navbar-right {
+    margin-right: 0 !important;
+}
+
 #main-nav {
     position: fixed;
     width: 100%;

@@ -13,7 +13,7 @@
     <div class="centered minForms">
         @{
             var loginProviders = Context.GetOwinContext().Authentication.GetExternalAuthenticationTypes();
-            if (loginProviders.Count() == 0)
+            if (!loginProviders.Any())
             {
                 <div>
                     <p>
@@ -74,7 +74,3 @@
         }
     </div>
 </div>
-
-@section Scripts {
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.2.0/css/zocial.min.css" rel="stylesheet" />
-}

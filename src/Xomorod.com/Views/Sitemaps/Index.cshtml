@@ -10,22 +10,6 @@
 }
 
 
-
-@section scripts
-{
-    @Styles.Render("~/Content/easyTree")
-    @Scripts.Render("~/bundles/easyTree")
-    <script>
-        (function ($) {
-            function init() {
-                $('.easy-tree').EasyTree();
-            }
-
-            window.onload = init();
-        })(jQuery)
-    </script>
-}
-
 <div class="sitemap">
     <article role="main">
 
@@ -39,3 +23,10 @@
     </article>
 </div>
 
+<script>
+    function init() {
+        $('.easy-tree').EasyTree();
+    }
+
+    window.onload = init();
+</script>
