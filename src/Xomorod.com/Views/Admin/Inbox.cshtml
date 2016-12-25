@@ -27,8 +27,6 @@
             /* Adding "IsRead" column: */
             cols.Add(c => c.IsRead).Encoded(false).Sanitized(false).SetWidth(30).Titled(Localization.IsRead).SortInitialDirection(GridSortDirection.Descending)
                 .RenderValueAs(m => @<input @( m.IsRead ? "checked" : "") disabled id="isRead_@m.ContactMeId" type="checkbox" />);
-
-
             }).AutoGenerateColumns().SetRowCssClasses(item => item.IsRead ? string.Empty : "success").Filterable(true).Sortable(true).WithMultipleFilters()
         </div>
     </div>
