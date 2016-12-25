@@ -77,6 +77,7 @@ namespace Xomorod.Com
             {
                 "~/Scripts/jquery-{version}.js",
                 "~/Scripts/jquery-migrate.min.js", // smoothscrool.js dependency to jQuery v3 and migrated by this lib.
+                "~/Scripts/easing.min.js",
                 "~/Scripts/jquery.unobtrusive-ajax.min.js",
                 "~/Scripts/jquery.knob.min.js", // circle processBar control and more other controls
                 "~/Scripts/bootstrap.min.js",
@@ -85,7 +86,6 @@ namespace Xomorod.Com
                 "~/Scripts/bootstrap-select.min.js",
                 "~/Scripts/smoothscrool.js", //mouse wheel very smoothly
                 "~/Scripts/scrollReveal.js", //scrolling slowly for display
-                "~/Scripts/easing.min.js",
                 "~/Scripts/site.js" // site.js must be loaded after toastr.js
             };
 
@@ -126,9 +126,16 @@ namespace Xomorod.Com
                 "~/Scripts/easyTree.js"
             };
 
+            var userInbox = new string[]
+            {
+                "~/Scripts/userInbox.js"
+            };
+
+
             bundles.Add(new ScriptBundle("~/bundles/scripts").Include(layoutBundles).ForceOrdered());
             bundles.Add(new ScriptBundle("~/bundles/scripts-jqueryval").Include(layoutBundles.Concat(jqueryval).ToArray()));
             bundles.Add(new ScriptBundle("~/bundles/scripts-gridmvc").Include(layoutBundles.Concat(gridmvc).ToArray()));
+            bundles.Add(new ScriptBundle("~/bundles/scripts-gridmvc-userInbox").Include(layoutBundles.Concat(gridmvc).Concat(userInbox).ToArray()));
             bundles.Add(new ScriptBundle("~/bundles/scripts-highstock").Include(layoutBundles.Concat(highstock).ToArray()));
             bundles.Add(new ScriptBundle("~/bundles/scripts-blogs").Include(layoutBundles.Concat(blogs).ToArray()));
             bundles.Add(new ScriptBundle("~/bundles/scripts-clipboard").Include(layoutBundles.Concat(clipboard).ToArray()));
@@ -196,7 +203,7 @@ namespace Xomorod.Com
                             {
                                 switch (action.ToLower())
                                 {
-                                    case "inbox": return "~/bundles/scripts-gridmvc";
+                                    case "inbox": return "~/bundles/scripts-gridmvc-userInbox";
                                     case "ranking": return "~/bundles/scripts-highstock";
                                     default:
                                         return "~/bundles/scripts";

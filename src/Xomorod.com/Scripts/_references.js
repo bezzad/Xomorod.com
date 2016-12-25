@@ -38,3 +38,4 @@
 /// <reference path="site.js" />
 /// <reference path="smoothscrool.js" />
 /// <reference path="toastr.min.js" />
+/// <reference path="userinbox.js" />
