@@ -64,6 +64,9 @@ jQuery(document).ready(function () {
     $(".menu-items").click(function () {
         if ($("#menuBtn").css("display") !== "none") $("#menuBtn").click();
     });
+
+    // load Easy Tree objects
+    if ($('.easy-tree').length > 0) $('.easy-tree').EasyTree();
 });
 
 function getUrlCulture() {

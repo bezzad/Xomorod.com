@@ -77,7 +77,7 @@ namespace Xomorod.Com
             {
                 "~/Scripts/jquery-{version}.js",
                 "~/Scripts/jquery-migrate.min.js", // smoothscrool.js dependency to jQuery v3 and migrated by this lib.
-                "~/Scripts/easing.min.js",
+                "~/Scripts/jquery.easing.{version}.js",
                 "~/Scripts/jquery.unobtrusive-ajax.min.js",
                 "~/Scripts/jquery.knob.min.js", // circle processBar control and more other controls
                 "~/Scripts/bootstrap.min.js",
