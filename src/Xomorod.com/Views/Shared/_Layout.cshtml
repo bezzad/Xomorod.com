@@ -1,7 +1,7 @@
-﻿@using System.Diagnostics
-@using Xomorod.Shared
+﻿@using Xomorod.Shared
 @using Xomorod.Helper.Resources
 @using Xomorod.Com
+@using Xomorod.Helper
 
 @{
     ViewBag.CultureRout = Context.Request.GetUrlCulture(false) ?? "";
@@ -43,9 +43,7 @@
         <div id="status" class="fadeable">&nbsp;</div>
     </div>
     @RenderSection("PreScripts", required: false)
-    @(Debugger.IsAttached
-        ? Scripts.Render(Html.GetViewBundleName(1, BundleType.Scripts))
-        : Scripts.RenderFormat("<script type=\"text/javascript\" src=\"{0}\" async></script>", Html.GetViewBundleName(1, BundleType.Scripts)))
+    @Bundler.RenderScriptsAsync(Html.GetViewBundleName(1, BundleType.Scripts))
 
     <header id="home" class="header">
         <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="slide-nav">
@@ -103,9 +101,6 @@
             mobile: "@Localization.Mobile",
             desktop: "@Localization.Desktop"
         };
-
-        // Prevent zoom cross-browser
-        document.firstElementChild.style.zoom = "reset";
     </script>
     
     @RenderSection("scripts", required: false)
