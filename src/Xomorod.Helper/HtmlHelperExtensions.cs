@@ -20,7 +20,9 @@ namespace Xomorod.Helper
 
             if (node.Children.Any())
             {
-                result = string.IsNullOrEmpty(node.Value.ToString()) ? "" : "<span><span class='glyphicon glyphicon-minus'></span>&nbsp;" + node.Value + "</span>";
+                result = string.IsNullOrEmpty(node.Value.ToString())
+                    ? ""
+                    : "<span><span class='glyphicon glyphicon-minus'></span>&nbsp;" + node.Value + "</span>";
 
                 var ulTag = new TagBuilder("ul") { InnerHtml = Environment.NewLine };
 
@@ -39,6 +41,6 @@ namespace Xomorod.Helper
 
             return result;
         }
-
+        
     }
 }

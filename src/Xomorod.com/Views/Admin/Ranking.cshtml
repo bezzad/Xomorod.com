@@ -1,4 +1,5 @@
-﻿@using Xomorod.Helper.GooglePageSpeed
+﻿@using Xomorod.Helper
+@using Xomorod.Helper.GooglePageSpeed
 @using Xomorod.Helper.Ranking
 @using Xomorod.Helper.Resources
 @using Xomorod.Shared.Resources
@@ -6,6 +7,10 @@
 
 @{
     ViewBag.Title = Localization.XomorodRanking;
+}
+
+@section scripts{
+    @Bundler.RenderScripts("~/bundles/scripts-jquery", new {});
 }
 
 <section>
@@ -84,7 +89,7 @@
 
 
         <div class="row" style="padding-top: 50px;">
-            
+
             <div class="col-lg-4 col-sm-4 focus-box border-@Model.Item2.UserExperienceState" data-scrollreveal="enter left after 0.15s over 1s" data-sr-init="true" data-sr-complete="true">
                 <div class="service-icon">
                     <a target="_self" href="https://developers.google.com/speed/pagespeed/insights/?url=@SecurityKeys.WebSiteRout%2F&tab=mobile"><i class="pixeden our-focus-widget-image ux_widget svg-@Model.Item2.UserExperienceState"></i></a>

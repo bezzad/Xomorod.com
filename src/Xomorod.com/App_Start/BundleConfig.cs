@@ -94,6 +94,11 @@ namespace Xomorod.Com
                 "~/Scripts/jquery.validate*"
             };
 
+            var jquery = new string[]
+            {
+                "~/Scripts/jquery-{version}.js"
+            };
+
             var gridmvc = new string[]
             {
                 "~/Scripts/gridmvc.min.js",
@@ -134,6 +139,7 @@ namespace Xomorod.Com
 
             bundles.Add(new ScriptBundle("~/bundles/scripts").Include(layoutBundles).ForceOrdered());
             bundles.Add(new ScriptBundle("~/bundles/scripts-jqueryval").Include(layoutBundles.Concat(jqueryval).ToArray()));
+            bundles.Add(new ScriptBundle("~/bundles/scripts-jquery").Include(jquery));
             bundles.Add(new ScriptBundle("~/bundles/scripts-gridmvc").Include(layoutBundles.Concat(gridmvc).ToArray()));
             bundles.Add(new ScriptBundle("~/bundles/scripts-gridmvc-userInbox").Include(layoutBundles.Concat(gridmvc).Concat(userInbox).ToArray()));
             bundles.Add(new ScriptBundle("~/bundles/scripts-highstock").Include(layoutBundles.Concat(highstock).ToArray()));
