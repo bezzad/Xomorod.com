@@ -98,11 +98,7 @@ namespace Xomorod.Helper
         /// <param name="path">Set of virtual paths for which to generate script tags.</param>
         public static IHtmlString RenderScriptsAsync(string path)
         {
-#if DEBUG
-            return Scripts.Render(path);
-#else
-            return RenderScripts(path, new { async = "true" });
-#endif
+            return Debugger.IsAttached ? Scripts.Render(path) : RenderScripts(path, new { async = "true" });
         }
     }
 }
