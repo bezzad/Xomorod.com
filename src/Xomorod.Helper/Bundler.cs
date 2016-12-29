@@ -37,10 +37,7 @@ namespace Xomorod.Helper
             var originalHtml = Styles.Render(path).ToHtmlString();
             completedTag = originalHtml.Replace("/>", attributes + "/>");
 #else
-            completedTag = string.Format(
-                "<link rel=\"stylesheet\" href=\"{0}\" type=\"text/css\"{1} />",
-                Styles.Url(path), attributes);
-
+            completedTag = $"<link rel=\"stylesheet\" href=\"{Styles.Url(path)}\" type=\"text/css\"{attributes} />";
 #endif
 
             return MvcHtmlString.Create(completedTag);
@@ -59,14 +56,10 @@ namespace Xomorod.Helper
             string completedTag = string.Empty;
 
 #if DEBUG
-
             var originalHtml = Scripts.Render(path).ToHtmlString();
             completedTag = originalHtml.Replace("/>", attributes + "/>");
 #else
-            completedTag = string.Format(
-                "<script src=\"{0}\" {1} />",
-                Scripts.Url(path), attributes);
-
+            completedTag = $"<script type=\"text/javascript\" src=\"{Scripts.Url(path)}\" {attributes} ></script>";
 #endif
 
             return MvcHtmlString.Create(completedTag);
