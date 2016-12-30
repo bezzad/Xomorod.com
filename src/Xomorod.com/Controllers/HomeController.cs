@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Web.Mvc;
 using System.Web.UI;
+using Xomorod.Helper.Resources;
 using Xomorod.Shared.Resources;
 
 namespace Xomorod.Com.Controllers
@@ -94,6 +95,7 @@ namespace Xomorod.Com.Controllers
                 VaryByContentEncoding = "gzip;deflate", VaryByHeader = "X-Requested-With;Accept-Language")]
         public ActionResult Privacy()
         {
+            ViewBag.Title = Localization.PrivacyPolicy;
             return View();
         }
     }

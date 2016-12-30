@@ -1665,9 +1665,9 @@ object {
 }
 
 .navbar {
-    background: #e5eaea;
-    border: 0;
+    background: #dfdfdf;
     border-radius: 0 !important;
+    border-color: rgba(92, 210, 147, 0.5);
     text-align: left;
 }
 

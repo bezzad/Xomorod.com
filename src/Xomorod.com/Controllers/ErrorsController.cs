@@ -11,7 +11,7 @@ namespace Xomorod.Com.Controllers
         // GET: Errors
         public ActionResult Index()
         {
-            ViewBag.Title = $"{Localization.Xomorod} - {Localization.Error}";
+            ViewBag.Title = Localization.Error;
             return View("Index");
         }
 
@@ -19,7 +19,7 @@ namespace Xomorod.Com.Controllers
             VaryByContentEncoding = "gzip;deflate", VaryByHeader = "X-Requested-With;Accept-Language")]
         public ActionResult NotFound()
         {
-            ViewBag.Title = $"{Localization.Xomorod} - {Localization.PageNotFound}";
+            ViewBag.Title = Localization.PageNotFound;
             return View("NotFound");
         }
     }
