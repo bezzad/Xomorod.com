@@ -5,7 +5,7 @@
 
 @{
     ViewBag.CultureRout = Context.Request.GetUrlCulture(false) ?? "";
-    var title = " - " + ViewBag.Title ?? "";
+    var title = string.IsNullOrEmpty(ViewBag.Title) ? "" : " - " + ViewBag.Title;
 }
 
 <!DOCTYPE html>
@@ -102,7 +102,7 @@
             desktop: "@Localization.Desktop"
         };
     </script>
-    
+
     @RenderSection("scripts", required: false)
 </body>
 </html>

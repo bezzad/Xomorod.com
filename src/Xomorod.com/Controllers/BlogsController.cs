@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Xomorod.Helper.Resources;
 
 namespace Xomorod.Com.Controllers
 {
@@ -11,8 +12,8 @@ namespace Xomorod.Com.Controllers
         // GET: Blogs
         public ActionResult Index()
         {
-            ViewBag.Message = "Your blog page.";
-
+            ViewBag.Title = Localization.Blogs;
+            
             return View();
         }
     }
