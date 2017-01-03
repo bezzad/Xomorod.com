@@ -1,17 +1,14 @@
 ﻿using System;
-using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Mvc;
-using System.Web.UI;
 using AdoManager;
 using Dapper;
 using DotNet.Highstock.Enums;
 using DotNet.Highstock.Helpers;
 using DotNet.Highstock.Options;
 using Xomorod.Com.Models;
-using Xomorod.Helper;
 using Xomorod.Helper.GooglePageSpeed;
 using Xomorod.Helper.Ranking;
 using Xomorod.Helper.Resources;
@@ -22,8 +19,6 @@ namespace Xomorod.Com.Controllers
     [Authorize(Roles = "Admin")]
     public class AdminController : BaseController
     {
-        //[OutputCache(Duration = 3600, Location = OutputCacheLocation.Any, VaryByParam = "*", VaryByCustom = "culture;user",
-        //    VaryByContentEncoding = "gzip;deflate", VaryByHeader = "X-Requested-With;Accept-Language")] // cache to 1hour
         public async Task<ActionResult> Ranking(string url = null)
         {
             ViewBag.Title = Localization.XomorodRanking;

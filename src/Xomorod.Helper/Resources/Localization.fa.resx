@@ -766,4 +766,34 @@
   <data name="TermsOfService" xml:space="preserve">
     <value>شرایط استفاده از خدمات</value>
   </data>
+  <data name="PrivacyPolicyHeader2_1" xml:space="preserve">
+    <value>حريم خصوصی کاربران سايت {0}</value>
+  </data>
+  <data name="PrivacyPolicyHeader2_2" xml:space="preserve">
+    <value>چه اطلاعاتی را جمع آوری می کنیم؟</value>
+  </data>
+  <data name="PrivacyPolicyP1_1" xml:space="preserve">
+    <value>بر اساس توافق نامه های این سایت، «{0}» خود را متعهد می داند که به آن چه «حریم خصوصی کاربران» شمرده می شود احترام بگذارد.</value>
+  </data>
+  <data name="PrivacyPolicyP1_2" xml:space="preserve">
+    <value>تعهد ها و سیاست های «{0}» عبارت است از:</value>
+  </data>
+  <data name="PrivacyPolicyP1_3" xml:space="preserve">
+    <value>ما هرگز بدون اجازه ی شما، دست به افشای اطلاعات خصوصی و فردی شما نخواهیم زد، مگر اينکه به موجب حکم قانونی توجيهی برای اين کار وجود داشته باشد.</value>
+  </data>
+  <data name="PrivacyPolicyP2_1" xml:space="preserve">
+    <value>با مشاهده ی هر وب سایت توسط کاربر، اطلاعات مشخصی از شما به صورت خودکار جمع آوری می شود. سایت {0} هم از این مساله مستثنی نیست و به موارد زیر دسترسی خواهیم داشت:</value>
+  </data>
+  <data name="PrivacyPolicyP2_2" xml:space="preserve">
+    <value>1- اطلاعاتی درباره آدرس IP کامپیوتر شما (آدرسIP نشانی مبتنی بر اعداد است که به صورت خودکار، هنگام ورود شما به وب، توسط فراهم آورنده خدمات اینترنتی طرف قراردادتان به شما اختصاص می یابد.)</value>
+  </data>
+  <data name="PrivacyPolicyP2_3" xml:space="preserve">
+    <value>2- آدرس اینترنتی سایت مبداء که از طریق آن وارد سایت ما شده اید. مانند گوگل، یاهو و یا هر وب سایت دیگر.</value>
+  </data>
+  <data name="PrivacyPolicyP2_4" xml:space="preserve">
+    <value>3- زمان ورود شما به سیستم و مدتی که میهمان «{0}» هستید.</value>
+  </data>
+  <data name="text_align" xml:space="preserve">
+    <value>right</value>
+  </data>
 </root>

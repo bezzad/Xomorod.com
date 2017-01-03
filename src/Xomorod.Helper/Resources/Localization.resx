@@ -775,4 +775,34 @@
   <data name="TermsOfService" xml:space="preserve">
     <value>Terms of Service</value>
   </data>
+  <data name="PrivacyPolicyHeader2_1" xml:space="preserve">
+    <value>{0} Privacy Policy</value>
+  </data>
+  <data name="PrivacyPolicyHeader2_2" xml:space="preserve">
+    <value>What information do we collect?</value>
+  </data>
+  <data name="PrivacyPolicyP1_1" xml:space="preserve">
+    <value>Based on the agreement of the site, "{0}" is committed to what be called "Privacy Policy" is considered respect.</value>
+  </data>
+  <data name="PrivacyPolicyP1_2" xml:space="preserve">
+    <value>Commitments and policies of "{0}" include is:</value>
+  </data>
+  <data name="PrivacyPolicyP1_3" xml:space="preserve">
+    <value>We are never without your permission, will do not to disclose your private and personal informations, unless under a legal warrant existing for this work.</value>
+  </data>
+  <data name="PrivacyPolicyP2_1" xml:space="preserve">
+    <value>Visit any website with the user, specific information is automatically be collected from him. Site {0} is not exempt from this issue and we have access to the following:</value>
+  </data>
+  <data name="PrivacyPolicyP2_2" xml:space="preserve">
+    <value>1. Information about your computer's IP address (IP Address is based on the numbers automatically when you login to the Web, online service provider by the contract will be assigned to you.)</value>
+  </data>
+  <data name="PrivacyPolicyP2_3" xml:space="preserve">
+    <value>2. Source Site URL through which you enter our site. Such as Google, Yahoo or any other website.</value>
+  </data>
+  <data name="PrivacyPolicyP2_4" xml:space="preserve">
+    <value>3. Your entry time and elapsed visiting time of "{0}".</value>
+  </data>
+  <data name="text_align" xml:space="preserve">
+    <value>left</value>
+  </data>
 </root>

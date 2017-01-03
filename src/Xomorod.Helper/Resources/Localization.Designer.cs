@@ -1249,6 +1249,87 @@ namespace Xomorod.Helper.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {0} Privacy Policy.
+        /// </summary>
+        public static string PrivacyPolicyHeader2_1 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyHeader2_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to What information do we collect?.
+        /// </summary>
+        public static string PrivacyPolicyHeader2_2 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyHeader2_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Based on the agreement of the site, &quot;{0}&quot; is committed to what be called &quot;Privacy Policy&quot; is considered respect..
+        /// </summary>
+        public static string PrivacyPolicyP1_1 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP1_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Commitments and policies of &quot;{0}&quot; include is:.
+        /// </summary>
+        public static string PrivacyPolicyP1_2 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP1_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We are never without your permission, will do not to disclose your private and personal informations, unless under a legal warrant existing for this work..
+        /// </summary>
+        public static string PrivacyPolicyP1_3 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP1_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Visit any website with the user, specific information is automatically be collected from him. Site {0} is not exempt from this issue and we have access to the following:.
+        /// </summary>
+        public static string PrivacyPolicyP2_1 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1. Information about your computer&apos;s IP address (IP Address is based on the numbers automatically when you login to the Web, online service provider by the contract will be assigned to you.).
+        /// </summary>
+        public static string PrivacyPolicyP2_2 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2. Source Site URL through which you enter our site. Such as Google, Yahoo or any other website..
+        /// </summary>
+        public static string PrivacyPolicyP2_3 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3. Your entry time and elapsed visiting time of &quot;{0}&quot;..
+        /// </summary>
+        public static string PrivacyPolicyP2_4 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Profile.
         /// </summary>
         public static string Profile {
@@ -1616,6 +1697,15 @@ namespace Xomorod.Helper.Resources {
         public static string TermsOfService {
             get {
                 return ResourceManager.GetString("TermsOfService", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to left.
+        /// </summary>
+        public static string text_align {
+            get {
+                return ResourceManager.GetString("text_align", resourceCulture);
             }
         }
         

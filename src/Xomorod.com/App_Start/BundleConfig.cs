@@ -210,7 +210,7 @@ namespace Xomorod.Com
                                 switch (action.ToLower())
                                 {
                                     case "inbox": return "~/bundles/scripts-gridmvc-userInbox";
-                                    case "ranking": return "~/bundles/scripts-highstock";
+                                    case "ranking": return "~/bundles/scripts-highstock-NoAsync";
                                     default:
                                         return "~/bundles/scripts";
                                 }
