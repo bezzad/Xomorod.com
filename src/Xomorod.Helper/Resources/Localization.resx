@@ -802,4 +802,16 @@
   <data name="PrivacyPolicyP2_4" xml:space="preserve">
     <value>3. Your entry time and elapsed visiting time of "{0}".</value>
   </data>
+  <data name="PrivacyPolicyP2_5" xml:space="preserve">
+    <value>4. The name and version of your computer operating system and Internet browser. For example, Windows 10 / Google Chrome. This information is transmitted to us automatically by your computer or any other website.</value>
+  </data>
+  <data name="PrivacyPolicyP2_6" xml:space="preserve">
+    <value>5. The pages of the site which you see them.</value>
+  </data>
+  <data name="PrivacyPolicyP2_7" xml:space="preserve">
+    <value>We use IP addresses to analyze statistical reports, manage the site, track users and collect statistical informations.</value>
+  </data>
+  <data name="PrivacyPolicyP2_8" xml:space="preserve">
+    <value>IP addresses are not related in any way with your private informations.</value>
+  </data>
 </root>

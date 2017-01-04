@@ -793,4 +793,16 @@
   <data name="PrivacyPolicyP2_4" xml:space="preserve">
     <value>3- زمان ورود شما به سیستم و مدتی که میهمان «{0}» هستید.</value>
   </data>
+  <data name="PrivacyPolicyP2_5" xml:space="preserve">
+    <value>4- نام و نسخه سیستم عامل و مرورگر اینترنتی کامپیوتر شما. به عنوان مثال ویندوز ۱۰ / گوگل کروم. این اطلاعات به طور اتوماتیک بوسیله کامپیوتر شما و یا هر وب سایت دیگری به سایت ما منتقل می شود.</value>
+  </data>
+  <data name="PrivacyPolicyP2_6" xml:space="preserve">
+    <value>5- صفحاتی از سایت که شما آنها را مشاهده می کنید.</value>
+  </data>
+  <data name="PrivacyPolicyP2_7" xml:space="preserve">
+    <value>ما از آدرس IP برای تحلیل گزارش های آماری، مدیریت سایت، و ردیابی كاربران و جمع آوری اطلاعات آماری استفاده می كنیم.</value>
+  </data>
+  <data name="PrivacyPolicyP2_8" xml:space="preserve">
+    <value>آدرسهای IP به هیچ عنوان ارتباطی با اطلاعات خصوصی شما ندارد.</value>
+  </data>
 </root>

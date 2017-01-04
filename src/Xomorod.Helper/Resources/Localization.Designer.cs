@@ -1330,6 +1330,42 @@ namespace Xomorod.Helper.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 4. The name and version of your computer operating system and Internet browser. For example, Windows 10 / Google Chrome. This information is transmitted to us automatically by your computer or any other website..
+        /// </summary>
+        public static string PrivacyPolicyP2_5 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5. The pages of the site which you see them..
+        /// </summary>
+        public static string PrivacyPolicyP2_6 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We use IP addresses to analyze statistical reports, manage the site, track users and collect statistical informations..
+        /// </summary>
+        public static string PrivacyPolicyP2_7 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IP addresses are not related in any way with your private informations..
+        /// </summary>
+        public static string PrivacyPolicyP2_8 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Profile.
         /// </summary>
         public static string Profile {
