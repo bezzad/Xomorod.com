@@ -1,4 +1,5 @@
 ﻿@using Xomorod.Helper.Resources
+@using Xomorod.Shared
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -9,7 +10,7 @@
 </h1>
 
 
-<div class="left_right" style="text-align: @Localization.text_align; padding: 50px;">
+<div class="left_right" style="text-align: @CultureHelper.GetTextAlign(); padding: 50px;">
     
     <h2>@string.Format(Localization.PrivacyPolicyHeader2_1, Localization.CompanyName)</h2>
     <p>@string.Format(Localization.PrivacyPolicyP1_1, Localization.Xomorod)</p>

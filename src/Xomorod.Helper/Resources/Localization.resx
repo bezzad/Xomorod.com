@@ -802,7 +802,4 @@
   <data name="PrivacyPolicyP2_4" xml:space="preserve">
     <value>3. Your entry time and elapsed visiting time of "{0}".</value>
   </data>
-  <data name="text_align" xml:space="preserve">
-    <value>left</value>
-  </data>
 </root>

@@ -1701,15 +1701,6 @@ namespace Xomorod.Helper.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to left.
-        /// </summary>
-        public static string text_align {
-            get {
-                return ResourceManager.GetString("text_align", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Thank you for confirming your email. Please.
         /// </summary>
         public static string Thank_confirming_email_Please {

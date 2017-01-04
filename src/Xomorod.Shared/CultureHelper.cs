@@ -318,9 +318,25 @@ namespace Xomorod.Shared
         }
 
         /// <summary>
+        /// Returns right if the language is a right-to-left language. Otherwise, left.
+        /// </summary>
+        public static string GetTextAlign()
+        {
+            return System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.IsRightToLeft ? "right" : "left";
+        }
+
+        /// <summary>
+        /// Returns right if the language is a right-to-left language. Otherwise, left.
+        /// </summary>
+        public static string GetDirection()
+        {
+            return System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.IsRightToLeft ? "rtl" : "ltr";
+        }
+
+        /// <summary>
         /// Returns a valid culture name based on "name" parameter. If "name" is not valid, it returns the default culture "en-US"
         /// </summary>
-        /// <param name="name" />Culture's name (e.g. en-US)</param>
+        /// <param name="name">Culture's name (e.g. en-US)</param>
         public static string GetImplementedCulture(string name)
         {
             // make sure it's not null

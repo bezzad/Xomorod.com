@@ -793,7 +793,4 @@
   <data name="PrivacyPolicyP2_4" xml:space="preserve">
     <value>3- زمان ورود شما به سیستم و مدتی که میهمان «{0}» هستید.</value>
   </data>
-  <data name="text_align" xml:space="preserve">
-    <value>right</value>
-  </data>
 </root>
