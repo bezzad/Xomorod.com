@@ -766,10 +766,10 @@
   <data name="TermsOfService" xml:space="preserve">
     <value>شرایط استفاده از خدمات</value>
   </data>
-  <data name="PrivacyPolicyHeader2_1" xml:space="preserve">
+  <data name="PrivacyPolicyHeader1" xml:space="preserve">
     <value>حريم خصوصی کاربران سايت {0}</value>
   </data>
-  <data name="PrivacyPolicyHeader2_2" xml:space="preserve">
+  <data name="PrivacyPolicyHeader2" xml:space="preserve">
     <value>چه اطلاعاتی را جمع آوری می کنیم؟</value>
   </data>
   <data name="PrivacyPolicyP1_1" xml:space="preserve">
@@ -804,5 +804,62 @@
   </data>
   <data name="PrivacyPolicyP2_8" xml:space="preserve">
     <value>آدرسهای IP به هیچ عنوان ارتباطی با اطلاعات خصوصی شما ندارد.</value>
+  </data>
+  <data name="PrivacyPolicyP2_10" xml:space="preserve">
+    <value>«زمرد»، این اطلاعات را به منظور مشخص کردن سلایق بینندگان و بهبود کیفیت وب سایت مورد بررسی قرار می دهد. این آمارها، کمک می کند که بکوشیم سیستم «زمرد» را کاربردی تر بسازیم.</value>
+  </data>
+  <data name="PrivacyPolicyP2_11" xml:space="preserve">
+    <value>برای نمونه، از اطلاعات مرورگر به این منظور استفاده می کنیم که سایتمان را به گونه ای طراحی نماییم که تعداد افراد بیشتری بتوانند صفحه های «{0}» را به درستی مشاهده کنند.</value>
+  </data>
+  <data name="PrivacyPolicyP2_9" xml:space="preserve">
+    <value>اطلاعات این که چه صفحاتی را و برای چند بار تماشا کرده اید و امثال آن. اینها اطلاعاتی هستند که ما جمع آوری می کنیم.</value>
+  </data>
+  <data name="PrivacyPolicyHeader3" xml:space="preserve">
+    <value>کوکی ها</value>
+  </data>
+  <data name="PrivacyPolicyHeader4" xml:space="preserve">
+    <value>ایمنی</value>
+  </data>
+  <data name="PrivacyPolicyHeader5" xml:space="preserve">
+    <value>نظر سنجی ها و مسابقات</value>
+  </data>
+  <data name="PrivacyPolicyHeader6" xml:space="preserve">
+    <value>خبرنامه</value>
+  </data>
+  <data name="PrivacyPolicyHeader7" xml:space="preserve">
+    <value>لینک ها و پیوندها</value>
+  </data>
+  <data name="PrivacyPolicyP2_12" xml:space="preserve">
+    <value>«{0}» به شما اطمینان می دهد که اطلاعات دیگری جز موارد ذکر شده بالا ذخیره نخواهد کرد. مگر اطلاعات دیگری که با میل و اراده شخصی خود در اختیار ما می گذارید. به عنوان مثال فرم ثبت نام را پر می کنید که شامل اطلاعاتی درباره ی نام، سن، نشانی الکترونیکی و امثال آن باشد.</value>
+  </data>
+  <data name="PrivacyPolicyP3_1" xml:space="preserve">
+    <value>«کوکی» ها، فایل های کوچکی هستند که توسط سایت های میزبان شما بر روی کامپیوترتان ذخیره می شود. در واقع فایل های ارتباطی میان سرور و کامپیوتر شما هستند و از نظر امنیت اطلاعات برای کامپیوتر شما به طور مطلق بی خطر هستند.</value>
+  </data>
+  <data name="PrivacyPolicyP3_2" xml:space="preserve">
+    <value>به خاطر ویژگی زبان های برنامه نویسی تحت وب، در صورتی که شما این گزینه را در مرورگر خود غیر فعال کنید، از دسترسی به برخی از خدمات «{0}» محروم خواهید بود.</value>
+  </data>
+  <data name="PrivacyPolicyP4_1" xml:space="preserve">
+    <value>«{0}»، تمام اقدامات احتیاطی را برای حفاظت از اطلاعات حساس كاربران، چه در حالت آنلاین و چه آفلاین انجام می دهد.</value>
+  </data>
+  <data name="PrivacyPolicyP4_2" xml:space="preserve">
+    <value>اگر فرم «ثبت نام/درخواست خدمات ما»، از كاربر درخواست وارد كردن اطلاعات حساس (همچون شماره كارت اعتباری یا شماره ملی) را كند، این اطلاعات با بهترین نرم افزار رمزگذاری (SSL) حفاظت خواهد شد.</value>
+  </data>
+  <data name="PrivacyPolicyP4_3" xml:space="preserve">
+    <value>در صفحات ایمن، مثل فرم «درخواست خدمات»، تصویر «قفل»ی را در بالای مرورگر وب خود مشاهده خواهید كرد.</value>
+  </data>
+  <data name="PrivacyPolicyP4_4" xml:space="preserve">
+    <value>علاوه بر این ها، «{0}»، هرچه در توان دارد به کار خواهد بست تا از اطلاعات کاربر در حالت آفلاین نیز محافظت کند.</value>
+  </data>
+  <data name="PrivacyPolicyP5_1" xml:space="preserve">
+    <value>«{0}»، گاهی از كاربران، برای نظر سنجی یا مسابقه، اطلاعاتی درخواست می كند.</value>
+  </data>
+  <data name="PrivacyPolicyP5_2" xml:space="preserve">
+    <value>شركت در این نظر سنجی ها، یا مسابقات، داوطلبانه است. این اطلاعات برای افزایش رضایت مشتریان و بررسی میزان رضایت آنها در نظر سنجی ها و برای تماس با برنده در مسابقات استفاده می شود.</value>
+  </data>
+  <data name="PrivacyPolicyP6_1" xml:space="preserve">
+    <value>اگر كاربر تمایلی به دریافت خبرنامه ما داشته باشد، ما از او خواهیم خواست تا اطلاعات تماس همچون نام و ایمیل خود را در اختیار ما بگذارد.</value>
+  </data>
+  <data name="PrivacyPolicyP7_1" xml:space="preserve">
+    <value>«{0}»، به سایتهای دیگری، «لینك» شده است.</value>
   </data>
 </root>

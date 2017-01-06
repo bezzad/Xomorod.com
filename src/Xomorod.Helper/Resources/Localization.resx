@@ -775,10 +775,10 @@
   <data name="TermsOfService" xml:space="preserve">
     <value>Terms of Service</value>
   </data>
-  <data name="PrivacyPolicyHeader2_1" xml:space="preserve">
+  <data name="PrivacyPolicyHeader1" xml:space="preserve">
     <value>{0} Privacy Policy</value>
   </data>
-  <data name="PrivacyPolicyHeader2_2" xml:space="preserve">
+  <data name="PrivacyPolicyHeader2" xml:space="preserve">
     <value>What information do we collect?</value>
   </data>
   <data name="PrivacyPolicyP1_1" xml:space="preserve">
@@ -813,5 +813,63 @@
   </data>
   <data name="PrivacyPolicyP2_8" xml:space="preserve">
     <value>IP addresses are not related in any way with your private informations.</value>
+  </data>
+  <data name="PrivacyPolicyP2_10" xml:space="preserve">
+    <value>"{0}", the informations will review to determine the tastes of viewers and improve the quality of the website. These statistics, which helps to make the  "{0}" systems to work more functional.</value>
+  </data>
+  <data name="PrivacyPolicyP2_11" xml:space="preserve">
+    <value>For example, use the browser information for this purpose that we can design "{0}" website able to view correctly for more people.</value>
+  </data>
+  <data name="PrivacyPolicyP2_9" xml:space="preserve">
+    <value>Information on what pages you've watched a few times and so on. This is the information that we collect.</value>
+  </data>
+  <data name="PrivacyPolicyHeader3" xml:space="preserve">
+    <value>Cookies</value>
+  </data>
+  <data name="PrivacyPolicyHeader4" xml:space="preserve">
+    <value>Security</value>
+  </data>
+  <data name="PrivacyPolicyHeader5" xml:space="preserve">
+    <value>Polls and contests</value>
+  </data>
+  <data name="PrivacyPolicyHeader6" xml:space="preserve">
+    <value>Newsletter</value>
+  </data>
+  <data name="PrivacyPolicyHeader7" xml:space="preserve">
+    <value>Links</value>
+  </data>
+  <data name="PrivacyPolicyP2_12" xml:space="preserve">
+    <value>"{0}" to assure you that the stored information is not other than those mentioned above. Unless other information you provide us with your personal willingness . For example, fill the registration form which contains information about the name, age, email address, and so on.</value>
+  </data>
+  <data name="PrivacyPolicyP3_1" xml:space="preserve">
+    <value>"Cookies" are small text files that are stored on your computer by your host sites. In fact communication between the server and your computer files are considered absolutely safe for your computer security.</value>
+  </data>
+  <data name="PrivacyPolicyP3_2" xml:space="preserve">
+    <value>Accourding to web programming language features, if you disable this option in your browser, access to some services of "{0}" will be denied.</value>
+  </data>
+  <data name="PrivacyPolicyP4_1" xml:space="preserve">
+    <value>"{0}", doing all precautionary measures to protect sensitive user data, whether online or offline.</value>
+  </data>
+  <data name="PrivacyPolicyP4_2" xml:space="preserve">
+    <value>If the form "registration / order our services," asks users to enter sensitive information (such as credit card number or national security code) , this information with the best encryption software (SSL) will be protected.</value>
+  </data>
+  <data name="PrivacyPolicyP4_3" xml:space="preserve">
+    <value>In the secure pages, such as the form "Request for Services" image "lock" at the top of your web browser will see.</value>
+  </data>
+  <data name="PrivacyPolicyP4_4" xml:space="preserve">
+    <value>In addition, "{0}" will do everything in its power to to protect user data in offline mode as well.</value>
+  </data>
+  <data name="PrivacyPolicyP5_1" xml:space="preserve">
+    <value>"{0}" is sometimes requests information from users, for surveys or contests.</value>
+  </data>
+  <data name="PrivacyPolicyP5_2" xml:space="preserve">
+    <value>Participation in this polls or contests is voluntary.
+This information to increase customer satisfaction and their satisfaction in surveys and is used to contact the winner in the tournament.</value>
+  </data>
+  <data name="PrivacyPolicyP6_1" xml:space="preserve">
+    <value>If users would like to receive our newsletter, we urge him to give us contact information such as your name and email.</value>
+  </data>
+  <data name="PrivacyPolicyP7_1" xml:space="preserve">
+    <value>"{0}", is "linked" to other sites.</value>
   </data>
 </root>

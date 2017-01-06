@@ -1251,18 +1251,63 @@ namespace Xomorod.Helper.Resources {
         /// <summary>
         ///   Looks up a localized string similar to {0} Privacy Policy.
         /// </summary>
-        public static string PrivacyPolicyHeader2_1 {
+        public static string PrivacyPolicyHeader1 {
             get {
-                return ResourceManager.GetString("PrivacyPolicyHeader2_1", resourceCulture);
+                return ResourceManager.GetString("PrivacyPolicyHeader1", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to What information do we collect?.
         /// </summary>
-        public static string PrivacyPolicyHeader2_2 {
+        public static string PrivacyPolicyHeader2 {
             get {
-                return ResourceManager.GetString("PrivacyPolicyHeader2_2", resourceCulture);
+                return ResourceManager.GetString("PrivacyPolicyHeader2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cookies.
+        /// </summary>
+        public static string PrivacyPolicyHeader3 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyHeader3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Security.
+        /// </summary>
+        public static string PrivacyPolicyHeader4 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyHeader4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Polls and contests.
+        /// </summary>
+        public static string PrivacyPolicyHeader5 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyHeader5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Newsletter.
+        /// </summary>
+        public static string PrivacyPolicyHeader6 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyHeader6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Links.
+        /// </summary>
+        public static string PrivacyPolicyHeader7 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyHeader7", resourceCulture);
             }
         }
         
@@ -1299,6 +1344,33 @@ namespace Xomorod.Helper.Resources {
         public static string PrivacyPolicyP2_1 {
             get {
                 return ResourceManager.GetString("PrivacyPolicyP2_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;{0}&quot;, the informations will review to determine the tastes of viewers and improve the quality of the website. These statistics, which helps to make the  &quot;{0}&quot; systems to work more functional..
+        /// </summary>
+        public static string PrivacyPolicyP2_10 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to For example, use the browser information for this purpose that we can design &quot;{0}&quot; website able to view correctly for more people..
+        /// </summary>
+        public static string PrivacyPolicyP2_11 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;{0}&quot; to assure you that the stored information is not other than those mentioned above. Unless other information you provide us with your personal willingness . For example, fill the registration form which contains information about the name, age, email address, and so on..
+        /// </summary>
+        public static string PrivacyPolicyP2_12 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_12", resourceCulture);
             }
         }
         
@@ -1362,6 +1434,106 @@ namespace Xomorod.Helper.Resources {
         public static string PrivacyPolicyP2_8 {
             get {
                 return ResourceManager.GetString("PrivacyPolicyP2_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Information on what pages you&apos;ve watched a few times and so on. This is the information that we collect..
+        /// </summary>
+        public static string PrivacyPolicyP2_9 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;Cookies&quot; are small text files that are stored on your computer by your host sites. In fact communication between the server and your computer files are considered absolutely safe for your computer security..
+        /// </summary>
+        public static string PrivacyPolicyP3_1 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP3_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Accourding to web programming language features, if you disable this option in your browser, access to some services of &quot;{0}&quot; will be denied..
+        /// </summary>
+        public static string PrivacyPolicyP3_2 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP3_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;{0}&quot;, doing all precautionary measures to protect sensitive user data, whether online or offline..
+        /// </summary>
+        public static string PrivacyPolicyP4_1 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP4_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If the form &quot;registration / order our services,&quot; asks users to enter sensitive information (such as credit card number or national security code) , this information with the best encryption software (SSL) will be protected..
+        /// </summary>
+        public static string PrivacyPolicyP4_2 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP4_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In the secure pages, such as the form &quot;Request for Services&quot; image &quot;lock&quot; at the top of your web browser will see..
+        /// </summary>
+        public static string PrivacyPolicyP4_3 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP4_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In addition, &quot;{0}&quot; will do everything in its power to to protect user data in offline mode as well..
+        /// </summary>
+        public static string PrivacyPolicyP4_4 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP4_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;{0}&quot; is sometimes requests information from users, for surveys or contests..
+        /// </summary>
+        public static string PrivacyPolicyP5_1 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP5_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Participation in this polls or contests is voluntary.
+        ///This information to increase customer satisfaction and their satisfaction in surveys and is used to contact the winner in the tournament..
+        /// </summary>
+        public static string PrivacyPolicyP5_2 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP5_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If users would like to receive our newsletter, we urge him to give us contact information such as your name and email..
+        /// </summary>
+        public static string PrivacyPolicyP6_1 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP6_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;{0}&quot;, is &quot;linked&quot; to other sites..
+        /// </summary>
+        public static string PrivacyPolicyP7_1 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP7_1", resourceCulture);
             }
         }
         

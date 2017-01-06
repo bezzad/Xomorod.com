@@ -103,20 +103,15 @@
     <Compile Include="Ranking\AlexaResources.cs" />
     <Compile Include="GooglePageSpeed\PageSpeed.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resources\Localization.fa.Designer.cs">
-      <DependentUpon>Localization.fa.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="Resources\Localization.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Localization.resx</DependentUpon>
-    </Compile>
     <Compile Include="Resources\Localization.fa1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Localization.fa.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Localization1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.resx</DependentUpon>
     </Compile>
     <Compile Include="Sitemap\ChangeFrequency.cs" />
     <Compile Include="Sitemap\SitemapNode.cs" />
@@ -142,7 +137,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Localization.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Localization.Designer.cs</LastGenOutput>
+      <LastGenOutput>Localization1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
