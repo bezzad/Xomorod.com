@@ -872,4 +872,24 @@ This information to increase customer satisfaction and their satisfaction in sur
   <data name="PrivacyPolicyP7_1" xml:space="preserve">
     <value>"{0}", is "linked" to other sites.</value>
   </data>
+  <data name="PrivacyPolicyHeader8" xml:space="preserve">
+    <value>We are shared this information with who?</value>
+  </data>
+  <data name="PrivacyPolicyP7_2" xml:space="preserve">
+    <value>We are not have any responsibility for the "Privacy" of Linked Sites . We encourage users to read the "Privacy" of those sites.</value>
+  </data>
+  <data name="PrivacyPolicyP7_3" xml:space="preserve">
+    <value>When you click on the link of the others on the our site and go to them sites, your some information will be posted to them.
+In this case, {0} does not have any control over the information in front of them and is not responsive.</value>
+  </data>
+  <data name="PrivacyPolicyP7_4" xml:space="preserve">
+    <value>If you have any protest to our site links, you can let us know. Be sure that your email address is protected to us and we do not will disclose it without your permission (except by law).</value>
+  </data>
+  <data name="PrivacyPolicyP8_1" xml:space="preserve">
+    <value>We will not disclose any of users personal information or pass them to someone or other third parties unless we are required by law.</value>
+  </data>
+  <data name="PrivacyPolicyP8_2" xml:space="preserve">
+    <value>"{0}" has three parts: "The statistics collected about users, site traffic and information related to the site."
+We will use your personal characteristics, just to respond to you and to prepare statistical reports for a better understanding of users.</value>
+  </data>
 </root>

@@ -1312,6 +1312,15 @@ namespace Xomorod.Helper.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to We are shared this information with who?.
+        /// </summary>
+        public static string PrivacyPolicyHeader8 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyHeader8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Based on the agreement of the site, &quot;{0}&quot; is committed to what be called &quot;Privacy Policy&quot; is considered respect..
         /// </summary>
         public static string PrivacyPolicyP1_1 {
@@ -1534,6 +1543,53 @@ namespace Xomorod.Helper.Resources {
         public static string PrivacyPolicyP7_1 {
             get {
                 return ResourceManager.GetString("PrivacyPolicyP7_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We are not have any responsibility for the &quot;Privacy&quot; of Linked Sites . We encourage users to read the &quot;Privacy&quot; of those sites..
+        /// </summary>
+        public static string PrivacyPolicyP7_2 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP7_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to When you click on the link of the others on the our site and go to them sites, your some information will be posted to them.
+        ///In this case, {0} does not have any control over the information in front of them and is not responsive..
+        /// </summary>
+        public static string PrivacyPolicyP7_3 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP7_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If you have any protest to our site links, you can let us know. Be sure that your email address is protected to us and we do not will disclose it without your permission (except by law)..
+        /// </summary>
+        public static string PrivacyPolicyP7_4 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP7_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We will not disclose any of users personal information or pass them to someone or other third parties unless we are required by law..
+        /// </summary>
+        public static string PrivacyPolicyP8_1 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP8_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;{0}&quot; has three parts: &quot;The statistics collected about users, site traffic and information related to the site.&quot;
+        ///We will use your personal characteristics, just to respond to you and to prepare statistical reports for a better understanding of users..
+        /// </summary>
+        public static string PrivacyPolicyP8_2 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP8_2", resourceCulture);
             }
         }
         
