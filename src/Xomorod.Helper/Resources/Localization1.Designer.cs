@@ -1321,6 +1321,15 @@ namespace Xomorod.Helper.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to تغییرات در سیاست های سایت.
+        /// </summary>
+        public static string PrivacyPolicyHeader9 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyHeader9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Based on the agreement of the site, &quot;{0}&quot; is committed to what be called &quot;Privacy Policy&quot; is considered respect..
         /// </summary>
         public static string PrivacyPolicyP1_1 {
@@ -1590,6 +1599,60 @@ namespace Xomorod.Helper.Resources {
         public static string PrivacyPolicyP8_2 {
             get {
                 return ResourceManager.GetString("PrivacyPolicyP8_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We create Log File and Database from the our users information for analyze how they used the system during each month..
+        /// </summary>
+        public static string PrivacyPolicyP8_3 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP8_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In this way we can improve and have a better understanding of our site contents that &quot;{0}&quot; offers..
+        /// </summary>
+        public static string PrivacyPolicyP8_4 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP8_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to این اطلاعات، در بر گیرنده مشخصه های فردی و شخصی تک تک کاربران نیست..
+        /// </summary>
+        public static string PrivacyPolicyP8_5 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP8_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to بار دیگر خاطر نشان می کنیم که: «هیچ یک از اطلاعات فردی و شخصی شما را به هیچ شخص ثالثی ارائه نمی کنیم مگر اینکه با اجازه خودتان باشد و یا اینکه به موجب قانون مجبور به انجام این کار باشیم.».
+        /// </summary>
+        public static string PrivacyPolicyP8_6 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP8_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ممکن است «{0}» گاهی سیاست های کاری خود را بهبود و یا تغییر دهد. ما به شما پیشنهاد می کنیم که هر چند وقت یکبار این صفحه را مطالعه کنید تا از تغییرات احتمالی سیاست های ما آگاه شوید..
+        /// </summary>
+        public static string PrivacyPolicyP9_1 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP9_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to چنانچه پرسشی درباره قوانین و سیاست های سایت «{0}» داشتید، می توانید آنرا با ما در میان بگذارید..
+        /// </summary>
+        public static string PrivacyPolicyP9_2 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP9_2", resourceCulture);
             }
         }
         

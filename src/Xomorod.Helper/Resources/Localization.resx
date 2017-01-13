@@ -892,4 +892,25 @@ In this case, {0} does not have any control over the information in front of the
     <value>"{0}" has three parts: "The statistics collected about users, site traffic and information related to the site."
 We will use your personal characteristics, just to respond to you and to prepare statistical reports for a better understanding of users.</value>
   </data>
+  <data name="PrivacyPolicyHeader9" xml:space="preserve">
+    <value>تغییرات در سیاست های سایت</value>
+  </data>
+  <data name="PrivacyPolicyP8_3" xml:space="preserve">
+    <value>We create Log File and Database from the our users information for analyze how they used the system during each month.</value>
+  </data>
+  <data name="PrivacyPolicyP8_4" xml:space="preserve">
+    <value>In this way we can improve and have a better understanding of our site contents that "{0}" offers.</value>
+  </data>
+  <data name="PrivacyPolicyP8_5" xml:space="preserve">
+    <value>این اطلاعات، در بر گیرنده مشخصه های فردی و شخصی تک تک کاربران نیست.</value>
+  </data>
+  <data name="PrivacyPolicyP8_6" xml:space="preserve">
+    <value>بار دیگر خاطر نشان می کنیم که: «هیچ یک از اطلاعات فردی و شخصی شما را به هیچ شخص ثالثی ارائه نمی کنیم مگر اینکه با اجازه خودتان باشد و یا اینکه به موجب قانون مجبور به انجام این کار باشیم.»</value>
+  </data>
+  <data name="PrivacyPolicyP9_1" xml:space="preserve">
+    <value>ممکن است «{0}» گاهی سیاست های کاری خود را بهبود و یا تغییر دهد. ما به شما پیشنهاد می کنیم که هر چند وقت یکبار این صفحه را مطالعه کنید تا از تغییرات احتمالی سیاست های ما آگاه شوید.</value>
+  </data>
+  <data name="PrivacyPolicyP9_2" xml:space="preserve">
+    <value>چنانچه پرسشی درباره قوانین و سیاست های سایت «{0}» داشتید، می توانید آنرا با ما در میان بگذارید.</value>
+  </data>
 </root>
