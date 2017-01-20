@@ -473,7 +473,7 @@
     <value>Page Not Found</value>
   </data>
   <data name="Oops_Something_is_missing" xml:space="preserve">
-    <value>... وای! چیزی گم شده است</value>
+    <value>Oops Something is missing ...</value>
   </data>
   <data name="InternetError" xml:space="preserve">
     <value>An error has occurred. Please check your internet connection!</value>
@@ -893,7 +893,7 @@ In this case, {0} does not have any control over the information in front of the
 We will use your personal characteristics, just to respond to you and to prepare statistical reports for a better understanding of users.</value>
   </data>
   <data name="PrivacyPolicyHeader9" xml:space="preserve">
-    <value>تغییرات در سیاست های سایت</value>
+    <value>Changes in the site policies</value>
   </data>
   <data name="PrivacyPolicyP8_3" xml:space="preserve">
     <value>We create Log File and Database from the our users information for analyze how they used the system during each month.</value>
@@ -902,15 +902,16 @@ We will use your personal characteristics, just to respond to you and to prepare
     <value>In this way we can improve and have a better understanding of our site contents that "{0}" offers.</value>
   </data>
   <data name="PrivacyPolicyP8_5" xml:space="preserve">
-    <value>این اطلاعات، در بر گیرنده مشخصه های فردی و شخصی تک تک کاربران نیست.</value>
+    <value>This information is not includes the user's personal attributes.</value>
   </data>
   <data name="PrivacyPolicyP8_6" xml:space="preserve">
-    <value>بار دیگر خاطر نشان می کنیم که: «هیچ یک از اطلاعات فردی و شخصی شما را به هیچ شخص ثالثی ارائه نمی کنیم مگر اینکه با اجازه خودتان باشد و یا اینکه به موجب قانون مجبور به انجام این کار باشیم.»</value>
+    <value>Once again we are reminded that, no one will not give your personal and private information to any third parties, unless with the yourself permission or that forced to do this by law.</value>
   </data>
   <data name="PrivacyPolicyP9_1" xml:space="preserve">
-    <value>ممکن است «{0}» گاهی سیاست های کاری خود را بهبود و یا تغییر دهد. ما به شما پیشنهاد می کنیم که هر چند وقت یکبار این صفحه را مطالعه کنید تا از تغییرات احتمالی سیاست های ما آگاه شوید.</value>
+    <value>May "{0}" sometimes change or improve their business strategies.
+ We suggest to you, that every some times you read this page to be known possible alterations of our policies.</value>
   </data>
   <data name="PrivacyPolicyP9_2" xml:space="preserve">
-    <value>چنانچه پرسشی درباره قوانین و سیاست های سایت «{0}» داشتید، می توانید آنرا با ما در میان بگذارید.</value>
+    <value>If you have questions about the rules and policies of the "{0}", you can share it with us.</value>
   </data>
 </root>

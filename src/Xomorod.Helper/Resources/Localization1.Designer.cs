@@ -1123,7 +1123,7 @@ namespace Xomorod.Helper.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ... وای! چیزی گم شده است.
+        ///   Looks up a localized string similar to Oops Something is missing ....
         /// </summary>
         public static string Oops_Something_is_missing {
             get {
@@ -1321,7 +1321,7 @@ namespace Xomorod.Helper.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to تغییرات در سیاست های سایت.
+        ///   Looks up a localized string similar to Changes in the site policies.
         /// </summary>
         public static string PrivacyPolicyHeader9 {
             get {
@@ -1621,7 +1621,7 @@ namespace Xomorod.Helper.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to این اطلاعات، در بر گیرنده مشخصه های فردی و شخصی تک تک کاربران نیست..
+        ///   Looks up a localized string similar to This information is not includes the user&apos;s personal attributes..
         /// </summary>
         public static string PrivacyPolicyP8_5 {
             get {
@@ -1630,7 +1630,7 @@ namespace Xomorod.Helper.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to بار دیگر خاطر نشان می کنیم که: «هیچ یک از اطلاعات فردی و شخصی شما را به هیچ شخص ثالثی ارائه نمی کنیم مگر اینکه با اجازه خودتان باشد و یا اینکه به موجب قانون مجبور به انجام این کار باشیم.».
+        ///   Looks up a localized string similar to Once again we are reminded that, no one will not give your personal and private information to any third parties, unless with the yourself permission or that forced to do this by law..
         /// </summary>
         public static string PrivacyPolicyP8_6 {
             get {
@@ -1639,7 +1639,8 @@ namespace Xomorod.Helper.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ممکن است «{0}» گاهی سیاست های کاری خود را بهبود و یا تغییر دهد. ما به شما پیشنهاد می کنیم که هر چند وقت یکبار این صفحه را مطالعه کنید تا از تغییرات احتمالی سیاست های ما آگاه شوید..
+        ///   Looks up a localized string similar to May &quot;{0}&quot; sometimes change or improve their business strategies.
+        /// We suggest to you, that every some times you read this page to be known possible alterations of our policies..
         /// </summary>
         public static string PrivacyPolicyP9_1 {
             get {
@@ -1648,7 +1649,7 @@ namespace Xomorod.Helper.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to چنانچه پرسشی درباره قوانین و سیاست های سایت «{0}» داشتید، می توانید آنرا با ما در میان بگذارید..
+        ///   Looks up a localized string similar to If you have questions about the rules and policies of the &quot;{0}&quot;, you can share it with us..
         /// </summary>
         public static string PrivacyPolicyP9_2 {
             get {

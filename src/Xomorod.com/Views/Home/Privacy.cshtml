@@ -1,7 +1,15 @@
 ﻿@using Xomorod.Helper.Resources
 @using Xomorod.Shared
 
-
+@section head
+{
+    <style>
+        p {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+    </style>
+}
 <br />
 <h1>
     @Localization.PrivacyPolicy
@@ -9,12 +17,12 @@
 
 
 <div class="left_right" style="text-align: @CultureHelper.GetTextAlign(); padding: 50px;">
-    
+    <br />
     <h2>@string.Format(Localization.PrivacyPolicyHeader1, Localization.CompanyName)</h2>
     <p>@string.Format(Localization.PrivacyPolicyP1_1, Localization.Xomorod)</p>
     <p>@string.Format(Localization.PrivacyPolicyP1_2, Localization.Xomorod)</p>
     <p>@Localization.PrivacyPolicyP1_3</p>
-
+    <br />
     <h2>@Localization.PrivacyPolicyHeader2</h2>
     <p>@string.Format(Localization.PrivacyPolicyP2_1, Localization.Xomorod)</p>
 
@@ -31,30 +39,30 @@
     <p>@string.Format(Localization.PrivacyPolicyP2_10, Localization.Xomorod)</p>
     <p>@string.Format(Localization.PrivacyPolicyP2_11, Localization.Xomorod)</p>
     <p>@string.Format(Localization.PrivacyPolicyP2_12, Localization.Xomorod)</p>
-
+    <br />
     <h2>@Localization.PrivacyPolicyHeader3</h2>
     <p>@Localization.PrivacyPolicyP3_1</p>
     <p>@string.Format(Localization.PrivacyPolicyP3_2, Localization.Xomorod)</p>
-
+    <br />
     <h2>@Localization.PrivacyPolicyHeader4</h2>
     <p>@string.Format(Localization.PrivacyPolicyP4_1, Localization.Xomorod)</p>
     <p>@Localization.PrivacyPolicyP4_2</p>
     <p>@Localization.PrivacyPolicyP4_3</p>
     <p>@string.Format(Localization.PrivacyPolicyP4_4, Localization.Xomorod)</p>
-    
+    <br />
     <h2>@Localization.PrivacyPolicyHeader5</h2>
     <p>@string.Format(Localization.PrivacyPolicyP5_1, Localization.Xomorod)</p>
     <p>@Localization.PrivacyPolicyP5_2</p>
-    
+    <br />
     <h2>@Localization.PrivacyPolicyHeader6</h2>
     <p>@Localization.PrivacyPolicyP6_1</p>
-    
+    <br />
     <h2>@Localization.PrivacyPolicyHeader7</h2>
     <p>@string.Format(Localization.PrivacyPolicyP7_1, Localization.Xomorod)</p>
     <p>@Localization.PrivacyPolicyP7_2</p>
     <p>@string.Format(Localization.PrivacyPolicyP7_3, Localization.Xomorod)</p>
     <p>@Localization.PrivacyPolicyP7_4</p>
-    
+    <br />
     <h2>@Localization.PrivacyPolicyHeader8</h2>
     <p>@Localization.PrivacyPolicyP8_1</p>
     <p>@string.Format(Localization.PrivacyPolicyP8_2, Localization.Xomorod)</p>
@@ -62,7 +70,7 @@
     <p>@string.Format(Localization.PrivacyPolicyP8_4, Localization.Xomorod)</p>
     <p>@Localization.PrivacyPolicyP8_5</p>
     <p>@Localization.PrivacyPolicyP8_6</p>
-    
+    <br/>
     <h2>@Localization.PrivacyPolicyHeader9</h2>
     <p>@string.Format(Localization.PrivacyPolicyP9_1, Localization.Xomorod)</p>
     <p>@string.Format(Localization.PrivacyPolicyP9_2, Localization.Xomorod)</p>
