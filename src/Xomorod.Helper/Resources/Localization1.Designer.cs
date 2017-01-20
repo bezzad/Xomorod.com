@@ -1123,7 +1123,7 @@ namespace Xomorod.Helper.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ... وای! چیزی گم شده است.
+        ///   Looks up a localized string similar to Oops Something is missing ....
         /// </summary>
         public static string Oops_Something_is_missing {
             get {
@@ -1245,6 +1245,415 @@ namespace Xomorod.Helper.Resources {
         public static string PrivacyPolicy {
             get {
                 return ResourceManager.GetString("PrivacyPolicy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} Privacy Policy.
+        /// </summary>
+        public static string PrivacyPolicyHeader1 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyHeader1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to What information do we collect?.
+        /// </summary>
+        public static string PrivacyPolicyHeader2 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyHeader2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cookies.
+        /// </summary>
+        public static string PrivacyPolicyHeader3 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyHeader3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Security.
+        /// </summary>
+        public static string PrivacyPolicyHeader4 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyHeader4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Polls and contests.
+        /// </summary>
+        public static string PrivacyPolicyHeader5 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyHeader5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Newsletter.
+        /// </summary>
+        public static string PrivacyPolicyHeader6 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyHeader6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Links.
+        /// </summary>
+        public static string PrivacyPolicyHeader7 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyHeader7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We are shared this information with who?.
+        /// </summary>
+        public static string PrivacyPolicyHeader8 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyHeader8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Changes in the site policies.
+        /// </summary>
+        public static string PrivacyPolicyHeader9 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyHeader9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Based on the agreement of the site, &quot;{0}&quot; is committed to what be called &quot;Privacy Policy&quot; is considered respect..
+        /// </summary>
+        public static string PrivacyPolicyP1_1 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP1_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Commitments and policies of &quot;{0}&quot; include is:.
+        /// </summary>
+        public static string PrivacyPolicyP1_2 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP1_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We are never without your permission, will do not to disclose your private and personal informations, unless under a legal warrant existing for this work..
+        /// </summary>
+        public static string PrivacyPolicyP1_3 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP1_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Visit any website with the user, specific information is automatically be collected from him. Site {0} is not exempt from this issue and we have access to the following:.
+        /// </summary>
+        public static string PrivacyPolicyP2_1 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;{0}&quot;, the informations will review to determine the tastes of viewers and improve the quality of the website. These statistics, which helps to make the  &quot;{0}&quot; systems to work more functional..
+        /// </summary>
+        public static string PrivacyPolicyP2_10 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to For example, use the browser information for this purpose that we can design &quot;{0}&quot; website able to view correctly for more people..
+        /// </summary>
+        public static string PrivacyPolicyP2_11 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;{0}&quot; to assure you that the stored information is not other than those mentioned above. Unless other information you provide us with your personal willingness . For example, fill the registration form which contains information about the name, age, email address, and so on..
+        /// </summary>
+        public static string PrivacyPolicyP2_12 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1. Information about your computer&apos;s IP address (IP Address is based on the numbers automatically when you login to the Web, online service provider by the contract will be assigned to you.).
+        /// </summary>
+        public static string PrivacyPolicyP2_2 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2. Source Site URL through which you enter our site. Such as Google, Yahoo or any other website..
+        /// </summary>
+        public static string PrivacyPolicyP2_3 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3. Your entry time and elapsed visiting time of &quot;{0}&quot;..
+        /// </summary>
+        public static string PrivacyPolicyP2_4 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4. The name and version of your computer operating system and Internet browser. For example, Windows 10 / Google Chrome. This information is transmitted to us automatically by your computer or any other website..
+        /// </summary>
+        public static string PrivacyPolicyP2_5 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5. The pages of the site which you see them..
+        /// </summary>
+        public static string PrivacyPolicyP2_6 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We use IP addresses to analyze statistical reports, manage the site, track users and collect statistical informations..
+        /// </summary>
+        public static string PrivacyPolicyP2_7 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IP addresses are not related in any way with your private informations..
+        /// </summary>
+        public static string PrivacyPolicyP2_8 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Information on what pages you&apos;ve watched a few times and so on. This is the information that we collect..
+        /// </summary>
+        public static string PrivacyPolicyP2_9 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP2_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;Cookies&quot; are small text files that are stored on your computer by your host sites. In fact communication between the server and your computer files are considered absolutely safe for your computer security..
+        /// </summary>
+        public static string PrivacyPolicyP3_1 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP3_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Accourding to web programming language features, if you disable this option in your browser, access to some services of &quot;{0}&quot; will be denied..
+        /// </summary>
+        public static string PrivacyPolicyP3_2 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP3_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;{0}&quot;, doing all precautionary measures to protect user sensitive data, whether online or offline..
+        /// </summary>
+        public static string PrivacyPolicyP4_1 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP4_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If the form &quot;registration / order our services,&quot; asks users to enter sensitive information (such as credit card number or national security code) , this information with the best encryption software (SSL) will be protected..
+        /// </summary>
+        public static string PrivacyPolicyP4_2 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP4_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In the secure pages, such as the form &quot;Request for Services&quot; image &quot;lock&quot; at the top of your web browser will see..
+        /// </summary>
+        public static string PrivacyPolicyP4_3 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP4_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In addition, &quot;{0}&quot; will do everything in its power to to protect user data in offline mode as well..
+        /// </summary>
+        public static string PrivacyPolicyP4_4 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP4_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;{0}&quot; is sometimes requests information from users, for surveys or contests..
+        /// </summary>
+        public static string PrivacyPolicyP5_1 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP5_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Participation in this polls or contests is voluntary.
+        ///This information to increase customer satisfaction and their satisfaction in surveys and is used to contact the winner in the tournament..
+        /// </summary>
+        public static string PrivacyPolicyP5_2 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP5_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If users would like to receive our newsletter, we urge him to give us contact information such as your name and email..
+        /// </summary>
+        public static string PrivacyPolicyP6_1 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP6_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;{0}&quot;, is &quot;linked&quot; to other sites..
+        /// </summary>
+        public static string PrivacyPolicyP7_1 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP7_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We are not have any responsibility for the &quot;Privacy&quot; of Linked Sites . We encourage users to read the &quot;Privacy&quot; of those sites..
+        /// </summary>
+        public static string PrivacyPolicyP7_2 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP7_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to When you click on the link of the others on the our site and go to them sites, your some information will be posted to them.
+        ///In this case, {0} does not have any control over the information in front of them and is not responsive..
+        /// </summary>
+        public static string PrivacyPolicyP7_3 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP7_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If you have any protest to our site links, you can let us know. Be sure that your email address is protected to us and we do not will disclose it without your permission (except by law)..
+        /// </summary>
+        public static string PrivacyPolicyP7_4 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP7_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We will not disclose any of users personal information or pass them to someone or other third parties unless we are required by law..
+        /// </summary>
+        public static string PrivacyPolicyP8_1 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP8_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;{0}&quot; has three parts: &quot;The statistics collected about users, site traffic and information related to the site.&quot;
+        ///We will use your personal characteristics, just to respond to you and to prepare statistical reports for a better understanding of users..
+        /// </summary>
+        public static string PrivacyPolicyP8_2 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP8_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We create Log File and Database from the our users information for analyze how they used the system during each month..
+        /// </summary>
+        public static string PrivacyPolicyP8_3 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP8_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In this way we can improve and have a better understanding of our site contents that &quot;{0}&quot; offers..
+        /// </summary>
+        public static string PrivacyPolicyP8_4 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP8_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This information is not includes the user&apos;s personal attributes..
+        /// </summary>
+        public static string PrivacyPolicyP8_5 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP8_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Once again we are reminded that, no one will not give your personal and private information to any third parties, unless with the yourself permission or that forced to do this by law..
+        /// </summary>
+        public static string PrivacyPolicyP8_6 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP8_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to May &quot;{0}&quot; sometimes change or improve their business strategies.
+        /// We suggest to you, that every some times you read this page to be known possible alterations of our policies..
+        /// </summary>
+        public static string PrivacyPolicyP9_1 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP9_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If you have questions about the rules and policies of the &quot;{0}&quot;, you can share it with us..
+        /// </summary>
+        public static string PrivacyPolicyP9_2 {
+            get {
+                return ResourceManager.GetString("PrivacyPolicyP9_2", resourceCulture);
             }
         }
         

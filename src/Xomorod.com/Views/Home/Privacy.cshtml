@@ -1,61 +1,78 @@
-﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+﻿@using Xomorod.Helper.Resources
+@using Xomorod.Shared
+
+@section head
+{
+    <style>
+        p {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+    </style>
 }
-
-
-
 <br />
 <h1>
-    Privacy Policy
+    @Localization.PrivacyPolicy
 </h1>
 
 
+<div class="left_right" style="text-align: @CultureHelper.GetTextAlign(); padding: 50px;">
+    <br />
+    <h2>@string.Format(Localization.PrivacyPolicyHeader1, Localization.CompanyName)</h2>
+    <p>@string.Format(Localization.PrivacyPolicyP1_1, Localization.Xomorod)</p>
+    <p>@string.Format(Localization.PrivacyPolicyP1_2, Localization.Xomorod)</p>
+    <p>@Localization.PrivacyPolicyP1_3</p>
+    <br />
+    <h2>@Localization.PrivacyPolicyHeader2</h2>
+    <p>@string.Format(Localization.PrivacyPolicyP2_1, Localization.Xomorod)</p>
 
-<div class="left_right" style="text-align: right; padding: 20px;">
-    <h2>حريم خصوصي کاربران سايت زمرد</h2>
-    <p>بر اساس توافق نامه های این سایت، «زمرد» خود را متعهد می داند که به آن چه «حریم خصوصی کاربران» شمرده می شود احترام بگذارد. </p>
-    <p>تعهد ها و سیاست های «زمرد» عبارت است از: </p>
-    <p>ما هرگز بدون اجازه ی شما، دست به افشاي اطلاعات خصوصي و فردي شما نخواهيم زد، مگر اينکه به موجب حکم قانوني توجيهي براي اين کار وجود داشته باشد. </p>
-    <h2>چه اطلاعاتي را جمع آوري می کنیم؟</h2>
-    <p>با مشاهده ی هر وب سایت توسط کاربر، اطلاعات مشخصی از شما به صورت خودکار جمع آوری می شود. سایت زمرد هم از این مساله مستثنی نیست و به موارد زیر دسترسی خواهیم داشت: </p>
-    <p>1- اطلاعاتي درباره آدرس IP کامپيوتر شما (آدرسIP نشانی مبتنی بر اعداد است که به صورت خودکر، هنگام ورود شما به وب، توسط فراهم آورنده خدمات اینترنتی طرف قراردادتان به شما اختصاص می یابد. </p>
-    <p>2- آدرس اينترنتي سايت مبداء که از طريق آن وارد سايت ما شده ايد. مانند گوگل، یاهو و یا هر وب سایت دیگر. </p>
-    <p>3- زمان ورود شما به سیستم و مدتی که میهمان «زمرد» هستید. </p>
-    <p>4- نام و نسخه سيستم عامل و مرورگر اینترنتی کامپيوتر شما. به عنوان مثال Windows XP/IE 8 يا Google Chrome اين اطلاعات به طور اتوماتيک بوسيله کامپيوتر شما به ما و هر وب سایت دیگری منتقل مي شود. </p>
-    <p>5- صفحاتي از سايت که شما آنها را مشاهده مي کنيد. </p>
-    <p>ما از آدرس IP براي تحليل گزارش های آماری، مديريت سايت، و رديابي كاربران و جمع آوري اطلاعات آماري استفاده مي كنيم. </p>
-    <p>آدرسهاي IP به هيچ عنوان ارتباطي با اطلاعات خصوصي شما ندارد. </p>
-    <p>اطلاعات این که چه صفحاتی را و برای چند بار تماشا کرده اید و امثال آن. اينها اطلاعاتي هستند که ما جمع آوري مي کنيم. </p>
-    <p>«زمرد»، اين اطلاعات را به منظور مشخص کردن سلایق بینندگان و بهبود کیفیت وب سایت مورد بررسی قرار می دهد. این آمارها، کمک مي کند که بکوشیم سیستم «زمرد» را کاربردی تر بسازیم. </p>
-    <p>براي نمونه، از اطلاعات مرورگر به اين منظور استفاده مي کنيم که سايتمان را به گونه اي طراحي نماييم که تعداد افراد بيشتري بتوانند صفحه های «زمرد» را به درستي مشاهده کنند. </p>
-    <p>«زمرد» به شما اطمینان می دهد که اطلاعات دیگری جز موارد ذکر شده بالا ذخیره نخواهد کرد. مگر اطلاعات دیگری که با میل و اراده شخصی خود در اختیار ما می گذارید. به عنوان مثال فرم ثبت نام را پر می کنید که شامل اطلاعاتی درباره ی نام، سن، نشانی الکترونیکی و امثال آن باشد. </p>
-    <h2>کوکی ها</h2>
-    <p>«کوکی» ها، فایل های کوچکی هستند که توسط سایت های میزبان شما بر روی کامپیوترتان ذخیره می شود. در واقع فایل های ارتباطی میان سرور و کامپیوتر شما هستند و از نظر امنیت اطلاعات برای کامپیوتر شما به طور مطلق بی خطر هستند. </p>
-    <p>به خاطر ویژگی زبان های برنامه نویسی تحت وب، در صورتی که شما این گزینه را در مرورگر خود غیر فعال کنید، از دسترسی به برخی از خدمات «زمرد» محروم خواهید بود. </p>
-    <h2>ایمنی</h2>
-    <p>«زمرد»، تمام اقدامات احتياطی را برای حفاظت از اطلاعات حساس كاربران، چه در حالت آن لاین (برخط) و چه آف لاين انجام می دهد. </p>
-    <p>اگر فرم «ثبت نام/درخواست خدمات ما»، از كاربر درخواست وارد كردن اطلاعات حساس (همچون شماره كارت اعتباری يا شماره ملی) را كند، اين اطلاعات با بهترين نرم افزار رمزگذاری،(SSL) حفاظت خواهد شد. </p>
-    <p>در صفحات ايمن، مثل فرم «درخواست خدمات»، تصوير «قفل»ی را در پايين مرورگر وب خود مشاهده خواهيد كرد. </p>
-    <p>علاوه بر این ها، «زمرد»، هرچه در توان دارد به کار خواهد بست تا از اطلاعات کاربر در حالت آفلاین نیز محافظت کند. </p>
-    <h2>نظر سنجی ها و مسابقات</h2>
-    <p>«زمرد»، گاهي از كاربران، برای نظر سنجی يا مسابقه، اطلاعاتی درخواست مي كند. </p>
-    <p>شركت در اين نظر سنجی ها، يا مسابقات، داوطلبانه است. اين اطلاعات برای افزايش رضايت مشتريان و بررسی ميزان رضايت آنها در نظر سنجي ها و برای تماس با برنده در مسابقات استفاده می شود. </p>
-    <h2>خبرنامه</h2>
-    <p>اگر كاربر تمايلی به دريافت خبرنامه ما داشته باشد، ما از او خواهیم خواست تا اطلاعات تماس همچون نام و ایمیل خود را در اختیار ما بگذارد. </p>
-    <h2>لینک ها و پیوندها</h2>
-    <p>«زمرد»، به سايتهای ديگری، «لينك» شده است. </p>
-    <p>ما هيچ مسئوليتی در قبال رويه «حريم خصوصی» اين سايت ها نداريم. ما كاربرانمان را به خواندن ابلاغيه های «حريم خصوصی» اين سايت ها تشويق می كنيم. </p>
-    <p>زمانی که شما بر روی لینک های اشخاص دیگر که در سایت ما وجود دارد کلیک می کنید و وارد آن سایت ها می شوید، اطلاعاتی از شما در اختیار آن ها گذاشته می شود. در این صورت زمرد هیچ گونه کنترلی بر این اطلاعات ندارد و در مقابل آن ها پاسخگو نیست. </p>
-    <p>اگر شما اعتراضی نسبت به لینک های سایت ما داشتید، می توانید آن را به ما اطلاع دهید. مطمئن باشید که آدرس ایمیل شما نزد ما محفوظ می ماند و ما آن را بدون اجازه خودتان (مگر به موجب قانون) فاش نخواهیم کرد. </p>
-    <h2>ما در این اطلاعات با چه کسانی سهیم هستیم؟</h2>
-    <p>«زمرد» هیچ یک از اطلاعات فردی و شخصی کاربران خود را افشا نمی کند و همچنین آن ها را به شخص و یا اشخاص ثالثی منتقل نمی کند مگر اینکه به موجب قانون و یا حکم قانونی باشد. </p>
-    <p>«زمرد» دارای سه بخش اطلاعات است: «آمار جمع آوری شده درباره کاربران، ترافیک سایت و اطلاعات مرتبط با سایت». ما از مشخصه های فردی شما فقط به منظور پاسخگویی به خودتان و یا برای تهیه گزارش های آماری در جهت شناخت بهتر کاربران مان استفاده می کنیم. </p>
-    <p>ما Log File ها و Database هایی از اطلاعات کاربران برای تجزیه و تحلیل نحوه استفاده آنها در طی هر ماه ایجاد می کنیم. </p>
-    <p>به این ترتیب می توانیم درک بهتری از وضعیت سایت مان داشته باشیم و محتوایی را که در «زمرد» ارائه می کنیم، بهبود ببخشیم. </p>
-    <p>این اطلاعات، در بر گیرنده مشخصه های فردی و شخصی تک تک کاربران نیست. </p>
-    <p>بار دیگر خاطر نشان می کنیم که : «هیچ یک از اطلاعات فردی و شخصی شما را به هیچ شخص ثالثی ارائه نمی کنیم مگر اینکه با اجازه خودتان باشد و یا این که به موجب قانون مجبور به انجام این کار باشیم.» </p>
-    <h2>تغییرات در سیاست های سایت</h2>
-    <p>ممکن است «زمرد» گاهی سیاست های کاری خود را بهبود و یا تغییر دهد. ما به شما پیشنهاد می کنیم که هر چند وقت یکبار این صفحه را مطالعه کنید تا از تغییرات احتمالی سیاست های ما آگاه شوید. </p>
-    <p>چنان چه پرسشی درباره قوانین و سیاست های سایت «زمرد» داشتید، می توانید آنرا با ما در میان بگذارید. </p>
+    <div style="padding: 10px 50px;">
+        <p>@Localization.PrivacyPolicyP2_2</p>
+        <p>@Localization.PrivacyPolicyP2_3</p>
+        <p>@string.Format(Localization.PrivacyPolicyP2_4, Localization.Xomorod)</p>
+        <p>@Localization.PrivacyPolicyP2_5</p>
+        <p>@Localization.PrivacyPolicyP2_6</p>
+    </div>
+    <p>@Localization.PrivacyPolicyP2_7</p>
+    <p>@Localization.PrivacyPolicyP2_8</p>
+    <p>@Localization.PrivacyPolicyP2_9</p>
+    <p>@string.Format(Localization.PrivacyPolicyP2_10, Localization.Xomorod)</p>
+    <p>@string.Format(Localization.PrivacyPolicyP2_11, Localization.Xomorod)</p>
+    <p>@string.Format(Localization.PrivacyPolicyP2_12, Localization.Xomorod)</p>
+    <br />
+    <h2>@Localization.PrivacyPolicyHeader3</h2>
+    <p>@Localization.PrivacyPolicyP3_1</p>
+    <p>@string.Format(Localization.PrivacyPolicyP3_2, Localization.Xomorod)</p>
+    <br />
+    <h2>@Localization.PrivacyPolicyHeader4</h2>
+    <p>@string.Format(Localization.PrivacyPolicyP4_1, Localization.Xomorod)</p>
+    <p>@Localization.PrivacyPolicyP4_2</p>
+    <p>@Localization.PrivacyPolicyP4_3</p>
+    <p>@string.Format(Localization.PrivacyPolicyP4_4, Localization.Xomorod)</p>
+    <br />
+    <h2>@Localization.PrivacyPolicyHeader5</h2>
+    <p>@string.Format(Localization.PrivacyPolicyP5_1, Localization.Xomorod)</p>
+    <p>@Localization.PrivacyPolicyP5_2</p>
+    <br />
+    <h2>@Localization.PrivacyPolicyHeader6</h2>
+    <p>@Localization.PrivacyPolicyP6_1</p>
+    <br />
+    <h2>@Localization.PrivacyPolicyHeader7</h2>
+    <p>@string.Format(Localization.PrivacyPolicyP7_1, Localization.Xomorod)</p>
+    <p>@Localization.PrivacyPolicyP7_2</p>
+    <p>@string.Format(Localization.PrivacyPolicyP7_3, Localization.Xomorod)</p>
+    <p>@Localization.PrivacyPolicyP7_4</p>
+    <br />
+    <h2>@Localization.PrivacyPolicyHeader8</h2>
+    <p>@Localization.PrivacyPolicyP8_1</p>
+    <p>@string.Format(Localization.PrivacyPolicyP8_2, Localization.Xomorod)</p>
+    <p>@Localization.PrivacyPolicyP8_3</p>
+    <p>@string.Format(Localization.PrivacyPolicyP8_4, Localization.Xomorod)</p>
+    <p>@Localization.PrivacyPolicyP8_5</p>
+    <p>@Localization.PrivacyPolicyP8_6</p>
+    <br/>
+    <h2>@Localization.PrivacyPolicyHeader9</h2>
+    <p>@string.Format(Localization.PrivacyPolicyP9_1, Localization.Xomorod)</p>
+    <p>@string.Format(Localization.PrivacyPolicyP9_2, Localization.Xomorod)</p>
 </div>
 <br /><br />

@@ -38,7 +38,7 @@
 
     @Styles.RenderFormat("<script>loadCSS(\"{0}\");</script>", Html.GetViewBundleName(1, BundleType.Styles))
 </head>
-<body class="home @ViewBag.BodyClass" itemscope="itemscope" dir="@(CultureHelper.IsRighToLeft() ? "rtl":"ltr")">
+<body class="home @ViewBag.BodyClass" itemscope="itemscope" dir="@CultureHelper.GetDirection()">
     <div id="preloader" class="fadeable">
         <div id="status" class="fadeable">&nbsp;</div>
     </div>
@@ -59,16 +59,8 @@
                         <img src='@Url.Content("~/Content/images/logo/LogoXomorod.png")' alt="Xomorod Logo" width="155" height="40">
                     </a>
                 </div>
-                <div id="slidemenu" class="navbar-collapse collapse" style="@(CultureHelper.IsRighToLeft() ? "text-align: right;" : "")">
-                    <ul class="nav navbar-nav responsive-nav">
-                        <li><a class="menu-items" href="@Url.Content($"~/{ViewBag.CultureRout}/#home")">@Localization.Home</a></li>
-                        <li><a class="menu-items" href="@Url.Content($"~/{ViewBag.CultureRout}/#focus")">@Localization.Features</a></li>
-                        <li><a class="menu-items" href="@Url.Content($"~/{ViewBag.CultureRout}/#works")">@Localization.Portfolio</a></li>
-                        <li><a class="menu-items" href="@Url.Content($"~/{ViewBag.CultureRout}/#aboutus")">@Localization.About</a></li>
-                        @*<li><a class="menu-items" href="@Url.Content($"~/{ViewBag.CultureRout}/#subscribe")">@Localization.Newsletter</a></li>*@
-                        <li><a class="menu-items" href="@Url.Content($"~/{ViewBag.CultureRout}/#contact")" id="contactLink">@Localization.Contact</a></li>
-                        @*<li>@Html.ActionLink(@Localization.Blog, "Index", "Blogs", new { area = "" },  new { @class = "menu-items" })</li>*@
-                    </ul>
+                <div id="slidemenu" class="navbar-collapse collapse" style="text-align: @CultureHelper.GetTextAlign()">
+                    @Html.Partial("LayoutPartialViews/_MainMenusPartial")
                     @Html.Partial("LayoutPartialViews/_LanguageSelectorPartial")
                     @Html.Partial("LayoutPartialViews/_LoginPartial")
                 </div>
@@ -88,8 +80,8 @@
     @Html.Partial("LayoutPartialViews/_Footer")
     <a class="scroll-top fa fa-angle-up" id="scroll-top" href="#"></a>
 
-
     @Styles.RenderFormat("<noscript><link rel=\"stylesheet\" href=\"{0}\"></noscript>", Html.GetViewBundleName(1, BundleType.Styles))
+
     @*@Html.Partial("LayoutPartialViews/_FacebookPixelCode")*@
     <script>
         var localization = {
