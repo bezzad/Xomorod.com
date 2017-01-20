@@ -848,7 +848,7 @@
     <value>Accourding to web programming language features, if you disable this option in your browser, access to some services of "{0}" will be denied.</value>
   </data>
   <data name="PrivacyPolicyP4_1" xml:space="preserve">
-    <value>"{0}", doing all precautionary measures to protect sensitive user data, whether online or offline.</value>
+    <value>"{0}", doing all precautionary measures to protect user sensitive data, whether online or offline.</value>
   </data>
   <data name="PrivacyPolicyP4_2" xml:space="preserve">
     <value>If the form "registration / order our services," asks users to enter sensitive information (such as credit card number or national security code) , this information with the best encryption software (SSL) will be protected.</value>

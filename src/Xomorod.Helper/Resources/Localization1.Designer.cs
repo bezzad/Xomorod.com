@@ -1483,7 +1483,7 @@ namespace Xomorod.Helper.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;{0}&quot;, doing all precautionary measures to protect sensitive user data, whether online or offline..
+        ///   Looks up a localized string similar to &quot;{0}&quot;, doing all precautionary measures to protect user sensitive data, whether online or offline..
         /// </summary>
         public static string PrivacyPolicyP4_1 {
             get {
