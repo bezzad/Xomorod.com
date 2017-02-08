@@ -347,7 +347,6 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Grid.mvc.readme" />
     <Content Include="fonts\zocial-regular-webfont.woff" />
     <Content Include="fonts\zocial-regular-webfont.ttf" />
     <Content Include="fonts\zocial-regular-webfont.eot" />
