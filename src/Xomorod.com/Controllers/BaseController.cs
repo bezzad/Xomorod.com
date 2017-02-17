@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Linq;
 using System.Threading;
 using System.Web;
@@ -22,26 +23,28 @@ namespace Xomorod.Com.Controllers
             }
             set { _userManager = value; }
         }
-
         
         public ApplicationUser CurrentUser => UserManager.FindById(User.Identity.GetUserId());
 
         protected override IAsyncResult BeginExecuteCore(AsyncCallback callback, object state)
         {
-            string cultureName = Request.GetUrlCulture(false) // read route culture
-                ?? Request.Cookies[SecurityKeys.CultureCookieKey]?.Value // Attempt to read the culture cookie from Request
-                ?? (Request.UserLanguages?.Any() == true
-                    ? Request.UserLanguages[0] // obtain it from HTTP header AcceptLanguages
-                    : null);
+            var cultureName =
+                Request.GetUrlCulture(false) // read route culture
+                    ?? Request?.Cookies[SecurityKeys.CultureCookieKey]?.Value // Attempt to read the culture cookie from Request
+                        ?? (Request?.UserLanguages?.Any() == true
+                            ? Request.UserLanguages[0] // obtain it from HTTP header AcceptLanguages
+                                : null);
 
             // Validate culture name
             cultureName = CultureHelper.GetImplementedCulture(cultureName); // This is safe
 
 
-            // Modify current thread's cultures            
-            Thread.CurrentThread.CurrentCulture =
-                Thread.CurrentThread.CurrentUICulture = 
-                    new System.Globalization.CultureInfo(cultureName);
+            // Modify current thread's cultures     
+            CultureInfo.DefaultThreadCurrentCulture =
+                CultureInfo.DefaultThreadCurrentUICulture =
+                Thread.CurrentThread.CurrentCulture =
+                Thread.CurrentThread.CurrentUICulture =
+                    new CultureInfo(cultureName);
 
             RouteData.Values["culture"] = cultureName;  // set culture
 

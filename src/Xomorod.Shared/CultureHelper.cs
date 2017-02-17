@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Threading;
@@ -299,7 +300,7 @@ namespace Xomorod.Shared
         public static readonly List<string> Cultures;
 
         // Include ONLY languages we are implementing
-        public static readonly Dictionary<string, Language> Languages;
+        public static Dictionary<string, Language> Languages { get; }
 
         static CultureHelper()
         {
@@ -314,7 +315,7 @@ namespace Xomorod.Shared
         /// </summary>
         public static bool IsRighToLeft()
         {
-            return System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.IsRightToLeft;
+            return CultureInfo.DefaultThreadCurrentCulture?.TextInfo?.IsRightToLeft ?? Thread.CurrentThread.CurrentCulture.TextInfo.IsRightToLeft;
         }
 
         /// <summary>
@@ -322,7 +323,8 @@ namespace Xomorod.Shared
         /// </summary>
         public static string GetTextAlign()
         {
-            return System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.IsRightToLeft ? "right" : "left";
+            return (CultureInfo.DefaultThreadCurrentCulture?.TextInfo?.IsRightToLeft ??
+                Thread.CurrentThread.CurrentCulture.TextInfo.IsRightToLeft) ? "right" : "left";
         }
 
         /// <summary>
@@ -330,7 +332,9 @@ namespace Xomorod.Shared
         /// </summary>
         public static string GetDirection()
         {
-            return System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.IsRightToLeft ? "rtl" : "ltr";
+            return
+                (CultureInfo.DefaultThreadCurrentCulture?.TextInfo?.IsRightToLeft ??
+                Thread.CurrentThread.CurrentCulture.TextInfo.IsRightToLeft) ? "rtl" : "ltr";
         }
 
         /// <summary>
@@ -418,17 +422,19 @@ namespace Xomorod.Shared
 
         public static string GetCurrentCulture()
         {
-            return Thread.CurrentThread.CurrentCulture.Name;
+            return CultureInfo.DefaultThreadCurrentCulture?.Name ??
+                Thread.CurrentThread.CurrentCulture.Name;
         }
 
         public static string GetCurrentCultureTwoLetter()
         {
-            return Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName.ToLower();
+            return CultureInfo.DefaultThreadCurrentCulture?.TwoLetterISOLanguageName.ToLower()
+                ?? Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName.ToLower();
         }
 
         public static string GetCurrentNeutralCulture()
         {
-            return GetNeutralCulture(Thread.CurrentThread.CurrentCulture.Name);
+            return GetNeutralCulture(CultureInfo.DefaultThreadCurrentCulture?.Name ?? Thread.CurrentThread.CurrentCulture.Name);
         }
 
         public static string GetNeutralCulture(string name)
