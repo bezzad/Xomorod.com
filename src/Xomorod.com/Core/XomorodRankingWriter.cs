@@ -2,7 +2,6 @@
 using System.Data;
 using AdoManager;
 using Dapper;
-using Xomorod.Helper;
 using Xomorod.Helper.Ranking;
 
 namespace Xomorod.Com.Core
