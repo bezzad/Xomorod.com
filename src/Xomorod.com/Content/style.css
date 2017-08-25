@@ -208,12 +208,6 @@ ul, ol {
     color: #FFF;
 }
 
-a {
-    color: #e96656;
-    -webkit-transition: all 700ms;
-    transition: all 700ms;
-}
-
     a, a:hover {
         text-decoration: none;
     }
