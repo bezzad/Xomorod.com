@@ -30,6 +30,4 @@ Xomorod was created by and is maintained by **Behzad Khosravifar**.
 
 # Xomorod News  [![News Site](https://img.shields.io/badge/News-news.xomorod.com-orange.svg)](http://news.xomorod.com)
 
-[![Build status](https://ci.appveyor.com/api/projects/status/8hg5jwm88hyro6y6?svg=true)](https://ci.appveyor.com/project/Behzadkhosravifar/news)
-
 The News channel web application for [Xomorod.com](http://Xomorod.com)
