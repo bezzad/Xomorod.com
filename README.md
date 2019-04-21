@@ -21,8 +21,8 @@ Have a bug or an issue with this theme? [Open a new issue](https://github.com/Xo
 
 Xomorod was created by and is maintained by **Behzad Khosravifar**.
 
-* https://twitter.com/behzadkhosravifar
-* https://github.com/behzadkhosravifar
+* https://twitter.com/bkhosravifar
+* https://github.com/bezzad
 
 ------------------------
 
